@@ -1,0 +1,170 @@
+* { margin: 0; padding: 0; }
+
+body {
+	padding: 150px 40px;
+	line-height: 1.4em;
+	font-size: 16px;
+}
+body, input, button {
+	font-family: Inconsolata, Consolas,
+				 "Liberation Mono", "Menlo",
+				 "Fira Mono", "Ubuntu Mono",
+				 Monaco, courier, monospace;
+}
+main {
+	margin: 0 auto;
+	max-width: 640px;
+}
+
+.title {
+	display: block;
+	text-align: center;
+	font-size: 2.2em;
+	font-family: courier, monospace;
+	letter-spacing: 0.95em;
+	padding-left: 0px;
+}
+
+a[rel="footnote"] {
+	margin-left: 0.2em;
+}
+a[rel="footnote"]::before {
+	content: "[";
+}
+a[rel="footnote"]::after {
+	content: "]";
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a, a:visited {
+	color: #0000ff;
+}
+
+sup {
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+}
+
+.footnotes {
+	margin-top: 30px;
+}
+.footnotes ol {
+	padding-top: 10px;
+}
+.footnotes, footer {
+	font-size: 0.9em;
+}
+
+main > p {
+	margin: 1em 0;
+	word-break: keep-all;
+}
+
+address {
+	font-style: normal;
+	color: #888;
+	text-align: center;
+}
+
+hr {
+	display: block;
+	border: none;
+	border-top: 1px dashed #ccc;
+	margin: 2em 5%;
+	text-align: center;
+}
+
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.5em 45px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+cite, blockquote {
+  color: #666;
+}
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 2em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+cite {
+	margin-top: 10px;
+	font-style: italic;
+	display: block;
+	text-align: right;
+	margin-right: 30px;
+}
+
+nav {
+	text-align: right;
+	padding-right: 45px;
+	margin-bottom: 45px;
+}
+
+main ul {
+	display: table;
+	margin-left: 1rem;
+	list-style-position: inside;
+}
+main li {
+	display: table-row;
+	counter-increment: table-ol;
+}
+main li::before {
+	content: "•";
+	display: table-cell;
+	padding-right: 10px;
+	text-align: right;
+}
+main ol li::before {
+	content: counter(table-ol) ".";
+	padding-right: 5px;
+	word-break: keep-all;
+}
+
+form {
+	text-align: center;
+}
+input {
+	padding: 3px 5px;
+}
+button {
+	padding: 3px 10px;
+}
+input:focus {
+	outline: none;
+}
+
+footer {
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 15px;
+		padding-top: 60px;
+		padding-left: 20px;
+		padding-right: 20px;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+	.title {
+		font-size: 8vw;
+	}
+	blockquote {
+	  padding: 0.5em 0;
+	}
+}

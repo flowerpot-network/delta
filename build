@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require "erb"
+require "redcarpet"
+require "ostruct"
+
+$markdown = Redcarpet::Markdown.new(
+  Redcarpet::Render::HTML.new(hard_wrap: true),
+  autolink: true,
+  space_after_headers: true,
+  footnotes: true
+)
+
+INDEX_TEMPLATE   = File.read("templates/index.html.erb")
+INTRO            = File.read("intro.md")
+
+index = { body: $markdown.render(INTRO) }
+
+def to_html(template, attrs)
+  ERB.new(template).result(OpenStruct.new(attrs).instance_eval { binding })
+end
+
+result = to_html(INDEX_TEMPLATE, index)
+File.new("index.html", "w").write(result)
