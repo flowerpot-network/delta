@@ -1,14 +1,12 @@
 * { margin: 0; padding: 0; }
 
 body {
+	padding: 150px 40px;
 	line-height: 1.4em;
 	font-size: 16px;
 }
-body.index {
-	padding: 150px 40px;
-}
-body.jobs {
-	padding: 60px 40px;
+body.jobs main {
+	margin-top: 70px;
 }
 body, input, button {
 	font-family: Inconsolata, Consolas,
@@ -19,6 +17,10 @@ body, input, button {
 main {
 	margin: 0 auto;
 	max-width: 640px;
+}
+
+h1, h2, h3, h4, h5 h6 {
+	margin-bottom: 1em;
 }
 
 .title {

@@ -1,13 +1,14 @@
 ### Software Engineer, Monadic
 
-**Location**: Berlin, or remote in Europe
-**Commitment**: Full-time
-**Compensation**: 80'000 EUR/year with 0.25% - 0.75% equity[^1]
-**Paid vacation**: 28 days+
+* **Location**: Berlin, or remote in Europe
+* **Commitment**: Full-time
+* **Compensation**: 80'000 EUR/year starting salary with 0.25% - 0.75% equity[^1]
+* **Paid vacation**: 28 days+
 
-At Monadic, we're building our initial engineering team. We're looking for
-candidates with a minimum of 5-7 years of industry experience who are well
-versed in functional programming and distributed systems.
+At Monadic, the company behind Oscoin, we're building our initial engineering
+team. We're looking for candidates with a minimum of 5-7 years of industry
+experience who are well versed in functional programming and distributed
+systems.
 
 We'd like to speak to candidates who are empathetic, humble, passionate about
 their work and strive for excellence.
@@ -20,7 +21,7 @@ papers and produce working implementations is essential. You will have to be an
 excellent communicator, both in oral and written form.
 
 Currently, all of our efforts are focused on building the reference
-implementation of Oscoin (<http://oscoin.io>), an open-source protocol and
+implementation of [Oscoin](http://oscoin.io), an open-source protocol and
 network for decentralized code hosting and collaboration which aims to make
 open-source development more sustainable.
 
@@ -37,4 +38,6 @@ If you'd like to reach out, please send us an email at <jobs@monadic.xyz> with
 your résumé and links to or samples of work you've done, as well as any other
 information you deem relevant.
 
-[^1]: The starting salary is the same for all employees, including founders. Equity is negotiable based on experience.
+[^1]: The starting salary is equal for all employees, including founders. We
+  believe in having a level playing field for everyone and keeping the team
+  small. Equity is negotiable based on experience.
