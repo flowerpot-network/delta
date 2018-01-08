@@ -8,4 +8,7 @@ default:
 publish:
 	./publish $(FILES)
 
+deps:
+	gem install redcarpet
+
 .PHONY: publish
