@@ -1,11 +1,11 @@
-### Software Engineer, Monadic
+### Software Engineer, Oscoin
 
 * **Location**: Berlin, or remote in Europe
 * **Commitment**: Full-time
 * **Compensation**: 80'000 EUR/year starting salary with 0.25% - 0.75% equity[^1]
 * **Paid vacation**: 28 days+
 
-At Monadic, the company behind Oscoin, we're building our initial engineering
+At Monadic, the company behind oscoin, we're building our initial engineering
 team. We're looking for candidates with a minimum of 5-7 years of industry
 experience who are well versed in functional programming and distributed
 systems.
