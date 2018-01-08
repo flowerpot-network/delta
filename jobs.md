@@ -21,7 +21,7 @@ papers and produce working implementations is essential. You will have to be an
 excellent communicator, both in oral and written form.
 
 Currently, all of our efforts are focused on building the reference
-implementation of [Oscoin](http://oscoin.io), an open-source protocol and
+implementation of [oscoin](http://oscoin.io), an open-source protocol and
 network for decentralized code hosting and collaboration which aims to make
 open-source development more sustainable.
 
