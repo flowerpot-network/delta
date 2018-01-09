@@ -5,9 +5,9 @@
 * **Compensation**: 80'000 EUR/year starting salary with equity[^1]
 * **Paid vacation**: 30 days
 
-At Monadic, the team behind oscoin, we're building our initial engineering
-team. We're looking for experienced candidates who are well versed in
-functional programming and distributed systems.
+At Monadic, the team behind oscoin, we're hiring our first engineers. We're
+looking for experienced candidates who are well versed in functional
+programming and distributed systems.
 
 We'd like to speak to candidates who are empathetic, humble, passionate about
 their work and strive for excellence.
