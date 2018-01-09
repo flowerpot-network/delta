@@ -33,7 +33,7 @@ At Monadic, the culture is the people we hire. We have core tenets which you
 will learn about and help shape, but these revolve principally around how we
 treat each other and what standards we try to meet when working together.
 
-If you'd like to reach out, please send us an email at <jobs@monadic.xyz> with
+If you'd like to apply, please send us an email at <jobs@monadic.xyz> with
 your résumé and links to or samples of work you've done; we especially value
 open-source contributions.
 
