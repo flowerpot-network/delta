@@ -17,13 +17,13 @@ implementation of [oscoin](http://oscoin.io), an open-source protocol and
 network for decentralized code hosting and collaboration which aims to make
 open-source development more sustainable.
 
-We invest in people primarly, not technologies: if you are a seasoned
-distributed systems engineer but lack experience with some of the tools or
-technologies we use, we can get you up to speed.
+We invest in people primarly, not technologies: if you are a seasoned software
+engineer but lack experience with some of the tools or technologies we use, we
+can get you up to speed.
 
 Our language of choice is Haskell. You will be tasked to build and deploy
 fault-tolerant distributed systems based on cryptographic proofs, authenticated
-data-structured and distributed-ledger technologies. You will have to keep up
+data-structures and distributed-ledger technologies. You will have to keep up
 to date with recent developments in the field. The ability to read research
 papers and produce working implementations is essential. You will have to be an
 excellent communicator, both in oral and written form. Everything we build is
