@@ -3,21 +3,14 @@
 * **Location**: Berlin, or remote in Europe
 * **Commitment**: Full-time
 * **Compensation**: 80'000 EUR/year starting salary with equity[^1]
-* **Paid vacation**: 30 days+
+* **Paid vacation**: 30 days
 
-At Monadic, the company behind oscoin, we're building our initial engineering
+At Monadic, the team behind oscoin, we're building our initial engineering
 team. We're looking for experienced candidates who are well versed in
 functional programming and distributed systems.
 
 We'd like to speak to candidates who are empathetic, humble, passionate about
 their work and strive for excellence.
-
-Our language of choice is Haskell. You will be tasked to build and deploy
-fault-tolerant distributed systems based on cryptographic proofs, authenticated
-data-structured and distributed-ledger technologies. You will have to keep up
-to date with recent developments in the field. The ability to read research
-papers and produce working implementations is essential. You will have to be an
-excellent communicator, both in oral and written form.
 
 Currently, all of our efforts are focused on building the reference
 implementation of [oscoin](http://oscoin.io), an open-source protocol and
@@ -25,16 +18,24 @@ network for decentralized code hosting and collaboration which aims to make
 open-source development more sustainable.
 
 We invest in people primarly, not technologies: if you are a seasoned
-distributed systems engineer but lack experience with Haskell, we can get you
-up to speed.
+distributed systems engineer but lack experience with some of the tools or
+technologies we use, we can get you up to speed.
+
+Our language of choice is Haskell. You will be tasked to build and deploy
+fault-tolerant distributed systems based on cryptographic proofs, authenticated
+data-structured and distributed-ledger technologies. You will have to keep up
+to date with recent developments in the field. The ability to read research
+papers and produce working implementations is essential. You will have to be an
+excellent communicator, both in oral and written form. Everything we build is
+open-source.
 
 At Monadic, the culture is the people we hire. We have core tenets which you
 will learn about, but these revolve principally around how we treat each other
-and what standards we try to meet when working with each other.
+and what standards we try to meet when working together.
 
 If you'd like to reach out, please send us an email at <jobs@monadic.xyz> with
-your résumé and links to or samples of work you've done, as well as any other
-information you deem relevant.
+your résumé and links to or samples of work you've done; we especially value
+open-source contributions.
 
 [^1]: The starting salary is equal for all employees, including founders. We
   believe in having a level playing field for everyone and keeping the team
