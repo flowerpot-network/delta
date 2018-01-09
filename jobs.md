@@ -2,13 +2,12 @@
 
 * **Location**: Berlin, or remote in Europe
 * **Commitment**: Full-time
-* **Compensation**: 80'000 EUR/year starting salary with 0.25% - 0.75% equity[^1]
-* **Paid vacation**: 28 days+
+* **Compensation**: 80'000 EUR/year starting salary with equity[^1]
+* **Paid vacation**: 30 days+
 
 At Monadic, the company behind oscoin, we're building our initial engineering
-team. We're looking for candidates with a minimum of 5-7 years of industry
-experience who are well versed in functional programming and distributed
-systems.
+team. We're looking for experienced candidates who are well versed in
+functional programming and distributed systems.
 
 We'd like to speak to candidates who are empathetic, humble, passionate about
 their work and strive for excellence.
@@ -25,8 +24,7 @@ implementation of [oscoin](http://oscoin.io), an open-source protocol and
 network for decentralized code hosting and collaboration which aims to make
 open-source development more sustainable.
 
-We realize that finding candidates who meet all our criteria is difficult.
-However, we invest in people primarly, not technologies: if you are a seasoned
+We invest in people primarly, not technologies: if you are a seasoned
 distributed systems engineer but lack experience with Haskell, we can get you
 up to speed.
 
