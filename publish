@@ -3,8 +3,10 @@
 require 'aws-sdk-v1'
 require 'digest/md5'
 
+bucket = ENV['AWS_BUCKET'] || File.basename(Dir.pwd)
+
 SITE = AWS::S3.new(region: ENV['AWS_REGION'] || 'eu-west-1')
-              .buckets[File.basename(Dir.pwd)]
+              .buckets[bucket]
 
 USAGE = <<EOF
 usage: #{$0} file...

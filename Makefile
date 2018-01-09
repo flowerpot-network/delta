@@ -6,9 +6,9 @@ default:
 .PHONY: default
 
 publish:
-	./publish $(FILES)
+	env AWS_BUCKET=oscoin.io ./publish $(FILES)
 
 deps:
-	gem install redcarpet
+	gem install redcarpet aws-sdk-v1
 
 .PHONY: publish
