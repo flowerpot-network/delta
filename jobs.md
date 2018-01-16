@@ -2,7 +2,7 @@
 
 * **Location**: Berlin, or remote in Europe
 * **Commitment**: Full-time
-* **Compensation**: 100'000 EUR/year with equity[^1]
+* **Compensation**: 100'000 EUR/year + equity[^1]
 * **Paid vacation**: 30 days
 
 At Monadic, the team behind oscoin, we're hiring our first engineers. We're
