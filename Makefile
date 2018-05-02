@@ -1,4 +1,4 @@
-FILES := *.html css/*
+FILES := *.html updates/*.html css/*
 
 default:
 	./build

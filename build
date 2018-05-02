@@ -13,17 +13,23 @@ $markdown = Redcarpet::Markdown.new(
 
 INDEX_TEMPLATE = File.read("templates/index.html.erb")
 JOBS_TEMPLATE = File.read("templates/jobs.html.erb")
+UPDATE_TEMPLATE = File.read("templates/update.html.erb")
 
-def page!(template, name, path)
-  contents = File.read(path)
+def page!(template, name, out, src, extra)
+  contents = File.read(src)
   attrs = { name: name, body: $markdown.render(contents) }
+  attrs.merge!(extra || {})
   result = to_html(template, attrs)
-  File.new("#{name}.html", "w").write(result)
+  File.new("#{out}.html", "w").write(result)
 end
 
 def to_html(template, attrs)
   ERB.new(template).result(OpenStruct.new(attrs).instance_eval { binding })
 end
 
-page! INDEX_TEMPLATE, "index", "intro.md"
-page! JOBS_TEMPLATE, "jobs", "jobs.md"
+page! INDEX_TEMPLATE, "index", "index", "intro.md", {}
+page! JOBS_TEMPLATE, "jobs", "jobs", "jobs.md", {}
+
+[1, 2].each do |n|
+  page! UPDATE_TEMPLATE, "update", "updates/#{n}", "updates/#{n}.md", { n: n }
+end
