@@ -14,6 +14,7 @@ body, input, button {
 				 "Fira Mono", "Ubuntu Mono",
 				 Monaco, courier, monospace;
 }
+
 main {
 	margin: 0 auto;
 	max-width: 640px;
@@ -121,9 +122,21 @@ cite {
 }
 
 nav {
-	text-align: right;
-	padding-right: 45px;
-	margin-bottom: 45px;
+	position: absolute;
+	top: 0;
+	right: 15px;
+	text-align: center;
+	padding: 15px;
+}
+nav ul {
+	display: block;
+}
+nav li {
+	display: inline-block;
+	margin-right: 30px;
+}
+nav li:last-child {
+	margin-right: 0;
 }
 
 main ul, main ol {
@@ -162,6 +175,7 @@ input:focus {
 
 footer {
 	text-align: center;
+	padding-bottom: 360px;
 }
 
 @media screen and (max-width: 480px) {
