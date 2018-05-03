@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5 h6 {
 	font-family: courier, monospace;
 	letter-spacing: 0.95em;
 	padding-left: 0px;
+	padding-bottom: 20px;
 }
 
 body.update .title {
@@ -176,6 +177,12 @@ input:focus {
 footer {
 	text-align: center;
 	padding-bottom: 360px;
+}
+.updates {
+	text-align: center;
+}
+.updates li {
+	list-style-type: none;
 }
 
 @media screen and (max-width: 480px) {
