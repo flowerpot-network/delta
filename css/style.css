@@ -195,6 +195,10 @@ footer {
 		overflow-wrap: break-word;
 		word-break: break-word;
 	}
+	nav {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	.title {
 		font-size: 7vw;
 	}
