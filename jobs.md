@@ -1,6 +1,6 @@
 ### Software Engineer, Oscoin
 
-* **Location**: Berlin, or remote in Europe
+* **Location**: Berlin
 * **Commitment**: Full-time
 * **Compensation**: 100'000 EUR/year + equity[^1]
 * **Paid vacation**: 30 days
