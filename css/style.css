@@ -15,6 +15,25 @@ body, input, button {
 				 Monaco, courier, monospace;
 }
 
+body.team {
+	margin: 0 auto;
+	text-align: center;
+}
+body.team main {
+	margin-top: 60px;
+}
+body.team ul {
+	display: block;
+	margin-bottom: 60px;
+}
+body.team li {
+	display: block;
+	text-align: center;
+}
+body.team li::before {
+	content: none;
+}
+
 main {
 	margin: 0 auto;
 	max-width: 640px;
