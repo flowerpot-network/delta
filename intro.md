@@ -16,12 +16,12 @@ By moving the open-source ecosystem onto the blockchain, backed by its own crypt
 
 The key components of such a system include:
 
-* A new token called **oscoin**.
-* A blockchain of git commit hashes.
-* Proof-of-stake consensus.[^8]
+* A new token called **open source coin**.
+* A blockchain of commit hashes.
+* A permissionless network with proof-of-stake[^8] membership.
 * A treasury system as seen in Dash,[^9] to fund open-source work on the network, including oscoin’s own roadmap.
 * An on-chain governance system based on proposals, allowing atomic changes to smart-contract or regular code, including the oscoin protocol itself.
-* A community-owned ‘blessed’ code repository of smart-contracts defining the token distribution algorithm, used to reward and incentivize projects.
+* A community-owned ‘blessed’ code repository of smart-contracts defining the token distribution mechanism used to reward and incentivize projects.
 
 Fundamentally, we are proposing a crypto-economy[^10] based on the ideas of 'inflation funding'[^11] and 'curation markets.'[^12] By design, token supply increases at a predefined rate through minting. These newly minted tokens are used to reward open-source projects. Furthermore, an open marketplace is introduced in which participants can coordinate and cooperate by exchanging tokens for work within the network.
 
