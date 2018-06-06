@@ -215,8 +215,17 @@ footer {
 		word-break: break-word;
 	}
 	nav {
+		right: 10px;
+		left: 10px;
 		padding-left: 0;
 		padding-right: 0;
+		padding-top: 10px;
+	}
+	nav li {
+		margin-right: 5px;
+	}
+	nav li:last-child {
+		margin-right: 0;
 	}
 	.title {
 		font-size: 7vw;
