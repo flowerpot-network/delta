@@ -34,6 +34,14 @@ body.team li::before {
 	content: none;
 }
 
+body.page main {
+	margin-top: 45px;
+}
+body.page h1 {
+	text-decoration: none !important;
+	line-height: 1.2em;
+}
+
 main {
 	margin: 0 auto;
 	max-width: 640px;
@@ -144,7 +152,7 @@ cite {
 nav {
 	position: absolute;
 	top: 0;
-	right: 15px;
+	right: 10px;
 	text-align: center;
 	padding: 15px;
 }

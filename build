@@ -15,6 +15,7 @@ INDEX_TEMPLATE = File.read("templates/index.html.erb")
 JOBS_TEMPLATE = File.read("templates/jobs.html.erb")
 UPDATE_TEMPLATE = File.read("templates/update.html.erb")
 TEAM_TEMPLATE = File.read("templates/team.html.erb")
+PAGE_TEMPLATE = File.read("templates/page.html.erb")
 
 def page!(template, name, out, src, extra)
   contents = File.read(src)
@@ -31,6 +32,7 @@ end
 page! INDEX_TEMPLATE, "index", "index", "intro.md", {}
 page! JOBS_TEMPLATE, "jobs", "jobs", "jobs.md", {}
 page! TEAM_TEMPLATE, "team", "team", "team.md", {}
+page! PAGE_TEMPLATE, "motivation", "motivation", "motivation.md", {}
 
 [1, 2].each do |n|
   page! UPDATE_TEMPLATE, "update", "updates/#{n}", "updates/#{n}.md", { n: n }
