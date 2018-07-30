@@ -5,7 +5,7 @@ body {
 	line-height: 1.4em;
 	font-size: 16px;
 }
-body.jobs main, body.update main {
+body.jobs main, body.update main, body.jobs-web main {
 	margin-top: 70px;
 }
 body, input, button {

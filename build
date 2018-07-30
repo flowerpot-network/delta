@@ -31,7 +31,7 @@ end
 
 page! INDEX_TEMPLATE, "index", "index", "intro.md", {}
 page! JOBS_TEMPLATE, "jobs", "jobs", "jobs.md", {}
-page! JOBS_TEMPLATE, "jobs-web", "jobs-web", "jobs-web.md", {}
+page! JOBS_TEMPLATE, "jobs-web", "jobs/fae9b81", "jobs-web.md", {}
 page! TEAM_TEMPLATE, "team", "team", "team.md", {}
 page! PAGE_TEMPLATE, "motivation", "motivation", "motivation.md", {}
 
