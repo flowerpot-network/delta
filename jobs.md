@@ -33,17 +33,10 @@ At Monadic, the culture is the people we hire. We have core tenets which you
 will learn about and help shape, but these revolve principally around how we
 treat each other and what standards we try to meet when working together.
 
-We are currently looking for engineers in the following areas:
-
-1. Protocol and distributed-systems engineering in Haskell.
-2. Frontend web engineering and prototyping. For this work, we favor candidates
-with experience in Elm, React, Purescript or Vue, and a good eye for design.
-
 If you'd like to apply, please send us an email at <jobs@monadic.xyz> with
 your résumé and links to or samples of work you've done; we especially value
 open-source contributions.
 
-[^1]: The starting salary is equal for all employees, including founders,
-  regardless of location. We believe in having a level playing field for
-  everyone and in keeping the team small. Equity is negotiable based on
-  experience.
+[^1]: The salary is equal for all employees, including founders, regardless of
+  location. We believe in having a level playing field for everyone and in
+  keeping the team small. Equity is negotiable based on experience.
