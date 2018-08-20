@@ -1,6 +1,7 @@
 FILES := *.html updates/*.html css/* jobs/*.html
 
 default:
+	mkdir -p jobs
 	./build
 
 .PHONY: default
