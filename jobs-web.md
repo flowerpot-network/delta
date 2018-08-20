@@ -7,7 +7,7 @@
 
 At Monadic, the team behind oscoin, we're putting together our product team and
 looking for a few experienced engineers who are well versed in web technologies
-and have an eye for design. We'd like to speak to people who are empathetic,
+and have an interest in product. We'd like to speak to people who are empathetic,
 humble, passionate about their work and strive for excellence.
 
 Currently, our efforts are focused on building the reference implementation of

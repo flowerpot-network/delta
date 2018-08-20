@@ -2,7 +2,6 @@
 
 * [Alexis Sellier]
 * [Eleftherios Diakomichalis]
-* [Tyler Neely]
 * [Julian Arni]
 * [Onur Akpolat]
 * [Kim Altintop]
@@ -10,7 +9,6 @@
 
 [Alexis Sellier]: http://cloudhead.io
 [Eleftherios Diakomichalis]: https://twitter.com/lftherios
-[Tyler Neely]: http://tylerneely.com/
 [Julian Arni]: https://github.com/jkarni
 [Kim Altintop]: https://github.com/kim
 [Onur Akpolat]: https://twitter.com/onurakpolat
