@@ -155,16 +155,6 @@ header {
 	justify-content: space-between;
 }
 
-.logo {
-	display: block;
-	text-indent: -9999px;
-	width: 184px;
-	height: 80px;
-	background: url(/img/opensourcecoin-logo-wide.svg);
-	background-size: 184px 80px;
-	background-repeat: no-repeat;
-}
-
 nav {
 	text-align: center;
 	padding: 15px;
