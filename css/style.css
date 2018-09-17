@@ -1,50 +1,50 @@
 * { margin: 0; padding: 0; }
 
 body {
-	padding: 150px 40px;
-	line-height: 1.4em;
-	font-size: 16px;
+	padding: 40px;
+	line-height: 1.5em;
+	font-size: 18px;
+	color: #28333d;
 }
 body.jobs main, body.update main, body.jobs-web main {
 	margin-top: 70px;
 }
-body, input, button {
-	font-family: Inconsolata, Consolas,
+body, input, button, .title {
+	font-family: "Inconsolata", "Consolas",
 				 "Liberation Mono", "Menlo",
 				 "Fira Mono", "Ubuntu Mono",
 				 Monaco, courier, monospace;
 }
 
-body.team {
-	margin: 0 auto;
-	text-align: center;
-}
-body.team main {
-	margin-top: 60px;
-}
-body.team ul {
-	display: block;
-	margin-bottom: 60px;
-}
-body.team li {
-	display: block;
-	text-align: center;
-}
-body.team li::before {
+body.updates li::before, body.team li::before {
 	content: none;
 }
 
-body.page main {
-	margin-top: 45px;
+body.page main,
+body.team main {
+	margin-top: 96px;
+}
+body.team main ul,
+body.team main li,
+body.updates main ul,
+body.updates main li {
+	display: block;
+}
+body.team main, body.updates main {
+	text-align: center;
 }
 body.page h1 {
 	text-decoration: none !important;
 	line-height: 1.2em;
+	margin-bottom: 64px;
+}
+body.index main ul {
+	margin-left: 1rem;
 }
 
 main {
-	margin: 0 auto;
-	max-width: 640px;
+	margin: 180px auto;
+	max-width: 720px;
 }
 
 h1, h2, h3, h4, h5 h6 {
@@ -55,12 +55,11 @@ h1, h2, h3, h4, h5 h6 {
 
 .title {
 	display: block;
-	text-align: center;
-	font-size: 2.2em;
-	font-family: courier, monospace;
-	letter-spacing: 0.95em;
-	padding-left: 0px;
+	font-size: 2em;
 	padding-bottom: 20px;
+	max-width: 720px;
+	margin: 64px auto;
+	text-align: center;
 }
 
 body.update .title {
@@ -79,12 +78,13 @@ a[rel="footnote"]::after {
 
 a {
 	text-decoration: none;
+	color: #6e41e0;
 }
 a:hover {
 	text-decoration: underline;
 }
-a, a:visited {
-	color: #0000ff;
+a:visited {
+	color: #6e41e0;
 }
 
 sup {
@@ -149,10 +149,23 @@ cite {
 	margin-right: 30px;
 }
 
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo {
+	display: block;
+	text-indent: -9999px;
+	width: 184px;
+	height: 80px;
+	background: url(../img/opensourcecoin-logo-wide.svg);
+	background-size: 184px 80px;
+	background-repeat: no-repeat;
+}
+
 nav {
-	position: absolute;
-	top: 0;
-	right: 10px;
 	text-align: center;
 	padding: 15px;
 }
@@ -163,13 +176,23 @@ nav li {
 	display: inline-block;
 	margin-right: 30px;
 }
+
+nav li .updates {
+	color: #59e2f3;
+}
+
+nav li .team {
+	color: #37f18f;
+}
+nav li .motivation {
+	color: #e3eb37;
+}
 nav li:last-child {
 	margin-right: 0;
 }
 
 main ul, main ol {
 	display: table;
-	margin-left: 1rem;
 	list-style-position: inside;
 }
 main li {
@@ -205,6 +228,24 @@ footer {
 	text-align: center;
 	padding-bottom: 360px;
 }
+
+footer ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+footer a.twitter {
+	color: #59e2f3;
+}
+footer a.telegram {
+	color: #37f18f;
+}
+footer a.newsletter {
+	color: #e3eb37;
+}
+
 .updates {
 	text-align: center;
 }
@@ -239,6 +280,6 @@ footer {
 		font-size: 7vw;
 	}
 	blockquote {
-	  padding: 0.5em 0;
+		padding: 0.5em 0;
 	}
 }
