@@ -16,6 +16,18 @@
 [Julien Donck]: http://www.juliendonck.com/
 [Thomas Scholtes]: https://github.com/geigerzaehler
 
+**Contributors**
+
+* [Sam Hart]
+* [James Haydon]
+* [Ange Royall-Kahin]
+* [Tomás Senart]
+
+[Sam Hart]: http://hxrts.com
+[James Haydon]: https://github.com/jameshaydon
+[Ange Royall-Kahin]: https://angel.co/ange-royall-kahin
+[Tomás Senart]: https://github.com/tsenart
+
 **Partners**
 
 * [Ciarán O’Leary][1] from [BlueYard][2]
