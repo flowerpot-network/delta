@@ -6,6 +6,7 @@
 * [Onur Akpolat]
 * [Kim Altintop]
 * [Julien Donck]
+* [Thomas Scholtes]
 
 [Alexis Sellier]: http://cloudhead.io
 [Eleftherios Diakomichalis]: https://twitter.com/lftherios
@@ -13,6 +14,7 @@
 [Kim Altintop]: https://github.com/kim
 [Onur Akpolat]: https://twitter.com/onurakpolat
 [Julien Donck]: http://www.juliendonck.com/
+[Thomas Scholtes]: https://github.com/geigerzaehler
 
 **Partners**
 
