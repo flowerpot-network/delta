@@ -7,6 +7,7 @@
 * [Kim Altintop]
 * [Julien Donck]
 * [Thomas Scholtes]
+* [Luke Palmer]
 
 [Alexis Sellier]: http://cloudhead.io
 [Eleftherios Diakomichalis]: https://twitter.com/lftherios
@@ -15,6 +16,7 @@
 [Onur Akpolat]: https://twitter.com/onurakpolat
 [Julien Donck]: http://www.juliendonck.com/
 [Thomas Scholtes]: https://github.com/geigerzaehler
+[Luke Palmer]: https://github.com/luqui
 
 **Contributors**
 
