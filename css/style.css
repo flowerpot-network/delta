@@ -155,6 +155,10 @@ header {
 	justify-content: space-between;
 }
 
+object {
+	pointer-events: none;
+}
+
 nav {
 	text-align: center;
 	padding: 15px;
