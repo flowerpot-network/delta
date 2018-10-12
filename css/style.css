@@ -9,7 +9,7 @@ body {
 body.jobs main, body.update main, body.jobs-web main {
 	margin-top: 70px;
 }
-body, input, button, .title {
+body, input, button, code, .title {
 	font-family: "Inconsolata", "Consolas",
 				 "Liberation Mono", "Menlo",
 				 "Fira Mono", "Ubuntu Mono",
@@ -42,6 +42,10 @@ body.index main ul {
 	margin-left: 1rem;
 }
 
+code {
+	font-style: italic;
+}
+
 main {
 	margin: 180px auto;
 	max-width: 720px;
@@ -51,6 +55,11 @@ h1, h2, h3, h4, h5 h6 {
 	font-weight: normal;
 	text-decoration: underline;
 	margin-bottom: 1em;
+}
+
+h2 {
+	margin-top: 2em;
+	text-decoration: none;
 }
 
 .title {

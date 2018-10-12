@@ -34,6 +34,7 @@ page! JOBS_TEMPLATE, "jobs", "jobs", "jobs.md", {}
 page! JOBS_TEMPLATE, "jobs-web", "jobs/fae9b81", "jobs-web.md", {}
 page! TEAM_TEMPLATE, "team", "team", "team.md", {}
 page! PAGE_TEMPLATE, "motivation", "motivation", "motivation.md", {}
+page! PAGE_TEMPLATE, "radicle", "radicle", "radicle.md", {}
 page! PAGE_TEMPLATE, "updates", "updates/index", "updates.md", {}
 
 [1, 2].each do |n|
