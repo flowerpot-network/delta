@@ -16,10 +16,11 @@ JOBS_TEMPLATE = File.read("templates/jobs.html.erb")
 UPDATE_TEMPLATE = File.read("templates/update.html.erb")
 TEAM_TEMPLATE = File.read("templates/team.html.erb")
 PAGE_TEMPLATE = File.read("templates/page.html.erb")
+NAV_TEMPLATE = File.read("templates/nav.html.erb")
 
 def page!(template, name, out, src, extra)
   contents = File.read(src)
-  attrs = { name: name, body: $markdown.render(contents) }
+  attrs = { name: name, body: $markdown.render(contents), nav: to_html(NAV_TEMPLATE, {}) }
   attrs.merge!(extra || {})
   result = to_html(template, attrs)
   File.new("#{out}.html", "w").write(result)
