@@ -25,10 +25,11 @@ with peer-to-peer networking and extends the idea of replicated logs to fully
 re-programmable state machines we call *chains*.
 
 Today we’re releasing a core component of the radicle stack, an implementation
-of the radicle language, along with a [paper] describing its formal semantics.
+of the [radicle language], along with a [paper] describing its formal semantics.
 
 [paper]: https://ipfs.io/ipfs/QmadmGA6mBWZ93Wv4XKuCu9wdPf7Da8pjH3Corzpe9VGZg
 [secure scuttlebutt]: https://www.scuttlebutt.nz/
+[radicle language]: https://github.com/oscoin/radicle
 
 ## The radicle stack
 
@@ -113,8 +114,10 @@ like.
 
 [Emacs]: https://www.gnu.org/software/emacs/
 
-We’re very excited to open-source the radicle language and soon the full
+We’re very excited to [open-source] the radicle language and soon the full
 radicle stack.
+
+[open-source]: https://github.com/oscoin/radicle
 
 October 12, 2018
 
