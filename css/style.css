@@ -42,6 +42,11 @@ body.index main ul {
 	margin-left: 1rem;
 }
 
+body.update img[alt=logo] {
+	width: 300px;
+	text-align: center !important;
+}
+
 code {
 	font-style: italic;
 }
@@ -60,6 +65,11 @@ h1, h2, h3, h4, h5 h6 {
 h2 {
 	margin-top: 2em;
 	text-decoration: none;
+	line-height: 1.5em;
+}
+
+h3 {
+	margin-top: 1em;
 }
 
 .title {
@@ -146,6 +156,7 @@ blockquote:before {
 	line-height: 0.1em;
 	margin-right: 0.25em;
 	vertical-align: -0.4em;
+	font-family: monospace;
 }
 blockquote p {
   display: inline;
