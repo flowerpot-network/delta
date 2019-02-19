@@ -18,7 +18,7 @@ The key components of such a system include:
 
 * A new token called **open source coin**.
 * A blockchain of commit hashes.
-* A permissionless network with proof-of-stake[^8] membership.
+* A permissionless network initially running on proof-of-work[^8].
 * A treasury system as seen in Dash,[^9] to fund open-source work on the network, including oscoin’s own roadmap.
 * An on-chain governance system based on proposals, allowing atomic changes to smart-contract or regular code, including the oscoin protocol itself.
 * A community-owned ‘blessed’ code repository of smart-contracts defining the token distribution mechanism used to reward and incentivize projects.
@@ -42,7 +42,7 @@ Thanks for reading,
 [^5]: Open-Source Won. So, Now What? <https://www.wired.com/2016/08/open-source-won-now/>
 [^6]: Before GitHub, the majority of open-source contributions were sent as patches to maintainers on mailing lists. This is still how the Linux kernel project operates.
 [^7]: The Problem with putting all the world’s code on github. <https://www.wired.com/2015/06/problem-putting-worlds-code-github/>
-[^8]: Proof-of-stake consensus. <https://en.wikipedia.org/wiki/Proof-of-stake>
+[^8]: Proof-of-work. <https://en.wikipedia.org/wiki/Proof-of-work_system>
 [^9]: Dash's "treasury system." <https://en.wikipedia.org/wiki/Dash_(cryptocurrency)#Governance_and_funding>
 [^10]: Blockchains will replace networks with markets. <https://twitter.com/naval/status/877467629308395521?lang=en>
 [^11]: Funding the Evolution of Blockchains <https://medium.com/@FEhrsam/funding-the-evolution-of-blockchains-87d160988481>
