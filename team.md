@@ -7,7 +7,12 @@
 * [Kim Altintop]
 * [Julien Donck]
 * [Thomas Scholtes]
-* [Luke Palmer]
+* [Sam Hart]
+* [James Haydon]
+* [Ange Royall-Kahin]
+* [Alexandre Simmerl]
+* [Alfredo Di Napoli]
+* [Merle Breitkreuz]
 
 [Alexis Sellier]: http://cloudhead.io
 [Eleftherios Diakomichalis]: https://twitter.com/lftherios
@@ -16,19 +21,20 @@
 [Onur Akpolat]: https://twitter.com/onurakpolat
 [Julien Donck]: http://www.juliendonck.com/
 [Thomas Scholtes]: https://github.com/geigerzaehler
-[Luke Palmer]: https://github.com/luqui
-
-**Contributors**
-
-* [Sam Hart]
-* [James Haydon]
-* [Ange Royall-Kahin]
-* [Tomás Senart]
-
 [Sam Hart]: http://hxrts.com
 [James Haydon]: https://github.com/jameshaydon
 [Ange Royall-Kahin]: https://angel.co/ange-royall-kahin
+[Alexandre Simmerl]: https://github.com/xla
+[Alfredo Di Napoli]: http://www.alfredodinapoli.com/
+[Merle Breitkreuz]: https://github.com/MeBrei
+
+**Contributors**
+
+* [Tomás Senart]
+* [Luke Palmer]
+
 [Tomás Senart]: https://github.com/tsenart
+[Luke Palmer]: https://github.com/luqui
 
 **Partners**
 
