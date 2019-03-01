@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "FoundersGroteskMono";
+  src: url("/fonts/FoundersGroteskMonoWeb-Regular.eot?") format("eot"),
+	url("/fonts/FoundersGroteskMonoWeb-Regular.woff2") format("woff2"),
+	url("/fonts/FoundersGroteskMonoWeb-Regular.woff") format("woff");
+}
+
 * { margin: 0; padding: 0; }
 
 body {
@@ -10,10 +17,8 @@ body.jobs main, body.update main, body.jobs-web main {
 	margin-top: 70px;
 }
 body, input, button, code, .title {
-	font-family: "Inconsolata", "Consolas",
-				 "Liberation Mono", "Menlo",
-				 "Fira Mono", "Ubuntu Mono",
-				 Monaco, courier, monospace;
+	font-family: "FoundersGroteskMono", courier, monospace;
+	letter-spacing: -1px;
 }
 
 body.updates li::before, body.team li::before {
@@ -97,13 +102,13 @@ a[rel="footnote"]::after {
 
 a {
 	text-decoration: none;
-	color: #6e41e0;
+	color: #5555ff;
 }
 a:hover {
 	text-decoration: underline;
 }
 a:visited {
-	color: #6e41e0;
+	color: #5555ff;
 }
 
 sup {
@@ -155,8 +160,7 @@ blockquote:before {
 	font-size: 2em;
 	line-height: 0.1em;
 	margin-right: 0.25em;
-	vertical-align: -0.4em;
-	font-family: monospace;
+	vertical-align: -0.3em;
 }
 blockquote p {
   display: inline;
@@ -192,15 +196,12 @@ nav li {
 }
 
 nav li .updates {
-	color: #59e2f3;
 }
-
 nav li .team {
-	color: #37f18f;
 }
 nav li .motivation {
-	color: #e3eb37;
 }
+
 nav li:last-child {
 	margin-right: 0;
 }
@@ -251,13 +252,10 @@ footer ul {
 }
 
 footer a.twitter {
-	color: #59e2f3;
 }
 footer a.telegram {
-	color: #37f18f;
 }
 footer a.newsletter {
-	color: #e3eb37;
 }
 
 .updates {
