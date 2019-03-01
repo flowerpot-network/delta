@@ -10,15 +10,17 @@
 body {
 	padding: 40px;
 	line-height: 1.5em;
+	letter-spacing: -0.3px;
 	font-size: 18px;
 	color: #28333d;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 body.jobs main, body.update main, body.jobs-web main {
 	margin-top: 70px;
 }
 body, input, button, code, .title {
 	font-family: "FoundersGroteskMono", courier, monospace;
-	letter-spacing: -1px;
 }
 
 body.updates li::before, body.team li::before {

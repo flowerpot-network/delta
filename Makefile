@@ -1,4 +1,4 @@
-FILES := *.html updates/*.html css/* jobs/*.html img/*
+FILES := *.html updates/*.html css/* jobs/*.html img/* fonts/*
 
 default:
 	mkdir -p jobs
