@@ -37,7 +37,8 @@ page! TEAM_TEMPLATE, "team", "team", "team.md", {}
 page! PAGE_TEMPLATE, "motivation", "motivation", "motivation.md", {}
 page! PAGE_TEMPLATE, "radicle", "radicle", "radicle.md", {}
 page! PAGE_TEMPLATE, "updates", "updates/index", "updates.md", {}
+page! PAGE_TEMPLATE, "faq", "faq", "faq.md", {}
 
-[1, 2, 3].each do |n|
+[1, 2, 3, 4].each do |n|
   page! UPDATE_TEMPLATE, "update", "updates/#{n}", "updates/#{n}.md", { n: n }
 end

@@ -16,14 +16,13 @@ By moving the open-source ecosystem onto the blockchain, backed by its own crypt
 
 The key components of such a system include:
 
-* A new token called **open source coin**.
-* A blockchain of commit hashes.
+* A new token called **open source coin** or *oscoin*.
+* A blockchain of contribution metadata, such as commits.
 * A permissionless network initially running on proof-of-work[^8].
 * A treasury system as seen in Dash,[^9] to fund open-source work on the network, including oscoin’s own roadmap.
 * An on-chain governance system based on proposals, allowing atomic changes to smart-contract or regular code, including the oscoin protocol itself.
-* A community-owned ‘blessed’ code repository of smart-contracts defining the token distribution mechanism used to reward and incentivize projects.
 
-Fundamentally, we are proposing a crypto-economy[^10] based on the ideas of 'inflation funding'[^11] and 'curation markets.'[^12] By design, token supply increases at a predefined rate through minting. These newly minted tokens are used to reward open-source projects. Furthermore, an open marketplace is introduced in which participants can coordinate and cooperate by exchanging tokens for work within the network.
+Fundamentally, we are proposing a crypto-economy[^10] based on the idea of 'inflation funding'.[^11] By design, token supply increases at a predefined rate through minting. These newly minted tokens are used to reward open-source projects. Furthermore, an open marketplace is introduced in which participants can coordinate and cooperate by exchanging tokens for work within the network.
 
 We believe that with this infrastructure in place we’ll be able to solve many of the core problems in open-source today, while also introducing more developers to the new token economy.
 
@@ -46,4 +45,3 @@ Thanks for reading,
 [^9]: Dash's "treasury system." <https://en.wikipedia.org/wiki/Dash_(cryptocurrency)#Governance_and_funding>
 [^10]: Blockchains will replace networks with markets. <https://twitter.com/naval/status/877467629308395521?lang=en>
 [^11]: Funding the Evolution of Blockchains <https://medium.com/@FEhrsam/funding-the-evolution-of-blockchains-87d160988481>
-[^12]: Introducing 'Curation Markets'. <https://medium.com/@simondlr/introducing-curation-markets-trade-popularity-of-memes-information-with-code-70bf6fed9881>
