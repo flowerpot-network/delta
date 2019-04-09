@@ -288,6 +288,9 @@ footer a.newsletter {
 	nav li:last-child {
 		margin-right: 0;
 	}
+	footer ul {
+		flex-direction: column;
+	}
 }
 
 @media screen and (max-width: 480px) {
