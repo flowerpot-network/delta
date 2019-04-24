@@ -10,7 +10,7 @@
 [Thomas Scholtes]: https://github.com/geigerzaehler
 [Alfredo Di Napoli]: http://www.alfredodinapoli.com/
 
-**App**
+**Product**
 
 * [Julien Donck]
 * [Alexandre Simmerl]
@@ -23,7 +23,11 @@
 * [Eleftherios Diakomichalis]
 * [James Haydon]
 * [Sam Hart]
+* [Onur Akpolat]
+* [Merle Breitkreuz]
 
 [Eleftherios Diakomichalis]: https://twitter.com/lftherios
 [James Haydon]: https://github.com/jameshaydon
 [Sam Hart]: http://hxrts.com
+[Onur Akpolat]: https://twitter.com/onurakpolat
+[Merle Breitkreuz]: https://github.com/MeBrei
