@@ -2,13 +2,11 @@ import PropTypes from 'prop-types'
 
 import 'styles/page.scss'
 
-import Meta from 'components/Meta'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 
 const Page = ({ children }) => (
   <div className="page">
-    <Meta />
     <Header />
     {children}
     <Footer />
@@ -16,7 +14,7 @@ const Page = ({ children }) => (
 )
 
 Page.propTypes = {
-  children: PropTypes.element.isRequired
+  children: PropTypes.node.isRequired
 }
 
 export default Page

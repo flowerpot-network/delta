@@ -7,8 +7,10 @@
   "globals": {
     "Atomics": "readonly",
     "React": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "SharedArrayBuffer": "readonly",
+    "preval": "readonly"
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -21,7 +23,8 @@
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "strict": 0
   },
   "settings": {
     "import/resolver": {
@@ -30,7 +33,7 @@
       }
     },
     "react": {
-      "version": "latest"
+      "version": "^16.8.6"
     }
   }
 }
