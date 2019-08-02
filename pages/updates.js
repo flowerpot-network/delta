@@ -1,20 +1,17 @@
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 
-import Page from 'layouts/page'
+import { getUpdates } from 'api/get-updates'
 
-const updateFiles = () => {
-  const names =
-    preval`module.exports = require("fs").readdirSync("./pages/updates")` || []
-  return Promise.resolve(names)
-}
+import Page from 'layouts/page'
 
 const Updates = ({ updates }) => (
   <Page>
     <h1>UPDATES</h1>
-    {updates.map((update, i) => (
-      <Link href={`/updates/${i + 1}`} key={`updates-${i}`}>
-        <a>{update.title}</a>
+    {console.log(updates)}
+    {updates.map(update => (
+      <Link href={`/updates/${update.id}`} key={`updates-${update.id}`}>
+        <a>{update.meta.title}</a>
       </Link>
     ))}
   </Page>
@@ -29,15 +26,9 @@ Updates.defaultProps = {
 }
 
 Updates.getInitialProps = async () => {
-  const names = await updateFiles()
-  const metas = names.reduce((collection, name) => {
-    collection.push(require(`./updates/${name}`).meta)
-
-    return collection
-  }, [])
-
+  const updates = await getUpdates()
   return {
-    updates: metas
+    updates: updates
   }
 }
 
