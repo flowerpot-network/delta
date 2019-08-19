@@ -13,8 +13,10 @@
 h1 {
   font-family: 'FoundersGrotesk', helvetica, arial, sans-serif;
   font-size: 96px;
-  line-height: 72px;
+  // line-height: 72px;
+  line-height: 84px;
   padding: 96px 0 64px;
+  color: $green;
 }
 
 h2 {
