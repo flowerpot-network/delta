@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "FoundersGroteskMono";
+  src: url("/fonts/FoundersGroteskMonoWeb-Regular.woff2") format("woff2"),
+}
+
+@font-face {
+  font-family: "FoundersGrotesk";
+  src: url("/fonts/FoundersGrotesk-Semibold.woff") format("woff"),
+}
+
+// Type scale //
+
+h1 {
+  font-family: 'FoundersGrotesk', helvetica, arial, sans-serif;
+  font-size: 96px;
+  line-height: 72px;
+  padding: 96px 0 32px;
+}
+
+h2 {
+  font-family: 'FoundersGrotesk', helvetica, arial, sans-serif;
+  font-size: 38px;
+  line-height: 45px;
+  padding: 72px 0 24px;
+}
+
+h3 {
+  font-family: 'FoundersGrotesk', helvetica, arial, sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+  padding: 96px 0 32px;
+
+  a {
+    padding: 10px 8px 2px 8px;
+  }
+}
+
+h4 {
+  font-family: 'FoundersGrotesk', helvetica, arial, sans-serif;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+h5 {
+  font-family: 'FoundersGrotesk', helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'FoundersGroteskMono', Courier, monospace;
+  font-size: 16px;
+  line-height: 24px;
+
+  &.contained {
+    width: 760px;
+    margin: 0 auto;
+  }
+
+}
+
+
+p.small {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+li {
+  list-style-type: disc;
+}
