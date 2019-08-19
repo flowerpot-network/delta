@@ -13,21 +13,45 @@ header {
 
   nav {
     a {
+      cursor: pointer;
+      text-decoration: none;
       margin-left: 36px;
+
+      &:hover {
+        border-bottom: 1px solid black;
+      }
+
+      &.button {
+        background-color: black;
+        color: white;
+        padding: 10px 18px 12px;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:hover {
+          border-bottom: 0;
+          opacity: .85;
+        }
+      }
     }
   }
 }
 
-.button {
-  background-color: black;
-  color: white;
-  padding: 10px 18px 12px;
-  border-radius: 2px;
-}
 
 //Lecturer
+.lecturers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 48px 24px;
+}
 
 .lecturer {
+  display: flex;
+  flex-direction: row;
+
+  p {
+    margin: 8px 0 24px;
+  }
 
   img.avatar {
     height: 64px;
@@ -35,6 +59,33 @@ header {
     margin-right: 16px;
   }
 
-  display: flex;
-  flex-direction: row;
+  img.lecture-logo {
+    width: 240px;
+  }
+
+}
+
+// table
+
+table {
+  max-width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5em 1em;
+
+  &:nth-child(2n-1) {
+    font-weight: bold;
+  }
+
+  &:nth-child(3) {
+    white-space: nowrap;
+  }
+
+  &:nth-child(4) {
+    white-space: nowrap;
+    text-align: right;
+  }
 }

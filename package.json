@@ -1,7 +1,7 @@
 {
-  "name": "oscoin.io",
+  "name": "accessp2p.xyz",
   "version": "1.0.0",
-  "description": "The oscoin website oscoin.io.",
+  "description": "The accessP2P website",
   "main": "index.js",
   "scripts": {
     "build": "NODE_PATH=. next build",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oscoin/oscoin.io.git"
+    "url": "git+https://github.com/monadic.xyz/access-p2p.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oscoin/oscoin.io/issues"
+    "url": "https://github.com/monadic.xyz/access-p2p/issues"
   },
-  "homepage": "https://github.com/oscoin/oscoin.io#readme",
+  "homepage": "https://github.com/monadic.xyz/access-p2p#readme",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "next": "^9.0.2",
