@@ -20,15 +20,17 @@ export default function Header() {
         </a>
       </Link>
       <nav>
-        <Link href="/why">
-          <a>Why AccessP2P</a>
-        </Link>
-        <Link href="/content">
-          <a>Lecture Content</a>
-        </Link>
-        <Link href="/lecturers">
-          <a>Lecturers</a>
-        </Link>
+        <div className="links">
+          <Link href="/why">
+            <a>Why AccessP2P</a>
+          </Link>
+          <Link href="/syllabus">
+            <a>Syllabus</a>
+          </Link>
+          <Link href="/lecturers">
+            <a>Lecturers</a>
+          </Link>
+        </div>
         <a className="button" href="https://accessp2p.typeform.com/to/Eu1FCh" target="_blank" rel="noopener noreferrer">Apply</a>
       </nav>
     </header>
