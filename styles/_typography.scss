@@ -10,48 +10,41 @@
 
 // Type scale //
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'FoundersGrotesk', helvetica, arial, sans-serif;
+
+}
+
+h1 {
   font-size: 96px;
-  // line-height: 72px;
-  line-height: 84px;
+  line-height: 80px;
   padding: 96px 0 64px;
-  color: $green;
 }
 
 h2 {
-  font-family: 'FoundersGrotesk', helvetica, arial, sans-serif;
   font-size: 38px;
   line-height: 45px;
   padding: 72px 0 24px;
 }
 
 h3 {
-  font-family: 'FoundersGrotesk', helvetica, arial, sans-serif;
   font-size: 28px;
   line-height: 33px;
   padding: 96px 0 32px;
 }
 
 h4 {
-  font-family: 'FoundersGrotesk', helvetica, arial, sans-serif;
   font-size: 21px;
   line-height: 25px;
 }
 
-h5 {
-  font-family: 'FoundersGrotesk', helvetica, arial, sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
 
 p {
-  font-family: 'FoundersGroteskMono', Courier, monospace;
   font-size: 16px;
   line-height: 24px;
-
 }
 
 li {

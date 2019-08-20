@@ -11,22 +11,30 @@ export default function Index() {
         <h3>
           The AccessP2P program brings together
         </h3>
-        <ul>
+        <ul className="specs">
           <li>
-            10-12 students who are early-in-career developers
+            <h4>
+              &#9889; 10-12 students who are early-in-career developers
+            </h4>
           </li>
           <li>
-            with 8+ lecturers and experts
+            <h4>
+              &#9889; 8+ lecturers and experts
+            </h4>
           </li>
           <li>
-            on 8 evenings during the month of November
+            <h4>
+              &#9889; 8 evenings during the month of November
+            </h4>
           </li>
           <li>
-            at NO cost to students
+            <h4>
+              &#9889; NO cost to students
+            </h4>
           </li>
         </ul>
         <h3>
-          The AccessP2P Syllabus
+          The Syllabus
         </h3>
         <table>
           <tr>
@@ -40,7 +48,7 @@ export default function Index() {
             {/* <td>
               Peer to peer systems are increasingly moving from the periphery toward the center of how we create and, just as importantly, distribute value.
             </td> */}
-            <td>Stacco Troncoso</td>
+            <td><a href="/lecturers">Stacco Troncoso</a></td>
             <td>4 Nov 2019</td>
           </tr>
           <tr>
@@ -48,7 +56,7 @@ export default function Index() {
             {/* <td>
               Hash functions & chaining, symmetric/asymmetric/multi/ring signatures, merkle trees, DHTs, RSMs
             </td> */}
-            <td>Lucas Vogelsang</td>
+            <td><a href="/lecturers">Lucas Vogelsang</a></td>
             <td>6 Nov 2019</td>
           </tr>
           <tr>
@@ -56,7 +64,7 @@ export default function Index() {
             {/* <td>
               Scuttlebutt, messaging, communities and users
             </td> */}
-            <td>Sarah Friend</td>
+            <td><a href="/lecturers">Sarah Friend</a></td>
             <td>11 Nov 2019</td>
           </tr>
           <tr>
@@ -64,7 +72,7 @@ export default function Index() {
             {/* <td>
               Consensus mechanisms: Bitcoin/Nakamoto consensus, BFT
             </td> */}
-            <td>Alexis Sellier</td>
+            <td><a href="/lecturers">Alexis Sellier</a></td>
             <td>13 Nov 2019</td>
           </tr>
           <tr>
@@ -72,7 +80,7 @@ export default function Index() {
             {/* <td>
               Programmable money, legal implications, Ethereum (solidity)
             </td> */}
-            <td></td>
+            <td><a href="/lecturers"></a></td>
             <td>18 Nov 2019</td>
           </tr>
           <tr>
@@ -80,7 +88,7 @@ export default function Index() {
             {/* <td>
               Key management, smart contract best practices, general secure code frameworks?
             </td> */}
-            <td>Liz Steininger</td>
+            <td><a href="/lecturers">Liz Steininger</a></td>
             <td>20 Nov 2019</td>
           </tr>
           <tr>
@@ -88,7 +96,7 @@ export default function Index() {
             {/* <td>
               Trust models, incentives, game theory
             </td> */}
-            <td>Ele Diakomichalis</td>
+            <td><a href="/lecturers">Ele Diakomichalis</a></td>
             <td>25 Nov 2019</td>
           </tr>
           <tr>
@@ -96,7 +104,7 @@ export default function Index() {
             {/* <td>
               Who has power? Stakeholders, on & off-chain governance; DAOs
             </td> */}
-            <td>Gnosis + DAOStack</td>
+            <td><a href="/lecturers">Gnosis + DAOStack</a></td>
             <td>27 Nov 2019</td>
           </tr>
         </table>

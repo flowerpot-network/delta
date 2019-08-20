@@ -11,28 +11,24 @@ header {
   display: flex;
   justify-content: space-between;
 
+  .logo:hover {
+    border-bottom: none;
+  }
+
   nav {
     a {
-      cursor: pointer;
-      text-decoration: none;
       margin-left: 36px;
+    }
+  }
+}
 
-      &:hover {
-        border-bottom: 1px solid black;
-      }
+.specs {
+  li {
+    list-style: none;
+    margin-bottom: 24px;
 
-      &.button {
-        background-color: $green;
-        color: white;
-        padding: 10px 18px 12px;
-        border-radius: 2px;
-        cursor: pointer;
-
-        &:hover {
-          border-bottom: 0;
-          opacity: .85;
-        }
-      }
+    h4 {
+      font-family: "FoundersGroteskMono", courier, monospace;
     }
   }
 }
@@ -60,12 +56,13 @@ header {
   }
 
   img.lecture-logo {
-    width: 240px;
+    width: 200px;
+    // max-height: 72px;
   }
 
 }
 
-// table
+// syllabus
 
 table {
   width: 100%;
@@ -78,11 +75,12 @@ td {
 
   &:nth-child(1) {
     font-weight: bold;
+    padding: 0.5em 1em .5em 0;
   }
-
 
   &:nth-child(3) {
     white-space: nowrap;
     text-align: right;
+    padding: 0.5em 0 .5em 1em;
   }
 }

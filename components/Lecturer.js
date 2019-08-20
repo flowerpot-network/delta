@@ -8,7 +8,9 @@ const Lecturer = ({name, bio, logoUrl, picUrl}) => (
     <div className="meta">
       <h4>{name}</h4>
       <p>{bio}</p>
-      <img className="lecture-logo" src={logoUrl} alt="pic"/>
+      {logoUrl !== '' &&
+        <img className="lecture-logo" src={logoUrl} alt="pic"/>
+      }
     </div>
   </div>
 )

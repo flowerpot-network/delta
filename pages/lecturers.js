@@ -25,7 +25,7 @@ const Partners = () => {
             name="Alexis Sellier"
             bio="Alexis is the co-founder of Monadic, the company behind Oscoin, a decentralized network and currency for OSS collaboration and incentivisation. Long time open source contributor, he recently co-founded Monadic's first project open source coin, a project which aims to create a sustainable economy around open source software."
             picUrl="https://avatars1.githubusercontent.com/u/40774?s=400&v=4"
-            logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566226583/accessP2P/opensourcecoin-logo-wide.svg"
+            logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566303650/accessP2P/opensourcecoin-logo-wide.svg"
           />
           <Lecturer
             name="Sarah Friend"
@@ -37,7 +37,7 @@ const Partners = () => {
             name="Eleftherios Diakomichalis"
             bio="Eleftherios is the co-founder of Monadic, the company behind Oscoin. He was an early employee at SoundCloud where he led the Data Science team. His scientific interests lie between network science and statistics, focusing on online communities."
             picUrl="https://pbs.twimg.com/profile_images/894635919340441600/VsABh_tY_400x400.jpg"
-            logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566226583/accessP2P/opensourcecoin-logo-wide.svg"
+            logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566303650/accessP2P/opensourcecoin-logo-wide.svg"
           />
           <Lecturer
             name="Lucas Vogelsang"
