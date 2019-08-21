@@ -161,6 +161,11 @@ h1 {
       font-size: 64px;
       line-height: 54px;
       padding: 96px 0 48px; } }
+  @media (max-width: 420px) {
+    h1 {
+      font-size: 36px;
+      line-height: 32px;
+      padding: 96px 0 48px; } }
 
 h3 {
   font-size: 28px;
@@ -171,6 +176,11 @@ h3 {
       font-size: 21px;
       line-height: 25px;
       padding: 64px 0 16px; } }
+  @media (max-width: 420px) {
+    h3 {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 64px 0 32px; } }
 
 h4 {
   font-size: 21px;
@@ -179,6 +189,10 @@ h4 {
     h4 {
       font-size: 16px;
       line-height: 21px; } }
+  @media (max-width: 420px) {
+    h4 {
+      font-size: 14px;
+      line-height: 18px; } }
 
 p {
   font-size: 16px;
@@ -213,6 +227,24 @@ a {
   a:hover {
     border-bottom: 1px solid black; }
 
+.button {
+  padding: 10px 18px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer; }
+  .button:hover {
+    border-bottom: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); }
+  .button:active {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); }
+  @media (max-width: 800px) {
+    .button {
+      display: flex;
+      margin: 24px 0 0 0;
+      width: 100%;
+      justify-content: center; } }
+
 header {
   display: flex;
   justify-content: space-between; }
@@ -233,26 +265,13 @@ header {
     align-items: center; }
     header nav a {
       margin: 0 12px; }
-      header nav a.button {
-        padding: 10px 18px 12px;
-        background-color: #03CD97;
-        color: white;
-        border-radius: 2px;
-        cursor: pointer; }
-        header nav a.button:hover {
-          border-bottom: 0;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); }
-        header nav a.button:active {
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); }
     @media (max-width: 800px) {
       header nav {
         flex-direction: column;
         margin: 0 auto 24px; }
-        header nav .button {
-          display: flex;
-          margin-top: 24px;
-          width: 100%;
-          justify-content: center; } }
+        header nav a {
+          font-size: 14px;
+          margin: 0 8px; } }
 
 .specs li {
   list-style: none;
@@ -277,20 +296,33 @@ header {
   .lecturer img.lecture-logo {
     width: 200px; }
 
-table {
-  width: 100%; }
-
-th,
-td {
-  text-align: left;
-  padding: 0.5em 1em; }
-  th:nth-child(1),
-  td:nth-child(1) {
-    font-weight: bold;
-    padding: 0.5em 1em .5em 0; }
-  th:nth-child(3),
-  td:nth-child(3) {
-    white-space: nowrap;
-    text-align: right;
-    padding: 0.5em 0 .5em 1em; }
+.syllabus .title,
+.syllabus .row {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-column-gap: 24px;
+  padding-bottom: 12px; }
+  @media (max-width: 800px) {
+    .syllabus .title,
+    .syllabus .row {
+      grid-template-columns: 1fr;
+      grid-column-gap: 24px;
+      grid-template-rows: 1fr 1fr 1fr;
+      padding-bottom: 24px; } }
+  .syllabus .title li,
+  .syllabus .row li {
+    list-style: none; }
+    .syllabus .title li:first-child,
+    .syllabus .row li:first-child {
+      font-weight: bold; }
+    .syllabus .title li:nth-child(3n),
+    .syllabus .row li:nth-child(3n) {
+      text-align: right; }
+    @media (max-width: 800px) {
+      .syllabus .title li:nth-child(3n),
+      .syllabus .row li:nth-child(3n) {
+        text-align: left; }
+      .syllabus .title li:not(:first-child),
+      .syllabus .row li:not(:first-child) {
+        padding-left: 30px; } }
 
