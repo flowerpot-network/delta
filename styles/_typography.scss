@@ -29,6 +29,13 @@ h1 {
     padding: 96px 0 48px;
 
   }
+
+  @media (max-width: 420px) {
+    font-size: 36px;
+    line-height: 32px;
+    padding: 96px 0 48px;
+
+  }
 }
 
 h3 {
@@ -42,6 +49,13 @@ h3 {
     padding: 64px 0 16px;
 
   }
+
+  @media (max-width: 420px) {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 64px 0 32px;
+
+  }
 }
 
 h4 {
@@ -51,6 +65,12 @@ h4 {
   @media (max-width: 800px) {
     font-size: 16px;
     line-height: 21px;
+
+  }
+
+  @media (max-width: 420px) {
+    font-size: 14px;
+    line-height: 18px;
 
   }
 }
