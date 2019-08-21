@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_PATH=. next build",
     "dev": "NODE_PATH=. next",
-    "export": "NODE_PATH=. next export"
+    "export": "yarn build && NODE_PATH=. next export -o docs"
   },
   "repository": {
     "type": "git",
