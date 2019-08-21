@@ -38,6 +38,8 @@
     "prettier": "^1.18.2"
   },
   "husky": {
-    "pre-commit": "yarn export"
+    "hooks": {
+      "pre-commit": "yarn export"
+    }
   }
 }
