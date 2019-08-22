@@ -21,9 +21,13 @@ yarn dev
 To produce the latest version of the static generation run:
 
 ```
-yarn build && yarn export
+yarn export
 ```
 
 ### Deploy
 
-**TODO**
+This will build and deploy the website to github pages with the custom url [accessp2p.xyz](https://accessp2p.xyz).
+
+```
+yarn deploy
+```
