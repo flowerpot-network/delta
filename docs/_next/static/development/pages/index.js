@@ -22,7 +22,14 @@ function Footer() {
       lineNumber: 2
     },
     __self: this
-  });
+  }, "For more information, feel free to ", __jsx("a", {
+    href: "mailto:ange@monadic.xyz",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 2
+    },
+    __self: this
+  }, "reach out"), ".");
 }
 
 /***/ }),
@@ -10731,19 +10738,19 @@ function Index() {
       lineNumber: 34
     },
     __self: this
-  }, "\u26A1 NO cost to students"))), __jsx("br", {
+  }, "\u26A1 NO cost to participants"))), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
     },
     __self: this
-  }), __jsx("h4", {
+  }), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: this
-  }, "Cirriculum"), __jsx("br", {
+  }, "The Cirriculum"), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
@@ -10773,10 +10780,22 @@ function Index() {
       lineNumber: 51
     },
     __self: this
-  }), __jsx("br", {
+  }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
+    },
+    __self: this
+  }, "Deadline to apply is 22 September 2019."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
     },
     __self: this
   }), __jsx("a", {
@@ -10787,7 +10806,7 @@ function Index() {
     rel: "noopener noreferrer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 55
     },
     __self: this
   }, "Apply")));
@@ -10795,7 +10814,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!***************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjulien-mini%2Fcode%2Foscoin%2Faccess-p2p%2Fpages%2Findex.js ***!
   \***************************************************************************************************************************************/
@@ -10818,5 +10837,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
