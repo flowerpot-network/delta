@@ -21,7 +21,7 @@ export default function Index() {
           We want to make the P2P space more accessible.
         </h3>
         <p>
-          We created AccessP2P in order to build an open-sourced, publicly-accessible  library of materials for learning about fundamental P2P concepts. By bringing together members of the P2P community, we will explore many technical topics at a high level in an effort to give early-in-career participants the knowledge and network opportunities they need to better explore issues and careers in the P2P space. The program is free and although lectures will take place in-person in Berlin, all materials and output from the lectures will be made publicly available online.
+          We created AccessP2P in order to build an open-sourced, publicly-accessible  library of materials for learning about fundamental P2P concepts. By bringing together members of the P2P community, we will explore many technical topics at a high level in an effort to give participants the knowledge and network opportunities they need to better explore issues and careers in the P2P space. The program is free and although lectures will take place in-person in Berlin, all materials and output from the lectures will be made publicly available online.
         </p>
         <h3>
           Diversity and access for all is our priority.
