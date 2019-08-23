@@ -32,14 +32,14 @@ export default function Index() {
           </li>
           <li>
             <h4>
-              &#9889; NO cost to students
+              &#9889; NO cost to participants
             </h4>
           </li>
         </ul>
         <br />
-        <h4>
-          Cirriculum
-        </h4>
+        <h3>
+          The Cirriculum
+        </h3>
         <br />
         <Table />
         <h3>
