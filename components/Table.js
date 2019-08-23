@@ -30,7 +30,7 @@ const Table = () => (
     />
     <Row
       item1='5. Smart Contracts'
-      item2='tbd'
+      item2='[TBD]'
       item3='18 Nov 2019'
     />
     <Row
@@ -45,7 +45,7 @@ const Table = () => (
     />
     <Row
       item1='8. Decentralized Governance'
-      item2='Gnosis + DAOStack'
+      item2='Gnosis [TBD]'
       item3='27 Nov 2019'
     />
   </div>
