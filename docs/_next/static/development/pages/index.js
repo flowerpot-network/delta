@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Footer; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/juliendonck/code/monadic/access-p2p/components/Footer.js";
+var _jsxFileName = "/Users/julien-mini/code/oscoin/access-p2p/components/Footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 function Footer() {
@@ -41,7 +41,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/juliendonck/code/monadic/access-p2p/components/Header.js";
+var _jsxFileName = "/Users/julien-mini/code/oscoin/access-p2p/components/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -197,7 +197,7 @@ function Header() {
       lineNumber: 28
     },
     __self: this
-  }, "Syllabus")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Resources")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/lecturers",
     __source: {
       fileName: _jsxFileName,
@@ -236,7 +236,7 @@ function Header() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/juliendonck/code/monadic/access-p2p/components/Table.js";
+var _jsxFileName = "/Users/julien-mini/code/oscoin/access-p2p/components/Table.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -325,7 +325,7 @@ var Table = function Table() {
     __self: this
   }), __jsx(Row, {
     item1: "5. Smart Contracts",
-    item2: "tbd",
+    item2: "[TBD]",
     item3: "18 Nov 2019",
     __source: {
       fileName: _jsxFileName,
@@ -352,7 +352,7 @@ var Table = function Table() {
     __self: this
   }), __jsx(Row, {
     item1: "8. Decentralized Governance",
-    item2: "Gnosis + DAOStack",
+    item2: "Gnosis [TBD]",
     item3: "27 Nov 2019",
     __source: {
       fileName: _jsxFileName,
@@ -383,7 +383,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components/Footer */ "./components/Footer.js");
 /* harmony import */ var styles_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styles/style.scss */ "./styles/style.scss");
 /* harmony import */ var styles_style_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styles_style_scss__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/juliendonck/code/monadic/access-p2p/layouts/page.js";
+var _jsxFileName = "/Users/julien-mini/code/oscoin/access-p2p/layouts/page.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -6044,10 +6044,10 @@ exports.SUPPORTS_PERFORMANCE_USER_TIMING = exports.SUPPORTS_PERFORMANCE && typeo
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjuliendonck%2Fcode%2Fmonadic%2Faccess-p2p%2Fpages%2Findex.js!./":
-/*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjuliendonck%2Fcode%2Fmonadic%2Faccess-p2p%2Fpages%2Findex.js ***!
-  \************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjulien-mini%2Fcode%2Foscoin%2Faccess-p2p%2Fpages%2Findex.js!./":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjulien-mini%2Fcode%2Foscoin%2Faccess-p2p%2Fpages%2Findex.js ***!
+  \***********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10633,7 +10633,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var layouts_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! layouts/page */ "./layouts/page.js");
 /* harmony import */ var components_Table__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! components/Table */ "./components/Table.js");
-var _jsxFileName = "/Users/juliendonck/code/monadic/access-p2p/pages/index.js";
+var _jsxFileName = "/Users/julien-mini/code/oscoin/access-p2p/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -10658,98 +10658,151 @@ function Index() {
       lineNumber: 8
     },
     __self: this
-  }, "Educating the next generation of the peer-to-peer community"), __jsx("p", {
+  }, "Educating the next generation of the peer-to-peer community"), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, "From Bitcoin to Scuttlebutt, from governance to smart contracts, we'll highlight a spectrum of the technology and projects that have emerged within P2P so that you have what you need to better explore concepts, technology, and careers in this important and quickly evolving space."), __jsx("h3", {
+  }, "AccessP2P is an open learning program for exploring the peer-to-peer (P2P) space. Regardless of your level of technical skills, AccessP2P will provide you with a comprehensive introduction to the foundations of P2P technology."), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }, "The AccessP2P program brings together"), __jsx("ul", {
-    className: "specs",
+  }, "The Program"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     },
     __self: this
-  }, __jsx("li", {
+  }, "During the month of November, the AccessP2P Program will bring together a cohort of students for weekly lectures from local P2P experts. From Bitcoin to Scuttlebutt, from governance to smart contracts, the program will highlight a spectrum of P2P theories, concepts, and technologies. Lectures will be hosted by local projects and companies, giving the cohort the opportunity to grow their network within the Berlin P2P community."), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 20
     },
     __self: this
-  }, __jsx("h4", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, "\u26A1 10-12 students who are early-in-career developers")), __jsx("li", {
+  }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
-  }, __jsx("h4", {
+  }), __jsx("ul", {
+    className: "specs",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
     },
     __self: this
-  }, "\u26A1 8+ lecturers and experts")), __jsx("li", {
+  }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 23
     },
     __self: this
   }, __jsx("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 24
     },
     __self: this
-  }, "\u26A1 8 evenings during the month of November")), __jsx("li", {
+  }, "\u26A1 8+ lectures from experts in the peer-to-peer space")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 28
     },
     __self: this
   }, __jsx("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 29
     },
     __self: this
-  }, "\u26A1 NO cost to students"))), __jsx("h3", {
+  }, "\u26A1 Access to mentorship, career, and network opportunities")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 33
     },
     __self: this
-  }, "The Syllabus"), __jsx(components_Table__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, "\u26A1 NO cost to students"))), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }), __jsx("h4", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: this
-  })));
+  }, "Cirriculum"), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }), __jsx(components_Table__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, "Who should apply?"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, "We expect AccessP2P applicants to have some programming knowledge - whether it be self-taught or otherwise - but they are not required to be a traditional 'developer'. We hope to host a cohort with varying levels of technical skills and different backgrounds. As such, we are committed to creating a safe space to answer questions and provide additional resources so that concepts presented are accessible to anybody interested in diving into P2P technology."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }), __jsx("a", {
+    className: "button",
+    href: "https://accessp2p.typeform.com/to/Eu1FCh",
+    target: "_blank",
+    align: "center",
+    rel: "noopener noreferrer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, "Apply")));
 }
 
 /***/ }),
 
-/***/ 0:
-/*!****************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjuliendonck%2Fcode%2Fmonadic%2Faccess-p2p%2Fpages%2Findex.js ***!
-  \****************************************************************************************************************************************/
+/***/ 2:
+/*!***************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjulien-mini%2Fcode%2Foscoin%2Faccess-p2p%2Fpages%2Findex.js ***!
+  \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjuliendonck%2Fcode%2Fmonadic%2Faccess-p2p%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjuliendonck%2Fcode%2Fmonadic%2Faccess-p2p%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjulien-mini%2Fcode%2Foscoin%2Faccess-p2p%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjulien-mini%2Fcode%2Foscoin%2Faccess-p2p%2Fpages%2Findex.js!./");
 
 
 /***/ }),
@@ -10765,5 +10818,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
