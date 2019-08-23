@@ -25,7 +25,7 @@ export default function Header() {
             <a>Why AccessP2P</a>
           </Link>
           <Link href="/syllabus">
-            <a>Syllabus</a>
+            <a>Resources</a>
           </Link>
           <Link href="/lecturers">
             <a>Lecturers</a>

@@ -36,6 +36,11 @@ header {
 
     a {
       margin: 0 12px;
+      color: black;
+
+      &:hover {
+        border-bottom: 1px solid black;
+      }
 
     }
 
@@ -69,6 +74,10 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 48px 24px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .lecturer {

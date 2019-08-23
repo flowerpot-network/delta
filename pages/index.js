@@ -6,26 +6,28 @@ export default function Index() {
     <Page>
       <div className="content">
         <h1>Educating the next generation of the peer-to-peer community</h1>
-        <p>
-          From Bitcoin to Scuttlebutt, from governance to smart contracts, we&apos;ll highlight a spectrum of the technology and projects that have emerged within P2P so that you have what you need to better explore concepts, technology, and careers in this important and quickly evolving space.
-        </p>
         <h3>
-          The AccessP2P program brings together
+          AccessP2P is an open learning program for exploring the peer-to-peer (P2P) space. Regardless of your level of technical skills, AccessP2P will provide you with a comprehensive introduction to the foundations of P2P technology.
         </h3>
+        <h3>
+          The Program
+        </h3>
+        <p>
+        During the month of November, the AccessP2P Program will bring together a cohort of students for weekly lectures from local P2P experts. From Bitcoin to Scuttlebutt, from governance to smart contracts, the program will highlight a spectrum of P2P theories, concepts, and technologies.
+
+        Lectures will be hosted by local projects and companies, giving the cohort the opportunity to grow their network within the Berlin P2P community.
+        </p>
+        <br />
+        <br />
         <ul className="specs">
           <li>
             <h4>
-              &#9889; 10-12 students who are early-in-career developers
+              &#9889; 8+ lectures from experts in the peer-to-peer space
             </h4>
           </li>
           <li>
             <h4>
-              &#9889; 8+ lecturers and experts
-            </h4>
-          </li>
-          <li>
-            <h4>
-              &#9889; 8 evenings during the month of November
+              &#9889; Access to mentorship, career, and network opportunities
             </h4>
           </li>
           <li>
@@ -34,11 +36,24 @@ export default function Index() {
             </h4>
           </li>
         </ul>
-        <h3>
-          The Syllabus
-        </h3>
+        <br />
+        <h4>
+          Cirriculum
+        </h4>
+        <br />
         <Table />
+        <h3>
+          Who should apply?
+        </h3>
+        <p>
+          We expect AccessP2P applicants to have some programming knowledge - whether it be self-taught or otherwise - but they are not required to be a traditional 'developer'. We hope to host a cohort with varying levels of technical skills and different backgrounds. As such, we are committed to creating a safe space to answer questions and provide additional resources so that concepts presented are accessible to anybody interested in diving into P2P technology.
+        </p>
+        <br />
+        <br />
+        <a className="button" href="https://accessp2p.typeform.com/to/Eu1FCh" target="_blank" align = "center" rel="noopener noreferrer">Apply</a>
       </div>
+
+
     </Page>
   )
 }
