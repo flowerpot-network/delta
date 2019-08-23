@@ -20,7 +20,7 @@ export default Lecturer
 
 Lecturer.propTypes = {
   name: PropTypes.string.isRequired,
-  bio: PropTypes.string.isRequired,
+  bio: PropTypes.array.isRequired,
   picUrl: PropTypes.string.isRequired,
   logoUrl: PropTypes.string,
 }
