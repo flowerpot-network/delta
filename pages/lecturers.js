@@ -8,6 +8,8 @@ const Partners = () => {
         <h1>
           Our lecturers
         </h1>
+        <br/>
+        <br/>
         <div className="lecturers">
           <Lecturer
             name="Liz Steininger"
