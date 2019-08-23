@@ -46,13 +46,13 @@ const Partners = () => {
           />
           <Lecturer
             name="Alexis Sellier"
-            bio={['Alexis is the co-founder of ', <a href="https://monadic.xyz/" rel="noopener noreferrer" target="_blank">Monadic</a> ,' the company behind ', <a href="http://oscoin.io" rel="noopener noreferrer" target="_blank">Oscoin</a>, ', a decentralized network and currency for OSS collaboration and incentivisation. Long time open source contributor, he recently co-founded Monadic\'s first project open source coin, a project which aims to create a sustainable economy around open source software.']}
+            bio={['Long time open source contributor, he recently co-founded ', <a href="http://oscoin.io" rel="noopener noreferrer" target="_blank">Oscoin</a>, ', a project which aims to create a sustainable economy around free software.']}
             picUrl="https://avatars1.githubusercontent.com/u/40774?s=400&v=4"
             logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566303650/accessP2P/opensourcecoin-logo-wide.svg"
           />
           <Lecturer
             name="Eleftherios Diakomichalis"
-            bio={['Eleftherios is the co-founder of ', <a href="https://monadic.xyz/" rel="noopener noreferrer" target="_blank">Monadic</a> ,' the company behind ', <a href="http://oscoin.io" rel="noopener noreferrer" target="_blank">Oscoin</a>, '. He was an early employee at SoundCloud where he led the Data Science team. His scientific interests lie between network science and statistics, focusing on online communities.']}
+            bio={['Eleftherios is the co-founder of ', <a href="http://oscoin.io" rel="noopener noreferrer" target="_blank">Oscoin</a>, '. He was an early employee at SoundCloud where he led the Data Science team. His scientific interests lie between network science and statistics, focusing on online communities.']}
             picUrl="https://pbs.twimg.com/profile_images/894635919340441600/VsABh_tY_400x400.jpg"
             logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566303650/accessP2P/opensourcecoin-logo-wide.svg"
           />

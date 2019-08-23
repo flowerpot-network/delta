@@ -11,7 +11,7 @@ export default function Index() {
           Peer-to-peer concepts like &quot;Blockchain,&quot; &quot;Web 3.0,&quot; and &quot;decentralized systems&quot; have dominated news and conversations for the last few years. But P2P systems have existed for decades, in many shapes and forms.
         </h3>
         <p>
-          Starting with Usenet (a worldwide distributed discussion system available on computers) in 1979, this kind of peer-to-peer resource exchange was popularized by Napster and file sharing in 1999. Today, we see P2P technologies challenging centralized web services, P2P philosophies subverting business models and governance structures, and P2P culture demanding greater support of &quot;the commons,&quot; like free and open source software.
+          Starting with Usenet (a worldwide distributed discussion system available on computers) in 1979, this kind of peer-to-peer resource exchange was popularized by Napster and file sharing in 1999. Today, we see P2P technologies challenging centralized web services, P2P philosophies subverting business models and governance structures, and P2P culture demanding greater support for &quot;the commons,&quot; like free and open source software.
         </p>
         <br />
         <p>
