@@ -10750,7 +10750,7 @@ function Index() {
       lineNumber: 40
     },
     __self: this
-  }, "The Cirriculum"), __jsx("br", {
+  }, "The Curriculum"), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
