@@ -38,7 +38,7 @@ export default function Index() {
         </ul>
         <br />
         <h3>
-          The Cirriculum
+          The Curriculum
         </h3>
         <br />
         <Table />
