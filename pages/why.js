@@ -27,7 +27,7 @@ export default function Index() {
           Diversity and access for all is our priority.
         </h3>
         <p>
-          We recognize the need for greater diversity among individuals entering the P2P space. For this reason, we are prioritizing a student cohort that reflects diverse experience and backgrounds, especially those with identities that have been typically underrepresented in the space. For those who aren't part of the first cohort, we are committed to making the resources we create publicly accessible. Since this is the first time we're providing this kind of programming, we are aware that we might not get everything right. However, we are looking forward to welcoming our first set of Berlin-based students, who will be instrumental in shaping future iterations of this program.
+          We recognize the need for greater diversity among individuals entering the P2P space. For this reason, we are prioritizing a student cohort that reflects diverse experience and backgrounds, especially those with identities that have been typically underrepresented in the space. For those who aren&apos;t part of the first cohort, we are committed to making the resources we create publicly accessible. Since this is the first time we&apos;re providing this kind of programming, we are aware that we might not get everything right. However, we are looking forward to welcoming our first set of Berlin-based students, who will be instrumental in shaping future iterations of this program.
         </p>
       </div>
     </Page>
