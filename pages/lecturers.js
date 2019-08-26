@@ -19,6 +19,12 @@ const Partners = () => {
             logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566556492/accessP2P/Logo_LeastAuthority_Security.png"
           />
           <Lecturer
+            name="Kei Kreutler"
+            bio={['Kei is a researcher interested in how cultural narratives of technologies shape their use. Working as Director of Strategy at Gnosis, she oversees communications and messaging as the company builds prediction market platforms, decentralized trading protocols, and a smart wallet. She has extensive experience in the realm of decentralized organizing, participating in initiatives such as unMonastery, and maintains an independent artistic practice, exhibiting at institutions including the Victoria & Albert Museum, UK and the New Museum, NY, US.']}
+            picUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566816506/accessP2P/kreutler_headshot_square.jpg"
+            logoUrl="https://dappcon.io/static/gnosis_horizontal-010818f4968ccfec1f6b969e53fd8f39.png"
+          />
+          <Lecturer
             name="Stacco Troncoso"
             bio={['Stacco Troncoso is the advocacy coordinator of the ',<a href="http://p2pfoundation.net/" rel="noopener noreferrer" target="_blank">P2P Foundation</a>, ' as well as the project lead for ', <a href="https://commonstransition.org/" rel="noopener noreferrer" target="_blank">Commons Transition</a>, ', an organization dedicated to spreading and strengthening the Commons worldwide. He is also co-founder of the P2P translation collective ',<a href="http://guerrillatranslation.com/" rel="noopener noreferrer" target="_blank">Guerrilla Translation</a> ,'. His work in communicating commons culture extends to public speaking and relationship-building with prefigurative communities, policymakers and potential commoners.']}
             picUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566222523/accessP2P/stacco.png"
@@ -38,12 +44,7 @@ const Partners = () => {
             picUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566223068/accessP2P/Lucas_Centrifuge_Primitives.png"
             logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566223176/accessP2P/centrifuge-logo_ptxefx.png"
           />
-          <Lecturer
-            name="Gnosis"
-            bio={['[Speaker from Gnosis - a project builds new market mechanisms to redistribute the future - is to be determined. Check back Aug 30.]']}
-            picUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566554835/accessP2P/gnosis_bio.png"
-            logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566554865/accessP2P/gnosis_logo.png"
-          />
+
           <Lecturer
             name="Alexis Sellier"
             bio={['Long time open source contributor, he recently co-founded ', <a href="http://oscoin.io" rel="noopener noreferrer" target="_blank">Oscoin</a>, ', a project which aims to create a sustainable economy around free software.']}

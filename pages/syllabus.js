@@ -10,7 +10,7 @@ const Content = () => {
         <br/>
         <br/>
         <p>
-          Throughout the duration of the program, we will post the lectures material and other resources provided to our student cohort. This page will be updated frequently.
+          Throughout the duration of the program, we will post the lecture material and other resources provided to our student cohort. This page will be updated frequently.
         </p>
       </div>
     </Page>

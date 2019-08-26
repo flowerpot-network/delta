@@ -7,7 +7,7 @@ export default function Index() {
       <div className="content">
         <h1>Educating the next generation of the peer-to-peer community</h1>
         <h3>
-          AccessP2P is an open learning program for exploring the peer-to-peer (P2P) space. Regardless of your level of technical skills, AccessP2P will provide you with a comprehensive introduction to the foundations of P2P technology.
+          AccessP2P is an open learning program for exploring the peer-to-peer (P2P) space. Regardless of your level of technical skills, AccessP2P will provide you with a comprehensive introduction to the foundations of P2P technology and process.
         </h3>
         <h3>
           The Program
@@ -32,7 +32,7 @@ export default function Index() {
           </li>
           <li>
             <h4>
-              &#9889; NO cost to participants
+              &#9889; No cost to participants
             </h4>
           </li>
         </ul>
