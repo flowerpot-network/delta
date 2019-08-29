@@ -22,7 +22,7 @@ export default function Header() {
       <nav>
         <div className="links">
           <Link href="/why">
-            <a>Why AccessP2P</a>
+            <a>About</a>
           </Link>
           <Link href="/syllabus">
             <a>Resources</a>

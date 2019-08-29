@@ -11,42 +11,42 @@ const Table = () => (
     <Row
       item1='1. Intro to P2P'
       item2='Stacco Troncoso'
-      item3='4 Nov 2019'
+      item3='4 Nov 2019 – 18:30-20:30'
     />
     <Row
       item1='2. Primitives'
       item2='Lucas Vogelsang'
-      item3='6 Nov 2019'
+      item3='6 Nov 2019 – 18:30-20:30'
     />
     <Row
       item1='3. Social P2P'
       item2='Sarah Friend'
-      item3='11 Nov 2019'
+      item3='11 Nov 2019 – 18:30-20:30'
     />
     <Row
       item1='4. Consensus Mechanisms'
       item2='Alexis Sellier'
-      item3='13 Nov 2019'
+      item3='13 Nov 2019 – 18:30-20:30'
     />
     <Row
       item1='5. Smart Contracts'
       item2='[TBD]'
-      item3='18 Nov 2019'
+      item3='18 Nov 2019 – 18:30-20:30'
     />
     <Row
       item1='6. Security'
       item2='Liz Steininger'
-      item3='20 Nov 2019'
+      item3='20 Nov 2019 – 18:30-20:30'
     />
     <Row
       item1='7. Mechanism Design'
       item2='Ele Diakomichalis'
-      item3='25 Nov 2019'
+      item3='25 Nov 2019 – 18:30-20:30'
     />
     <Row
       item1='8. Decentralized Governance'
-      item2='Gnosis [TBD]'
-      item3='27 Nov 2019'
+      item2='Kei Kreutler'
+      item3='27 Nov 2019 – 18:30-20:30'
     />
   </div>
 )
