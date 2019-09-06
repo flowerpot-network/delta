@@ -413,7 +413,7 @@ var Table = function Table() {
     __self: this
   }), __jsx(Row, {
     item1: "5. Smart Contracts",
-    item2: "[TBD]",
+    item2: "Fran\xE7ois Guezengar",
     item3: "18 Nov 2019 \u2013 18:30-20:30",
     __source: {
       fileName: _jsxFileName,
@@ -10634,7 +10634,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!*********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************************************/
@@ -10657,5 +10657,5 @@ module.exports = dll_129a35c7ec57967eb265;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

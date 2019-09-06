@@ -10388,7 +10388,7 @@ var Content = function Content() {
       lineNumber: 22
     },
     __self: this
-  }, "The organization of AccessP2P is being lead by a few individuals at ", __jsx("a", {
+  }, "AccessP2P is organized by a few individuals at ", __jsx("a", {
     href: "https://monadic.xyz",
     __source: {
       fileName: _jsxFileName,
@@ -10423,7 +10423,7 @@ var Content = function Content() {
       lineNumber: 28
     },
     __self: this
-  }, "The organizers saw a few issues in the quickly growing and changing P2P space: 1. The community suffers from similar diversity concerns that the general tech industry faces 2. There are few introductory materials to support those who are curious about P2P and want to figure out how to transition into the space. Therefore, we created AccessP2P to build this library of introductory materials and host a small cohort to take advantage of a supportive peer group and a network of Berlin-based mentors and experts. While we believe that this is a good starting point for increasing the diversity of those entering the P2P space, we are aware that we might not get everything right. We are looking forward to welcoming our first set of students, who will be instrumental in shaping future iterations of this program."), __jsx("p", {
+  }, "The organizers saw a few issues in the quickly growing and changing P2P space: 1) The community suffers from similar diversity concerns that the general tech industry faces 2) There are few introductory materials to support those who are curious about P2P and want to transition into the space. Therefore, we created AccessP2P to build a library of introductory materials and host a small cohort to take advantage of a supportive peer group and the growing network of Berlin-based mentors and experts. While we believe that this is a good starting point for increasing the diversity of those entering the P2P space, we are aware that we might not get everything right. We are looking forward to welcoming our first set of students, who will be instrumental in shaping future iterations of this program."), __jsx("p", {
     className: "question",
     __source: {
       fileName: _jsxFileName,
@@ -10437,7 +10437,7 @@ var Content = function Content() {
       lineNumber: 33
     },
     __self: this
-  }, "We are looking for open-minded individuals who are 1. curious about P2P and 2. have some programming knowledge (even if limited). As part of our recruitment of applicants, we\u2019re targeting and prioritizing outreach to communities that support identities underrepresented in the P2P space. Our main goal for AccessP2P is to increase the diversity of this community."), __jsx("p", {
+  }, "We are looking for open-minded individuals who are 1) curious about P2P and 2) have some programming knowledge (even if limited). As part of our recruitment of applicants, we\u2019re targeting and prioritizing outreach to communities that support identities underrepresented in the P2P space. Our main goal for AccessP2P is to increase the diversity of this community."), __jsx("p", {
     className: "question",
     __source: {
       fileName: _jsxFileName,
@@ -10465,7 +10465,7 @@ var Content = function Content() {
       lineNumber: 43
     },
     __self: this
-  }, "The core lecturers will take place across 8 evenings (mostly Mondays and Wednesdays) during the month of November. Each evening will last about 2 hours (until 20:30-21:00). Outside of the lecture time itself, lecturers *might* give an article or two as preparatory reading - but these will be limited and not required (though to your benefit). As for homework, after each lecture, an \u201Cadditional resources and further reading\u201D list will be provided with resources that dive deeper into the subjects covered during the lecture, allowing students and remote users to pursue further, selective self-study."), __jsx("p", {
+  }, "The core lecturers will take place across 8 evenings (mostly Mondays and Wednesdays) during the month of November. Each evening will last about 2 hours (until 20:30-21:00). Outside of the lecture time itself, lecturers *might* give an article or two as preparatory reading - but these will be limited and not required (only for additional benefit). As for homework, after each lecture, an \u201Cadditional resources and further reading\u201D list will be provided with content that dives deeper into the subjects covered during the lecture, allowing students and remote users to pursue further, selective self-study."), __jsx("p", {
     className: "question",
     __source: {
       fileName: _jsxFileName,
@@ -10536,7 +10536,7 @@ var Content = function Content() {
     },
     __self: this
   }, "While we won\u2019t be live-streaming the lectures, we will be putting lecture videos and materials on this website (on the ", __jsx("a", {
-    href: "http://accessp2p.xyz/",
+    href: "http://accessp2p.xyz/resources",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 69
@@ -10646,7 +10646,7 @@ var Content = function Content() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ffaq&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Ffaq.js ***!
   \**********************************************************************************************************************************************/
@@ -10669,5 +10669,5 @@ module.exports = dll_129a35c7ec57967eb265;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=faq.js.map
