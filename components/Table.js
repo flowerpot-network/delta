@@ -30,7 +30,7 @@ const Table = () => (
     />
     <Row
       item1='5. Smart Contracts'
-      item2='[TBD]'
+      item2='François Guezengar'
       item3='18 Nov 2019 – 18:30-20:30'
     />
     <Row

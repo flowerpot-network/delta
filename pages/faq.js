@@ -20,18 +20,18 @@ const Content = () => {
             Who organizes AccessP2P?
           </p>
           <p className="answer">
-            The organization of AccessP2P is being lead by a few individuals at <a href="https://monadic.xyz"> Monadic</a>. However, the initiative wouldn’t be possible without the commitment of <a href="http://accessp2p.xyz/lecturers">individuals</a> - all contributors to the Berlin P2P community - who are creating original, accessible materials for the program. If you have questions about organization, logistics, or content, feel free to contact <a href="mailto:ange@monadic.xyz">Ange</a>.
+            AccessP2P is organized by a few individuals at <a href="https://monadic.xyz"> Monadic</a>. However, the initiative wouldn’t be possible without the commitment of <a href="http://accessp2p.xyz/lecturers">individuals</a> - all contributors to the Berlin P2P community - who are creating original, accessible materials for the program. If you have questions about organization, logistics, or content, feel free to contact <a href="mailto:ange@monadic.xyz">Ange</a>.
           </p>
           <p className="question">
             Why does AccessP2P exist?
           </p>
           <p className="answer">
-            The organizers saw a few issues in the quickly growing and changing P2P space: 1. The community suffers from similar diversity concerns that the general tech industry faces 2. There are few introductory materials to support those who are curious about P2P and want to figure out how to transition into the space. Therefore, we created AccessP2P to build this library of introductory materials and host a small cohort to take advantage of a supportive peer group and a network of Berlin-based mentors and experts. While we believe that this is a good starting point for increasing the diversity of those entering the P2P space, we are aware that we might not get everything right. We are looking forward to welcoming our first set of students, who will be instrumental in shaping future iterations of this program.
+            The organizers saw a few issues in the quickly growing and changing P2P space: 1) The community suffers from similar diversity concerns that the general tech industry faces 2) There are few introductory materials to support those who are curious about P2P and want to transition into the space. Therefore, we created AccessP2P to build a library of introductory materials and host a small cohort to take advantage of a supportive peer group and the growing network of Berlin-based mentors and experts. While we believe that this is a good starting point for increasing the diversity of those entering the P2P space, we are aware that we might not get everything right. We are looking forward to welcoming our first set of students, who will be instrumental in shaping future iterations of this program.
           </p><p className="question">
             What are the requirements to be a student?
           </p>
           <p className="answer">
-          We are looking for open-minded individuals who are 1. curious about P2P and 2. have some programming knowledge (even if limited). As part of our recruitment of applicants, we’re targeting and prioritizing outreach to communities that support identities underrepresented in the P2P space. Our main goal for AccessP2P is to increase the diversity of this community.
+          We are looking for open-minded individuals who are 1) curious about P2P and 2) have some programming knowledge (even if limited). As part of our recruitment of applicants, we’re targeting and prioritizing outreach to communities that support identities underrepresented in the P2P space. Our main goal for AccessP2P is to increase the diversity of this community.
           </p><p className="question">
             Do I have to be an engineer to apply?
           </p>
@@ -41,7 +41,7 @@ const Content = () => {
             How much time should I plan for the course and will there be homework?
           </p>
           <p className="answer">
-            The core lecturers will take place across 8 evenings (mostly Mondays and Wednesdays) during the month of November. Each evening will last about 2 hours (until 20:30-21:00). Outside of the lecture time itself, lecturers *might* give an article or two as preparatory reading - but these will be limited and not required (though to your benefit). As for homework, after each lecture, an “additional resources and further reading” list will be provided with resources that dive deeper into the subjects covered during the lecture, allowing students and remote users to pursue further, selective self-study.
+            The core lecturers will take place across 8 evenings (mostly Mondays and Wednesdays) during the month of November. Each evening will last about 2 hours (until 20:30-21:00). Outside of the lecture time itself, lecturers *might* give an article or two as preparatory reading - but these will be limited and not required (only for additional benefit). As for homework, after each lecture, an “additional resources and further reading” list will be provided with content that dives deeper into the subjects covered during the lecture, allowing students and remote users to pursue further, selective self-study.
           </p><p className="question">
             Can I keep my job if I’m selected as part of the student cohort?
           </p>
@@ -66,7 +66,7 @@ const Content = () => {
             Can I participate remotely?
           </p>
           <p className="answer">
-            While we won’t be live-streaming the lectures, we will be putting lecture videos and materials on this website (on the <a href = "http://accessp2p.xyz/"> Resources</a> page), as soon as the lecture takes place.
+            While we won’t be live-streaming the lectures, we will be putting lecture videos and materials on this website (on the <a href = "http://accessp2p.xyz/resources"> Resources</a> page), as soon as the lecture takes place.
           </p><p className="question">
           Will the material be provided online at some point?
           </p>
