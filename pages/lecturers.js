@@ -20,7 +20,7 @@ const Partners = () => {
           />
           <Lecturer
             name="Kei Kreutler"
-            bio={['Kei is a researcher interested in how cultural narratives of technologies shape their use. Working as Director of Strategy at Gnosis, she oversees communications and messaging as the company builds prediction market platforms, decentralized trading protocols, and a smart wallet. She has extensive experience in the realm of decentralized organizing, participating in initiatives such as unMonastery, and maintains an independent artistic practice, exhibiting at institutions including the Victoria & Albert Museum, UK and the New Museum, NY, US.']}
+            bio={['Kei is a researcher interested in how cultural narratives of technologies shape their use. Working as Director of Strategy at ',<a href="https://gnosis.io/" rel="noopener noreferrer" target="_blank">Gnosis</a>,', she oversees communications and messaging as the company builds prediction market platforms, decentralized trading protocols, and a smart wallet. She has extensive experience in the realm of decentralized organizing, participating in initiatives such as unMonastery, and maintains an independent artistic practice, exhibiting at institutions including the Victoria & Albert Museum, UK and the New Museum, NY, US.']}
             picUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566816506/accessP2P/kreutler_headshot_square.jpg"
             logoUrl="https://dappcon.io/static/gnosis_horizontal-010818f4968ccfec1f6b969e53fd8f39.png"
           />
@@ -56,6 +56,12 @@ const Partners = () => {
             bio={['Eleftherios is the co-founder of ', <a href="http://oscoin.io" rel="noopener noreferrer" target="_blank">Oscoin</a>, '. He was an early employee at SoundCloud where he led the Data Science team. His scientific interests lie between network science and statistics, focusing on online communities.']}
             picUrl="https://pbs.twimg.com/profile_images/894635919340441600/VsABh_tY_400x400.jpg"
             logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566303650/accessP2P/opensourcecoin-logo-wide.svg"
+          />
+          <Lecturer
+            name="François Guezengar"
+            bio={['François is a blockchain engineer working at the ',<a href = "https://www.ethereum.org/" rel="noopener noreferrer" target="_blank">Ethereum Foundation</a>,'on the project Remix IDE. He is the co-organizer of the Ethereum Meetup group in Berlin. He focuses his work on building tools to simplify developer experience and simplify learning curve.']}
+            picUrl = "https://avatars2.githubusercontent.com/u/8143464?s=400&v=4"
+            logoUrl="https://ethereum.foundation/images/avatar-icon.png"
           />
         </div>
       </div>
