@@ -59,7 +59,7 @@ const Partners = () => {
           />
           <Lecturer
             name="François Guezengar"
-            bio={['François is a blockchain engineer working at the ',<a href = "https://www.ethereum.org/" rel="noopener noreferrer" target="_blank">Ethereum Foundation</a>,'on the project Remix IDE. He is the co-organizer of the Ethereum Meetup group in Berlin. He focuses his work on building tools to simplify developer experience and simplify learning curve.']}
+            bio={['François is a blockchain engineer working at the ',<a href = "https://www.ethereum.org/" rel="noopener noreferrer" target="_blank">Ethereum Foundation</a>,' on the project Remix IDE. He is the co-organizer of the Ethereum Meetup group in Berlin. He focuses his work on building tools to simplify developer experience and simplify learning curve.']}
             picUrl = "https://avatars2.githubusercontent.com/u/8143464?s=400&v=4"
             logoUrl="https://ethereum.foundation/images/avatar-icon.png"
           />
