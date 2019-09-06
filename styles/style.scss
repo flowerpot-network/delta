@@ -109,7 +109,7 @@ header {
   .title,
   .row {
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 3fr 2fr 3fr;
     grid-column-gap: 24px;
     padding-bottom: 12px;
 
@@ -143,4 +143,16 @@ header {
       }
     }
   }
+}
+
+
+//FAQ
+
+.question {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.answer {
+  margin-bottom: 32px;
 }
