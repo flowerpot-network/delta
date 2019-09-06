@@ -24,11 +24,14 @@ export default function Header() {
           <Link href="/why">
             <a>About</a>
           </Link>
-          <Link href="/syllabus">
+          <Link href="/resources">
             <a>Resources</a>
           </Link>
           <Link href="/lecturers">
             <a>Lecturers</a>
+          </Link>
+          <Link href="/faq">
+            <a>FAQ</a>
           </Link>
         </div>
         <a className="button" href="https://accessp2p.typeform.com/to/Eu1FCh" target="_blank" rel="noopener noreferrer">Apply</a>
