@@ -57,12 +57,20 @@ const Content = () => {
           </p>
           <p className="answer">
             For this first iteration of AccessP2P, we will have an in-person, Berlin-based student cohort that is able to take advantage of a small group of supportive peers as well as a mentor network. Therefore, all those applying to the program must be able to attend all 8 core lectures in Berlin during the month of November. However, as all materials from the program will be made available and open-sourced on this site, we encourage global use of AccessP2P’s resources.
-          </p><p className="question">
+          </p>
+          <p className="question">
+            Where will the lectures take place?
+          </p>
+          <p className="answer">
+            All the lectures will be taking place in project/company offices around the western side of Gorlitzer Park.
+          </p>
+          <p className="question">
             Outside the 8 core lectures, will there be other opportunities for program participants?
           </p>
           <p className="answer">
             Yes. We are working with other organizations and individuals to create additional, inspirational opportunities that illustrate how people are using P2P, why it is important, and the problems we could consider solving with P2P systems and technologies. These opportunities will be optional, take place in the evenings in the form of discussions or workshops, and may be open to the general public.
-          </p><p className="question">
+          </p>
+          <p className="question">
             Can I participate remotely?
           </p>
           <p className="answer">
@@ -90,6 +98,12 @@ const Content = () => {
           </p>
           <p className="answer">
             If you can’t find answers to your questions via this FAQ or elsewhere on this website, feel free to contact <a href="mailto:ange@monadic.xyz">Ange</a>.
+          </p>
+          <p className="question">
+            Will I get a certificate upon completion of the program?
+          </p>
+          <p className="answer">
+            While we don't currently have plans to issue a certificate, I don't see why this couldn't be something driven by the desire and initiatives of the student cohort. That being said, it's important to recognize that we aren't an accredited institution. And a certificate won't recognize some of the other value-add of the program: a mentor network and a group of supportive peers.
           </p>
         </div>
       </div>

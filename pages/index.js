@@ -42,6 +42,10 @@ export default function Index() {
         </h3>
         <br />
         <Table />
+        <br />
+        <p>
+        Read lecture descriptions <a href = "/resources">here</a>.
+        </p>
         <h3>
           Who should apply?
         </h3>
