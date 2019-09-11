@@ -65,7 +65,7 @@ const Partners = () => {
           />
           <Lecturer
             name="Pat Rawson"
-            bio={['Pat is an accomplished DAO advocate, armchair governance expert, and <a href = "https://daostack.io" rel="noopener noreferrer" target="_blank">DAOstack&apos;s> Comms Lead. He brings unique experience into the blockchain space, having previously worked as an award winning advertising professional for the likes of Disney, HBO, and Universal Pictures.']}
+            bio={['Pat is an accomplished DAO advocate, armchair governance expert, and ',<a href = "https://daostack.io" rel="noopener noreferrer" target="_blank">DAOstack&apos;s</a>,' Comms Lead. He brings unique experience into the blockchain space, having previously worked as an award winning advertising professional for the likes of Disney, HBO, and Universal Pictures.']}
             picUrl = "https://res.cloudinary.com/dvargvav9/image/upload/v1568211671/Pat_DAOstack_Governance_gddrpj.jpg"
             logoUrl="https://res.cloudinary.com/dvargvav9/image/upload/v1568211681/DS_LOGO_BLACK_V01-1_szkmee.svg"
           />
