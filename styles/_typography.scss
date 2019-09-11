@@ -36,10 +36,30 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 56px;
+  line-height: 64px;
+  padding: 64px 0 16px;
+
+  @media (max-width: 800px) {
+    font-size: 21px;
+    line-height: 25px;
+    padding: 32px 0 16px;
+
+  }
+
+  @media (max-width: 420px) {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 32px 0 32px;
+
+  }
+}
+
 h3 {
   font-size: 28px;
   line-height: 33px;
-  padding: 64px 0 16px;
+  padding: 32px 0 16px;
 
   @media (max-width: 800px) {
     font-size: 21px;

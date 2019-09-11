@@ -20,7 +20,7 @@ const Partners = () => {
           />
           <Lecturer
             name="Kei Kreutler"
-            bio={['Kei is a researcher interested in how cultural narratives of technologies shape their use. Working as Director of Strategy at ',<a href="https://gnosis.io/" rel="noopener noreferrer" target="_blank">Gnosis</a>,', she oversees communications and messaging as the company builds prediction market platforms, decentralized trading protocols, and a smart wallet. She has extensive experience in the realm of decentralized organizing, participating in initiatives such as unMonastery, and maintains an independent artistic practice, exhibiting at institutions including the Victoria & Albert Museum, UK and the New Museum, NY, US.']}
+            bio={['Kei is a researcher interested in how cultural narratives of technologies shape their use. Working as Director of Strategy at ',<a href="https://gnosis.io/" rel="noopener noreferrer" target="_blank">Gnosis</a>,', she oversees communications and messaging as the company builds prediction market platforms, decentralized trading protocols, and a smart wallet. She has extensive experience in the realm of decentralized organizing and maintains an independent artistic practice, exhibiting at institutions including the Victoria & Albert Museum, UK and Ideas City at the New Museum, NY, US.']}
             picUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566816506/accessP2P/kreutler_headshot_square.jpg"
             logoUrl="https://dappcon.io/static/gnosis_horizontal-010818f4968ccfec1f6b969e53fd8f39.png"
           />
@@ -40,7 +40,7 @@ const Partners = () => {
 
           <Lecturer
             name="Lucas Vogelsang"
-            bio={['Lucas is the founding engineer at ',<a href="https://centrifuge.io/" rel="noopener noreferrer" target="_blank">Centrifuge</a>,', an open, decentralized platform to connect the global financial supply chain.']}
+            bio={['Lucas is co-founder and Head of Engineering at', <a href="https://centrifuge.io/" rel="noopener noreferrer" target="_blank">Centrifuge</a>, ' a Berlin-based company building a protocol for the financial supply chain. Lucas dropped out of college to start his first startup in 2009 in Switzerland. Since then he has worked at various startups around the world in different technical roles. He strongly believes in privacy, and that this technology can be a driving force to make the world a better place.']}
             picUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566223068/accessP2P/Lucas_Centrifuge_Primitives.png"
             logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566223176/accessP2P/centrifuge-logo_ptxefx.png"
           />
@@ -62,6 +62,12 @@ const Partners = () => {
             bio={['François is a blockchain engineer working at the ',<a href = "https://www.ethereum.org/" rel="noopener noreferrer" target="_blank">Ethereum Foundation</a>,' on the project Remix IDE. He is the co-organizer of the Ethereum Meetup group in Berlin. He focuses his work on building tools to simplify developer experience and simplify learning curve.']}
             picUrl = "https://avatars2.githubusercontent.com/u/8143464?s=400&v=4"
             logoUrl="https://ethereum.foundation/images/avatar-icon.png"
+          />
+          <Lecturer
+            name="Pat Rawson"
+            bio={['Pat is an accomplished DAO advocate, armchair governance expert, and <a href = "https://daostack.io" rel="noopener noreferrer" target="_blank">DAOstack&apos;s> Comms Lead. He brings unique experience into the blockchain space, having previously worked as an award winning advertising professional for the likes of Disney, HBO, and Universal Pictures.']}
+            picUrl = "https://res.cloudinary.com/dvargvav9/image/upload/v1568211671/Pat_DAOstack_Governance_gddrpj.jpg"
+            logoUrl="https://res.cloudinary.com/dvargvav9/image/upload/v1568211681/DS_LOGO_BLACK_V01-1_szkmee.svg"
           />
         </div>
       </div>
