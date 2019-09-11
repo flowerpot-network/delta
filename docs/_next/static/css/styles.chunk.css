@@ -166,10 +166,25 @@ h1 {
       font-size: 36px;
       line-height: 32px; } }
 
+h2 {
+  font-size: 56px;
+  line-height: 64px;
+  padding: 64px 0 16px; }
+  @media (max-width: 800px) {
+    h2 {
+      font-size: 21px;
+      line-height: 25px;
+      padding: 32px 0 16px; } }
+  @media (max-width: 420px) {
+    h2 {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 32px 0 32px; } }
+
 h3 {
   font-size: 28px;
   line-height: 33px;
-  padding: 64px 0 16px; }
+  padding: 32px 0 16px; }
   @media (max-width: 800px) {
     h3 {
       font-size: 21px;

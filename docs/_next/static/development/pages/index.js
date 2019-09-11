@@ -330,6 +330,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var Row = function Row(_ref) {
   var item1 = _ref.item1,
+      item4 = _ref.item4,
       item2 = _ref.item2,
       item3 = _ref.item3;
   return __jsx("ul", {
@@ -390,7 +391,7 @@ var Table = function Table() {
     item3: "6 Nov 2019 \u2013 18:30-20:30",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }), __jsx(Row, {
@@ -399,7 +400,7 @@ var Table = function Table() {
     item3: "11 Nov 2019 \u2013 18:30-20:30",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }), __jsx(Row, {
@@ -408,7 +409,7 @@ var Table = function Table() {
     item3: "13 Nov 2019 \u2013 18:30-20:30",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 29
     },
     __self: this
   }), __jsx(Row, {
@@ -417,7 +418,7 @@ var Table = function Table() {
     item3: "18 Nov 2019 \u2013 18:30-20:30",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 35
     },
     __self: this
   }), __jsx(Row, {
@@ -426,25 +427,38 @@ var Table = function Table() {
     item3: "20 Nov 2019 \u2013 18:30-20:30",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 41
     },
     __self: this
-  }), __jsx(Row, {
+  }), __jsx("div", {
+    className: "subline",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  })), __jsx(Row, {
     item1: "7. Mechanism Design",
     item2: "Ele Diakomichalis",
     item3: "25 Nov 2019 \u2013 18:30-20:30",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 51
     },
     __self: this
   }), __jsx(Row, {
     item1: "8. Decentralized Governance",
-    item2: "Kei Kreutler",
+    item2: "Kei Kreutler and Pat Rawson",
     item3: "27 Nov 2019 \u2013 18:30-20:30",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 57
     },
     __self: this
   }));
@@ -10582,40 +10596,59 @@ function Index() {
       lineNumber: 44
     },
     __self: this
-  }), __jsx("h3", {
+  }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
     },
     __self: this
-  }, "Who should apply?"), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }, "We expect AccessP2P applicants to have some programming knowledge - whether it be self-taught or otherwise - but they are not required to be a traditional 'developer'. We hope to host a cohort with varying levels of technical skills and different backgrounds. As such, we are committed to creating a safe space to answer questions and provide additional resources so that concepts presented are accessible to anybody interested in diving into P2P technology."), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
   }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, "Read lecture descriptions ", __jsx("a", {
+    href: "/resources",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, "here"), "."), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, "Who should apply?"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
     },
     __self: this
+  }, "We expect AccessP2P applicants to have some programming knowledge - whether it be self-taught or otherwise - but they are not required to be a traditional 'developer'. We hope to host a cohort with varying levels of technical skills and different backgrounds. As such, we are committed to creating a safe space to answer questions and provide additional resources so that concepts presented are accessible to anybody interested in diving into P2P technology."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
   }, "Deadline to apply is 22 September 2019."), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 57
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 58
     },
     __self: this
   }), __jsx("a", {
@@ -10626,7 +10659,7 @@ function Index() {
     rel: "noopener noreferrer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 59
     },
     __self: this
   }, "Apply")));
@@ -10634,7 +10667,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!*********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************************************/
@@ -10657,5 +10690,5 @@ module.exports = dll_129a35c7ec57967eb265;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
