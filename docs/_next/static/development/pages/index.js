@@ -386,9 +386,9 @@ var Table = function Table() {
     },
     __self: this
   }), __jsx(Row, {
-    item1: "2. Primitives",
-    item2: "Lucas Vogelsang",
-    item3: "6 Nov 2019 \u2013 18:30-20:30",
+    item1: "2. Mechanism Design",
+    item2: "Ele Diakomichalis",
+    item3: "25 Nov 2019 \u2013 18:30-20:30",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -444,9 +444,9 @@ var Table = function Table() {
     },
     __self: this
   })), __jsx(Row, {
-    item1: "7. Mechanism Design",
-    item2: "Ele Diakomichalis",
-    item3: "25 Nov 2019 \u2013 18:30-20:30",
+    item1: "7. Primitives",
+    item2: "Lucas Vogelsang",
+    item3: "6 Nov 2019 \u2013 18:30-20:30",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51

@@ -10594,7 +10594,7 @@ var Partners = function Partners() {
       },
       __self: this
     }, "Oscoin"), '. He was an early employee at SoundCloud where he led the Data Science team. His scientific interests lie between network science and statistics, focusing on online communities.'],
-    picUrl: "https://pbs.twimg.com/profile_images/894635919340441600/VsABh_tY_400x400.jpg",
+    picUrl: "https://res.cloudinary.com/dvargvav9/image/upload/v1568990825/VsABh_tY_400x400_hwcjd4.jpg",
     logoUrl: "https://res.cloudinary.com/juliendonck/image/upload/v1566303650/accessP2P/opensourcecoin-logo-wide.svg",
     __source: {
       fileName: _jsxFileName,
@@ -10646,7 +10646,7 @@ var Partners = function Partners() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Flecturers&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Flecturers.js ***!
   \**********************************************************************************************************************************************************/
@@ -10669,5 +10669,5 @@ module.exports = dll_129a35c7ec57967eb265;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=lecturers.js.map
