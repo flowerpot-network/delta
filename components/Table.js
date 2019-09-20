@@ -15,9 +15,9 @@ const Table = () => (
     />
 
     <Row
-      item1='2. Primitives'
-      item2='Lucas Vogelsang'
-      item3='6 Nov 2019 – 18:30-20:30'
+      item1='2. Mechanism Design'
+      item2='Ele Diakomichalis'
+      item3='25 Nov 2019 – 18:30-20:30'
     />
 
     <Row
@@ -49,9 +49,9 @@ const Table = () => (
     </p>
     </div>
     <Row
-      item1='7. Mechanism Design'
-      item2='Ele Diakomichalis'
-      item3='25 Nov 2019 – 18:30-20:30'
+      item1='7. Primitives'
+      item2='Lucas Vogelsang'
+      item3='6 Nov 2019 – 18:30-20:30'
     />
 
     <Row

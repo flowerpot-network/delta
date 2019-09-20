@@ -16,12 +16,12 @@ const Content = () => {
         <h2> Lecture Descriptions </h2>
         <h3>Intro to P2P - <a href= "/lecturers">Stacco Troncoso</a></h3>
         <p>
-        When speaking about Peer to Peer or P2P we usually refer to network topologies or technical infrastructures. But what about the people behind those nodes in the network and their effective and physical needs? Beyond techo-centric perspectives, P2P can also mean "person to person" and describes a social process to scale up small-group dynamics into resilient, transnational networks. How can Peer to Peer systems help us reimagine our economics and politics.  As a commons-advocate and project lead for the Commons Transition project, Stacco will discuss the wider implications of P2P.
+        When speaking about Peer to Peer or P2P we usually refer to network topologies or technical infrastructures. But what about the people behind those nodes in the network and their affective and physical needs? Beyond techo-centric perspectives, P2P can also mean "person to person" and describes a social process to scale up small-group dynamics into resilient, transnational networks. How can Peer to Peer systems help us reimagine our economics and politics.  As a commons-advocate and project lead for the Commons Transition project, Stacco will discuss the wider implications of P2P.
         </p>
         <br/>
-        <h3>Primitives - <a href= "/lecturers">Lucas Vogelsang</a></h3>
+        <h3>Mechanism Design - <a href= "/lecturers">Ele Diakomichalis</a></h3>
         <p>
-        P2P software often relies on cryptography to validate behavior of other nodes, keep networks in sync and provide consensus. This session gives a broad overview starting with the very basic primitives such as hash functions, signature schemes but also more complex constructions such as zero knowledge proofs.
+        In this lecture we will provide an introduction to auction and mechanism design as well as a survey of the most relevant topics at the intersection of computer science and economics. We will use real case studies from web search auctions, cryptocurrencies & security applications.
         </p>
         <br/>
         <h3>Social P2P- <a href= "/lecturers">Sarah Friend</a></h3>
@@ -44,9 +44,9 @@ const Content = () => {
         TBD
         </p>
         <br/>
-        <h3>Mechanism Design - <a href= "/lecturers">Ele Diakomichalis</a></h3>
+        <h3>Primitives - <a href= "/lecturers">Lucas Vogelsang</a></h3>
         <p>
-        In this lecture we will provide an introduction to auction and mechanism design as well as a survey of the most relevant topics at the intersection of computer science and economics. We will use real case studies from web search auctions, cryptocurrencies & security applications.
+        P2P software often relies on cryptography to validate behavior of other nodes, keep networks in sync and provide consensus. This session gives a broad overview starting with the very basic primitives such as hash functions, signature schemes but also more complex constructions such as zero knowledge proofs.
         </p>
         <br/>
         <h3>Decentralized Governance - <a href= "/lecturers">Kei Kreutler</a> and <a href= "/lecturers">Pat Rawson</a></h3>
