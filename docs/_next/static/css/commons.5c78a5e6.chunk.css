@@ -355,6 +355,13 @@ header {
       .syllabus .row li:not(:first-child) {
         padding-left: 30px; } }
 
+.updates {
+  margin-top: 32px;
+  text-align: center; }
+
+.update p {
+  margin-bottom: 32px; }
+
 .question {
   font-weight: bold;
   margin-bottom: 8px; }
@@ -362,5 +369,3 @@ header {
 .answer {
   margin-bottom: 32px; }
 
-
-/*# sourceMappingURL=styles.chunk.css.map*/
