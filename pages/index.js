@@ -53,13 +53,8 @@ export default function Index() {
           We expect AccessP2P applicants to have some programming knowledge - whether it be self-taught or otherwise - but they are not required to be a traditional &apos;developer&apos;. We hope to host a cohort with varying levels of technical skills and different backgrounds. As such, we are committed to creating a safe space to answer questions and provide additional resources so that concepts presented are accessible to anybody interested in diving into P2P technology.
         </p>
         <br />
-        <p>Deadline to apply is 22 September 2019.</p>
-        <br />
-        <br />
-        <a className="button" href="https://accessp2p.typeform.com/to/Eu1FCh" target="_blank" align = "center" rel="noopener noreferrer">Apply</a>
+        <p>Applications closed 22 September 2019. Cohort candidates can expect to hear back from us about their status by October 7.</p>
       </div>
-
-
     </Page>
   )
 }

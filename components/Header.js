@@ -34,7 +34,6 @@ export default function Header() {
             <a>FAQ</a>
           </Link>
         </div>
-        <a className="button" href="https://accessp2p.typeform.com/to/Eu1FCh" target="_blank" rel="noopener noreferrer">Apply</a>
       </nav>
     </header>
   )
