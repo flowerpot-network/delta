@@ -41,7 +41,7 @@ const Content = () => {
         <br/>
         <h3>Security - <a href= "/lecturers">Liz Steininger</a></h3>
         <p>
-        TBD
+        The topic of security encompasses many elements of our technology functioning in a way that keeps us safe from threats. In this lecture, we will go through the exercise of threat modeling and talk about the common attacks to P2P networks. We will also explore how to reduce the risk of these threats to build and maintain P2P systems that meet their goals of confidentiality, integrity and reliability of the data they provide.
         </p>
         <br/>
         <h3>Primitives - <a href= "/lecturers">Lucas Vogelsang</a></h3>
