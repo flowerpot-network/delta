@@ -69,6 +69,12 @@ const Partners = () => {
             picUrl = "https://res.cloudinary.com/dvargvav9/image/upload/v1568211671/Pat_DAOstack_Governance_gddrpj.jpg"
             logoUrl="https://res.cloudinary.com/dvargvav9/image/upload/v1568211681/DS_LOGO_BLACK_V01-1_szkmee.svg"
           />
+          <Lecturer
+            name="Ram Muthukrishnan"
+            bio={['Ram is a programmer living in Bangalore. He is interested in decentralization, privacy and security. In his free time, he likes to play with analog RF electronics and talk to strangers via amateur radio (his amateur radio callsign is VU3RDD) with morse code with home-built equipment. In the past, he worked on low level software like bootloaders and operating systems.']}
+            picUrl = "https://res.cloudinary.com/dvargvav9/image/upload/v1573222222/ram_zakdfe.jpg"
+            logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566556492/accessP2P/Logo_LeastAuthority_Security.png"
+          />
         </div>
       </div>
     </Page>
