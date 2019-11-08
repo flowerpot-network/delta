@@ -10642,6 +10642,16 @@ var Partners = function Partners() {
       lineNumber: 66
     },
     __self: this
+  }), __jsx(components_Lecturer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    name: "Ram Muthukrishnan",
+    bio: ['Ram is a programmer living in Bangalore. He is interested in decentralization, privacy and security. In his free time, he likes to play with analog RF electronics and talk to strangers via amateur radio (his amateur radio callsign is VU3RDD) with morse code with home-built equipment. In the past, he worked on low level software like bootloaders and operating systems.'],
+    picUrl: "https://res.cloudinary.com/dvargvav9/image/upload/v1573222222/ram_zakdfe.jpg",
+    logoUrl: "https://res.cloudinary.com/juliendonck/image/upload/v1566556492/accessP2P/Logo_LeastAuthority_Security.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
   }))));
 };
 
