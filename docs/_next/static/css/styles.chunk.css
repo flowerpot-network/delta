@@ -316,8 +316,8 @@ header {
 .lecturer {
   display: flex;
   flex-direction: row; }
-  .lecturer meta {
-    margin: 64px 0 0 24px; }
+  .lecturer p {
+    margin: 8px 0 24px; }
   .lecturer img.avatar {
     height: 64px;
     width: 64px;
