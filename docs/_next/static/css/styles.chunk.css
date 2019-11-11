@@ -305,6 +305,14 @@ header {
   .specs li h4 {
     font-family: "FoundersGroteskMono", courier, monospace; }
 
+.list {
+  margin-top: 12px; }
+  .list li {
+    margin-left: 32px;
+    margin-bottom: 8px; }
+    .list li h4 {
+      font-family: "FoundersGroteskMono", courier, monospace; }
+
 .lecturers {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -323,6 +331,18 @@ header {
     width: 64px;
     margin-right: 16px; }
   .lecturer img.lecture-logo {
+    width: 160px; }
+
+.resource {
+  display: flex;
+  flex-direction: row; }
+  .resource p {
+    margin: 8px 0 24px; }
+  .resource img.avatar {
+    height: 64px;
+    width: 64px;
+    margin-right: 16px; }
+  .resource img.lecture-logo {
     width: 160px; }
 
 .syllabus .title,

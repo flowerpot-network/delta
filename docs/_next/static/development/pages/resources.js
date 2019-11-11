@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/lecturers.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/resources.js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -316,10 +316,10 @@ function Header() {
 
 /***/ }),
 
-/***/ "./components/Lecturer.js":
-/*!********************************!*\
-  !*** ./components/Lecturer.js ***!
-  \********************************/
+/***/ "./components/Resources.js":
+/*!*********************************!*\
+  !*** ./components/Resources.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -329,76 +329,71 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/abbeytitcomb/Documents/GitHub/access-p2p/components/Lecturer.js";
+var _jsxFileName = "/Users/abbeytitcomb/Documents/GitHub/access-p2p/components/Resources.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var Lecturer = function Lecturer(_ref) {
-  var name = _ref.name,
-      bio = _ref.bio,
-      logoUrl = _ref.logoUrl,
-      picUrl = _ref.picUrl;
+var Resource = function Resource(_ref) {
+  var title = _ref.title,
+      description = _ref.description,
+      contact = _ref.contact,
+      materials = _ref.materials,
+      additional = _ref.additional;
   return __jsx("div", {
-    className: "lecturer",
+    className: "resource",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
   }, __jsx("div", {
-    className: "imgWrap",
+    className: "meta",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     },
     __self: this
-  }, __jsx("img", {
-    className: "avatar",
-    src: picUrl,
-    alt: "pic",
+  }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  })), __jsx("div", {
-    className: "meta",
+  }, title), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, description), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, __jsx("h4", {
+  }, contact), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, name), __jsx("p", {
+  }, materials), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, bio), logoUrl !== '' && __jsx("img", {
-    className: "lecture-logo",
-    src: logoUrl,
-    alt: "pic",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  })));
+  }, additional)));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Lecturer);
-Lecturer.propTypes = {
-  name: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
-  bio: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array.isRequired,
-  picUrl: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
-  logoUrl: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+/* harmony default export */ __webpack_exports__["default"] = (Resource);
+Resource.propTypes = {
+  title: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  description: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array.isRequired,
+  contact: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  materials: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  additionals: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired
 };
 
 /***/ }),
@@ -6081,21 +6076,21 @@ exports.SUPPORTS_PERFORMANCE_USER_TIMING = exports.SUPPORTS_PERFORMANCE && typeo
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flecturers&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Flecturers.js!./":
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fresources&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Fresources.js!./":
 /*!******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flecturers&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Flecturers.js ***!
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fresources&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Fresources.js ***!
   \******************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/lecturers", function() {
-      var page = __webpack_require__(/*! ./pages/lecturers.js */ "./pages/lecturers.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/resources", function() {
+      var page = __webpack_require__(/*! ./pages/resources.js */ "./pages/resources.js")
       if(true) {
-        module.hot.accept(/*! ./pages/lecturers.js */ "./pages/lecturers.js", function() {
-          if(!next.router.components["/lecturers"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/lecturers.js */ "./pages/lecturers.js")
-          next.router.update("/lecturers", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/resources.js */ "./pages/resources.js", function() {
+          if(!next.router.components["/resources"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/resources.js */ "./pages/resources.js")
+          next.router.update("/resources", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -10395,9 +10390,9 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/lecturers.js":
+/***/ "./pages/resources.js":
 /*!****************************!*\
-  !*** ./pages/lecturers.js ***!
+  !*** ./pages/resources.js ***!
   \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -10407,14 +10402,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var layouts_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! layouts/page */ "./layouts/page.js");
-/* harmony import */ var components_Lecturer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! components/Lecturer */ "./components/Lecturer.js");
-var _jsxFileName = "/Users/abbeytitcomb/Documents/GitHub/access-p2p/pages/lecturers.js";
+/* harmony import */ var components_Resources__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! components/Resources */ "./components/Resources.js");
+var _jsxFileName = "/Users/abbeytitcomb/Documents/GitHub/access-p2p/pages/resources.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var Partners = function Partners() {
+var Content = function Content() {
   return __jsx(layouts_page__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
@@ -10434,257 +10429,474 @@ var Partners = function Partners() {
       lineNumber: 8
     },
     __self: this
-  }, "Our lecturers"), __jsx("br", {
+  }, "Lecture Materials and Related Content"), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }), __jsx("br", {
+  }), __jsx("nr", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }), __jsx("div", {
-    className: "lecturers",
+  }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
-  }, __jsx(components_Lecturer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "Liz Steininger",
-    bio: ['Liz is the CEO/Managing Director of ', __jsx("a", {
-      href: "https://leastauthority.com/",
-      rel: "noopener noreferrer",
-      target: "_blank",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
-    }, "Least Authority"), ' in Berlin, a company supporting people’s right to privacy through security consulting and building secure solutions. Prior, she managed financing for Internet freedom projects at the Open Technology Fund. Liz has over 17 years of experience as a Project Manager, Program Manager and Analyst on numerous tech development projects in both private companies and public organizations. She holds an M.S. in Management & Technology from Carlow University (2007) and B.S. in Digital Media from Drexel University (2001) in the United States of America.'],
-    picUrl: "https://libertybits.org/wp-content/uploads/2018/02/Liz_Steininger_800x799-e1519724374165.jpg",
-    logoUrl: "https://res.cloudinary.com/juliendonck/image/upload/v1566556492/accessP2P/Logo_LeastAuthority_Security.png",
+  }, "Throughout the duration of the program, we will post the lecture material and other resources provided to our student cohort. This page will be updated frequently."), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: this
-  }), __jsx(components_Lecturer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "Kei Kreutler",
-    bio: ['Kei is a researcher interested in how cultural narratives of technologies shape their use. Working as Director of Strategy at ', __jsx("a", {
-      href: "https://gnosis.io/",
-      rel: "noopener noreferrer",
-      target: "_blank",
+  }, " Lecture Descriptions "), __jsx("div", {
+    className: "resources",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: ['Intro to P2P - ', __jsx("a", {
+      href: "/lecturers",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, "Stacco Troncoso")],
+    description: ['When speaking about Peer to Peer or P2P we usually refer to network topologies or technical infrastructures. But what about the people behind those nodes in the network and their affective and physical needs? Beyond techo-centric perspectives, P2P can also mean "person to person" and describes a social process to scale up small-group dynamics into resilient, transnational networks. How can Peer to Peer systems help us reimagine our economics and politics.  As a commons-advocate and project lead for the Commons Transition project, Stacco will discuss the wider implications of P2P.'],
+    contact: ['M: Hello@guerrillamedia.coop, Stacco@stacco.works', __jsx("br", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }), 'T: @staccoP2P'],
+    materials: ['Lecture material: ', __jsx("a", {
+      href: "https://drive.google.com/file/d/105MOYl3BCCQIT96lL-87fQTIab3YUzaI/view",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }, "slides"), ' and ', __jsx("a", {
+      href: "https://drive.google.com/open?id=0B7eiTIS0EEaVcXFHN0pWZEtRQm1aOGd4eXhOUmF2V2lqVVIw",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }, "summary")],
+    additional: ['Additional resources ', __jsx("a", {
+      href: "https://drive.google.com/file/d/0B7eiTIS0EEaVcXFHN0pWZEtRQm1aOGd4eXhOUmF2V2lqVVIw/view",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 23
       },
       __self: this
-    }, "Gnosis"), ', she oversees communications and messaging as the company builds prediction market platforms, decentralized trading protocols, and a smart wallet. She has extensive experience in the realm of decentralized organizing and maintains an independent artistic practice, exhibiting at institutions including the Victoria & Albert Museum, UK and Ideas City at the New Museum, NY, US.'],
-    picUrl: "https://res.cloudinary.com/juliendonck/image/upload/v1566816506/accessP2P/kreutler_headshot_square.jpg",
-    logoUrl: "https://dappcon.io/static/gnosis_horizontal-010818f4968ccfec1f6b969e53fd8f39.png",
+    }, "here")],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 18
     },
     __self: this
-  }), __jsx(components_Lecturer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "Stacco Troncoso",
-    bio: ['Stacco Troncoso is the advocacy coordinator of the ', __jsx("a", {
-      href: "http://p2pfoundation.net/",
-      rel: "noopener noreferrer",
-      target: "_blank",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: this
-    }, "P2P Foundation"), ' as well as the project lead for ', __jsx("a", {
-      href: "https://commonstransition.org/",
-      rel: "noopener noreferrer",
-      target: "_blank",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: this
-    }, "Commons Transition"), ', an organization dedicated to spreading and strengthening the Commons worldwide. He is also co-founder of the P2P translation collective ', __jsx("a", {
-      href: "http://guerrillatranslation.com/",
-      rel: "noopener noreferrer",
-      target: "_blank",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: this
-    }, "Guerrilla Translation"), '. His work in communicating commons culture extends to public speaking and relationship-building with prefigurative communities, policymakers and potential commoners.'],
-    picUrl: "https://res.cloudinary.com/juliendonck/image/upload/v1566222523/accessP2P/stacco.png",
-    logoUrl: "https://res.cloudinary.com/juliendonck/image/upload/v1566556555/accessP2P/Logo_Commons_Transition_IntroP2P.png",
+  })), __jsx("div", {
+    className: "resources",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 26
     },
     __self: this
-  }), __jsx(components_Lecturer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "Sarah Friend",
-    bio: [__jsx("a", {
-      href: "https://isthisa.com/",
-      rel: "noopener noreferrer",
-      target: "_blank",
+  }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: ['Network Address Translation - ', __jsx("a", {
+      href: "/lecturers",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36
+        lineNumber: 28
       },
       __self: this
-    }, "Sarah"), ' is an artist and software engineer, with special interest in blockchain and the p2p web. She is a proud Recurse Centre alum, and is one of the organizers of Our Networks, a conference on all aspects of the distributed web in Toronto.'],
-    picUrl: "https://isthisa.com/static/Headshots/Headshot1.jpg",
-    logoUrl: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }), __jsx(components_Lecturer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "Lucas Vogelsang",
-    bio: ['Lucas is co-founder and Head of Engineering at', __jsx("a", {
-      href: "https://centrifuge.io/",
-      rel: "noopener noreferrer",
-      target: "_blank",
+    }, "Ram Muthukrishnan")],
+    description: ['The web was originally designed to be decentralized so every participating computer (often referred to as an endpoint or a node), each assigned an IP address, could participate meaningfully in the network. However, as the usage of the web expanded beyond academia, the IPv4 addresses ran out. Among many ad hoc solutions to address the lack of IPv4 addresses was a system called Network Address Translation (NAT), which is a system where computers in a private network behind one internet facing router are assigned reusable private IP addresses. Even though IPv6 has been introduced, it hasn&apos;t taken off as anticipated by its supporters and the IPv4 + NAT solution still dominates today. Now, the inherent assumptions in the NAT makes it hard to run P2P applications, which act as both clients and servers of data. In this session, we will explore what NAT is, the different types of NAT, what the network topology for various NATs are and the challenges of discovering peers who are behind the NAT.'],
+    contact: ['M: ram@leastauthority.com', __jsx("br", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }), 'W: ', __jsx("a", {
+      href: "https://mastodon.radio/@vu3rdd",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, "https://mastodon.radio/@vu3rdd")],
+    materials: ['Lecture material: ', __jsx("a", {
+      href: "https://drive.google.com/file/d/16WDiJuTQ7mGn3aqjbzjem4eXiVf5pVGU/view",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }, "slides"), ' and ', __jsx("a", {
+      href: "https://rkrishnan.org/talks/accessp2p/talk.html",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }, "summary")],
+    additional: ['Additional resources: ', __jsx("ul", {
+      className: "list",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "https://files.ifi.uzh.ch/CSG/staff/bocek/extern/theses/BA-Jonas-Wagner.pdf",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, "UDP Hole Punching in TomP2P for NAT Traversal")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "https://pdos.csail.mit.edu/papers/p2pnat.pdf",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, "Peer-to-Peer Communication Across Network Address Translators")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "https://tools.ietf.org/html/rfc5128",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }, "State of P2P over NAT, RFC 5128")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 43
       },
       __self: this
-    }, "Centrifuge"), ' a Berlin-based company building a protocol for the financial supply chain. Lucas dropped out of college to start his first startup in 2009 in Switzerland. Since then he has worked at various startups around the world in different technical roles. He strongly believes in privacy, and that this technology can be a driving force to make the world a better place.'],
-    picUrl: "https://res.cloudinary.com/juliendonck/image/upload/v1566223068/accessP2P/Lucas_Centrifuge_Primitives.png",
-    logoUrl: "https://res.cloudinary.com/juliendonck/image/upload/v1566223176/accessP2P/centrifuge-logo_ptxefx.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }), __jsx(components_Lecturer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "Alexis Sellier",
-    bio: ['Long time open source contributor, he recently co-founded ', __jsx("a", {
-      href: "https://monadic.xyz/",
-      rel: "noopener noreferrer",
-      target: "_blank",
+    }, __jsx("a", {
+      href: "https://tools.ietf.org/html/rfc3489",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44
+      },
+      __self: this
+    }, "STUN, RFC 3489")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "https://tools.ietf.org/html/rfc2663",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    }, "NAT Terminology, RFC 2663")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "https://tools.ietf.org/html/rfc4787",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 50
       },
       __self: this
-    }, "Monadic"), '. Monadic current supports ', __jsx("a", {
-      href: "http://radicle.xyz/",
-      rel: "noopener noreferrer",
-      target: "_blank",
+    }, "UDP NAT traversal, RFC 4787")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50
+        lineNumber: 52
       },
       __self: this
-    }, "Radicle"), ', a secure p2p network for code collaboration and value exchange.'],
-    picUrl: "https://avatars1.githubusercontent.com/u/40774?s=400&v=4",
-    logoUrl: "https://res.cloudinary.com/dvargvav9/image/upload/v1573491183/Logo_Radicle1_qzveib.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }), __jsx(components_Lecturer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "Eleftherios Diakomichalis",
-    bio: ['Eleftherios is the co-founder of ', __jsx("a", {
-      href: "https://monadic.xyz/",
-      rel: "noopener noreferrer",
-      target: "_blank",
+    }, __jsx("a", {
+      href: "https://tools.ietf.org/html/rfc5382",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 53
       },
       __self: this
-    }, "Monadic"), ' which supports ', __jsx("a", {
-      href: "http://radicle.xyz/",
-      rel: "noopener noreferrer",
-      target: "_blank",
+    }, "TCP NAT traversal, RFC 5382")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "https://tools.ietf.org/html/rfc5245",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 56
       },
       __self: this
-    }, "Radicle"), ', a secure p2p network for code collaboration and value exchange. He was an early employee at SoundCloud where he led the Data Science team. His scientific interests lie between network science and statistics, focusing on online communities.'],
-    picUrl: "https://res.cloudinary.com/dvargvav9/image/upload/v1568990825/VsABh_tY_400x400_hwcjd4.jpg",
-    logoUrl: "https://res.cloudinary.com/dvargvav9/image/upload/v1573491183/Logo_Radicle1_qzveib.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
-  }), __jsx(components_Lecturer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "Fran\xE7ois Guezengar",
-    bio: ['François is a blockchain engineer working at the ', __jsx("a", {
-      href: "https://www.ethereum.org/",
-      rel: "noopener noreferrer",
-      target: "_blank",
+    }, "ICE, RFC 5245")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "https://tools.ietf.org/html/rfc793",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59
+      },
+      __self: this
+    }, "TCP, RFC 793")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "https://www.nrl.navy.mil/itd/chacs/sites/www.nrl.navy.mil.itd.chacs/files/pdfs/Dingledine%20etal2004.pdf",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 62
       },
       __self: this
-    }, "Ethereum Foundation"), ' on the project Remix IDE. He is the co-organizer of the Ethereum Meetup group in Berlin. He focuses his work on building tools to simplify developer experience and simplify learning curve.'],
-    picUrl: "https://avatars2.githubusercontent.com/u/8143464?s=400&v=4",
-    logoUrl: "https://ethereum.foundation/images/avatar-icon.png",
+    }, "Tor: The Second-Generation Onion Router\" Paper")))],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 27
     },
     __self: this
-  }), __jsx(components_Lecturer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "Pat Rawson",
-    bio: ['Pat is an accomplished DAO advocate, armchair governance expert, and ', __jsx("a", {
-      href: "https://daostack.io",
-      rel: "noopener noreferrer",
-      target: "_blank",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 68
-      },
-      __self: this
-    }, "DAOstack's"), ' Comms Lead. He brings unique experience into the blockchain space, having previously worked as an award winning advertising professional for the likes of Disney, HBO, and Universal Pictures.'],
-    picUrl: "https://res.cloudinary.com/dvargvav9/image/upload/v1568211671/Pat_DAOstack_Governance_gddrpj.jpg",
-    logoUrl: "https://res.cloudinary.com/dvargvav9/image/upload/v1568211681/DS_LOGO_BLACK_V01-1_szkmee.svg",
+  })), __jsx("iframe", {
+    width: "560",
+    height: "315",
+    src: "https://www.youtube.com/embed/JhNSC_McKJo",
+    frameborder: "0",
+    allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+    allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 67
     },
     __self: this
-  }), __jsx(components_Lecturer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "Ram Muthukrishnan",
-    bio: ['Ram is a programmer living in Bangalore. He is interested in decentralization, privacy and security. In his free time, he likes to play with analog RF electronics and talk to strangers via amateur radio (his amateur radio callsign is VU3RDD) with morse code with home-built equipment. In the past, he worked on low level software like bootloaders and operating systems.'],
-    picUrl: "https://res.cloudinary.com/dvargvav9/image/upload/v1573222222/ram_zakdfe.jpg",
-    logoUrl: "https://res.cloudinary.com/juliendonck/image/upload/v1566556492/accessP2P/Logo_LeastAuthority_Security.png",
+  }), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }, "Mechanism Design - ", __jsx("a", {
+    href: "/lecturers",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }, "Ele Diakomichalis")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }, "In this lecture we will provide an introduction to auction and mechanism design as well as a survey of the most relevant topics at the intersection of computer science and economics. We will use real case studies from web search auctions, cryptocurrencies & security applications."), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 72
     },
     __self: this
-  }))));
+  }), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, "Social P2P - ", __jsx("a", {
+    href: "/lecturers",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, "Sarah Friend")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }, "How would you host a static website on a p2p network? How would you run a blog? What about the best p2p app for sharing photos or messages with your friends? And moreso, once you have your p2p social network in place, what are the unique challenges of social networks in a distributed context? Social networks are built off of trust, but how can we use something like \"trust\" in computing? This lecture will compare some of the most popular emerging protocols (ipfs, dat, ssb) and discuss their strengths and weakness, borrowing from the early history of the web (usenet, bittorrent) to see what lessons have already been learned."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78
+    },
+    __self: this
+  }, "Consensus Mechanisms - ", __jsx("a", {
+    href: "/lecturers",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78
+    },
+    __self: this
+  }, "Alexis Sellier")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }, "In this lecture we explore the problem of consensus in peer-to-peer systems - or how networked peers come to agree on a single order of events. From early attempts at solving the problem, to the breakthrough discovered by the anonymous creator of the first crypto-currency, we'll learn about why consensus is interesting, where it is used today, and how it can be broken."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82
+    },
+    __self: this
+  }), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: this
+  }, "Smart Contracts - ", __jsx("a", {
+    href: "/lecturers",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: this
+  }, "Fran\xE7ois Guezengar")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84
+    },
+    __self: this
+  }, "You\u2019ll understand how to build and deploy a smart-contract on an Ethereum network. We\u2019ll first take a look at what are smart-contracts, then you\u2019ll write and deploy your own smart-contract in Solidity with the online IDE Remix."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: this
+  }), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88
+    },
+    __self: this
+  }, "Security - ", __jsx("a", {
+    href: "/lecturers",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88
+    },
+    __self: this
+  }, "Liz Steininger")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
+    },
+    __self: this
+  }, "The topic of security encompasses many elements of our technology functioning in a way that keeps us safe from threats. In this lecture, we will go through the exercise of threat modeling and talk about the common attacks to P2P networks. We will also explore how to reduce the risk of these threats to build and maintain P2P systems that meet their goals of confidentiality, integrity and reliability of the data they provide."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92
+    },
+    __self: this
+  }), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93
+    },
+    __self: this
+  }, "Primitives - ", __jsx("a", {
+    href: "/lecturers",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93
+    },
+    __self: this
+  }, "Lucas Vogelsang")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94
+    },
+    __self: this
+  }, "P2P software often relies on cryptography to validate behavior of other nodes, keep networks in sync and provide consensus. This session gives a broad overview starting with the very basic primitives such as hash functions, signature schemes but also more complex constructions such as zero knowledge proofs."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97
+    },
+    __self: this
+  }), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: this
+  }, "Decentralized Governance - ", __jsx("a", {
+    href: "/lecturers",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: this
+  }, "Kei Kreutler"), " and ", __jsx("a", {
+    href: "/lecturers",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: this
+  }, "Pat Rawson")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: this
+  }, "From its first use, the phrase Decentralized Autonomous Organization conjured an array of potentialities, including legal representation and management for natural systems to imaginaries of independent Skynet-like entities. Kei\u2019s lecture will include a brief working definition of a Decentralized Autonomous Organization (DAO), a history of their implementations to date in relation to decentralized organizing, and an overview of the dxDAO, a project initialized by Gnosis in early 2019 for community governance of software protocols. Some speculations on the future of DAOs will, of course, be interspersed throughout. Pat's lecture will discuss the emergence of collaborative networks and new institutional design patterns. In addition, Pat will present the DAOstack project, a blockchain governance platform that aims to facilitate the creation of superscalable cooperative structures.")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Partners);
+/* harmony default export */ __webpack_exports__["default"] = (Content);
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!**********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Flecturers&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Flecturers.js ***!
+  !*** multi next-client-pages-loader?page=%2Fresources&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Fresources.js ***!
   \**********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Flecturers&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Flecturers.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flecturers&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Flecturers.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fresources&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Fresources.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fresources&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Fresources.js!./");
 
 
 /***/ }),
@@ -10700,5 +10912,5 @@ module.exports = dll_129a35c7ec57967eb265;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=lecturers.js.map
+},[[2,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=resources.js.map
