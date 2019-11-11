@@ -58,6 +58,8 @@ header {
   }
 }
 
+// lists
+
 .specs {
   li {
     list-style: none;
@@ -69,6 +71,16 @@ header {
   }
 }
 
+.list {
+  margin-top: 12px;
+  li {
+    margin-left: 32px;
+    margin-bottom: 8px;
+    h4 {
+      font-family: "FoundersGroteskMono", courier, monospace;
+    }
+  }
+}
 
 //Lecturer
 .lecturers {
@@ -82,6 +94,27 @@ header {
 }
 
 .lecturer {
+  display: flex;
+  flex-direction: row;
+
+  p {
+    margin: 8px 0 24px;
+  }
+
+  img.avatar {
+    height: 64px;
+    width: 64px;
+    margin-right: 16px;
+  }
+
+  img.lecture-logo {
+    width: 160px;
+    // max-height: 72px;
+  }
+
+}
+
+.resource {
   display: flex;
   flex-direction: row;
 
