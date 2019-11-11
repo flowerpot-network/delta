@@ -47,15 +47,15 @@ const Partners = () => {
 
           <Lecturer
             name="Alexis Sellier"
-            bio={['Long time open source contributor, he recently co-founded ', <a href="http://oscoin.io" rel="noopener noreferrer" target="_blank">Oscoin</a>, ', a project which aims to create a sustainable economy around free software.']}
+            bio={['Long time open source contributor, he recently co-founded ', <a href="https://monadic.xyz/" rel="noopener noreferrer" target="_blank">Monadic</a>,'. Monadic current supports ', <a href="http://radicle.xyz/" rel="noopener noreferrer" target="_blank">Radicle</a>, ', a secure p2p network for code collaboration and value exchange.']}
             picUrl="https://avatars1.githubusercontent.com/u/40774?s=400&v=4"
-            logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566303650/accessP2P/opensourcecoin-logo-wide.svg"
+            logoUrl="https://res.cloudinary.com/dvargvav9/image/upload/v1573491183/Logo_Radicle1_qzveib.png"
           />
           <Lecturer
             name="Eleftherios Diakomichalis"
-            bio={['Eleftherios is the co-founder of ', <a href="http://oscoin.io" rel="noopener noreferrer" target="_blank">Oscoin</a>, '. He was an early employee at SoundCloud where he led the Data Science team. His scientific interests lie between network science and statistics, focusing on online communities.']}
+            bio={['Eleftherios is the co-founder of ', <a href="https://monadic.xyz/" rel="noopener noreferrer" target="_blank">Monadic</a>, ' which supports ',<a href="http://radicle.xyz/" rel="noopener noreferrer" target="_blank">Radicle</a>, ', a secure p2p network for code collaboration and value exchange. He was an early employee at SoundCloud where he led the Data Science team. His scientific interests lie between network science and statistics, focusing on online communities.']}
             picUrl="https://res.cloudinary.com/dvargvav9/image/upload/v1568990825/VsABh_tY_400x400_hwcjd4.jpg"
-            logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566303650/accessP2P/opensourcecoin-logo-wide.svg"
+            logoUrl="https://res.cloudinary.com/dvargvav9/image/upload/v1573491183/Logo_Radicle1_qzveib.png"
           />
           <Lecturer
             name="François Guezengar"
