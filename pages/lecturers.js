@@ -6,7 +6,7 @@ const Partners = () => {
     <Page>
       <div className="content">
         <h1>
-          Our lecturers
+          Our Lecturers
         </h1>
         <br/>
         <br/>
@@ -40,7 +40,7 @@ const Partners = () => {
 
           <Lecturer
             name="Lucas Vogelsang"
-            bio={['Lucas is co-founder and Head of Engineering at', <a href="https://centrifuge.io/" rel="noopener noreferrer" target="_blank">Centrifuge</a>, ' a Berlin-based company building a protocol for the financial supply chain. Lucas dropped out of college to start his first startup in 2009 in Switzerland. Since then he has worked at various startups around the world in different technical roles. He strongly believes in privacy, and that this technology can be a driving force to make the world a better place.']}
+            bio={['Lucas is co-founder and Head of Engineering at ', <a href="https://centrifuge.io/" rel="noopener noreferrer" target="_blank">Centrifuge</a>, ' a Berlin-based company building a protocol for the financial supply chain. Lucas dropped out of college to start his first startup in 2009 in Switzerland. Since then he has worked at various startups around the world in different technical roles. He strongly believes in privacy, and that this technology can be a driving force to make the world a better place.']}
             picUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566223068/accessP2P/Lucas_Centrifuge_Primitives.png"
             logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566223176/accessP2P/centrifuge-logo_ptxefx.png"
           />
@@ -74,6 +74,18 @@ const Partners = () => {
             bio={['Ram is a programmer living in Bangalore. He is interested in decentralization, privacy and security. In his free time, he likes to play with analog RF electronics and talk to strangers via amateur radio (his amateur radio callsign is VU3RDD) with morse code with home-built equipment. In the past, he worked on low level software like bootloaders and operating systems.']}
             picUrl = "https://res.cloudinary.com/dvargvav9/image/upload/v1573222222/ram_zakdfe.jpg"
             logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566556492/accessP2P/Logo_LeastAuthority_Security.png"
+          />
+          <Lecturer
+            name="Solana Larsen"
+            bio={[<a href = "https://twitter.com/solanasaurus?lang=en" rel="noopener noreferrer" target="_blank">Solana</a>,' is the editor of Mozilla’s Internet Health Report, which is an open source compilation of research about how the internet is evolving from year to year. Previously, she was the editor of Global Voices, an online community of writers and translators covering news and digital activism around the world. Solana is Danish-Puerto Rican based in Berlin.']}
+            picUrl = "https://res.cloudinary.com/dvargvav9/image/upload/v1574189562/Solana_IHR_yz9b3t.jpg"
+            logoUrl="https://res.cloudinary.com/dvargvav9/image/upload/v1574189610/Logo_Mozilla2_IHR_m1fihp.png"
+          />
+          <Lecturer
+            name="Kasia Odrozek"
+            bio={[<a href = "https://twitter.com/kaodro?lang=en" rel="noopener noreferrer" target="_blank">Kasia</a>,'  runs the production of Mozilla’s Internet Health Report, a compilation of research and stories explaining what’s key to a healthier internet. She is a long-time open internet and digital rights activist, product manager and lawyer. Before Mozilla, she worked on developing open culture and software at Wikimedia She is also a recipient of the Google News Initiative grant with her startup TapeWrite where she worked on alternative funding models for audio publishers.']}
+            picUrl = "https://res.cloudinary.com/dvargvav9/image/upload/v1574189556/Kasia_IHR_dfipjc.jpg"
+            logoUrl="https://res.cloudinary.com/dvargvav9/image/upload/v1574189610/Logo_Mozilla2_IHR_m1fihp.png"
           />
         </div>
       </div>
