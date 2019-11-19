@@ -54,6 +54,8 @@ export default function Index() {
         </p>
         <br />
         <p>Applications closed 22 September 2019. Cohort candidates can expect to hear back from us about their status by October 7.</p>
+        <br />
+        <p>Follow along with the Cohort by checking out our <a href = "/resources">Resources</a> page. It's continuously updated with lecture materials and related content.</p>
       </div>
     </Page>
   )
