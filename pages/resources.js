@@ -47,6 +47,16 @@ const Content = () => {
           <iframe width="560" height="315" src="https://www.youtube.com/embed/ZcmyE8cUQRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div className="resources">
           <Resource
+            title={['Mechanism Design - ',<a href= "/lecturers">Ele Diakomichalis</a>]}
+            description={['In this lecture we will provide an introduction to auction and mechanism design as well as a survey of the most relevant topics at the intersection of computer science and economics. We will use real case studies from web search auctions, cryptocurrencies & security applications.']}
+            contact={['M: ele@monadic.xyz',<br />,'T: ',<a href="https://twitter.com/lftherios">@lftherios</a>]}
+            materials= {['Lecture material: ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/0B7eiTIS0EEaVVkdMRWxxTVlfRGdZVGY1c3ZGbFNhOVh5SUZz/view?usp=sharing">slides</a>,' and ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/0B7eiTIS0EEaVRGIzOGM3MnRnNUo5YjdBX0tOVl9HMTlpQWRB/view?usp=sharing">summary</a>]}
+          />
+        </div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dj8FLVJLPjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br/>
+        <div className="resources">
+          <Resource
             title={['Network Address Translation - ',<a href= "/lecturers">Ram Muthukrishnan</a>]}
             description={['The web was originally designed to be decentralized so every participating computer (often referred to as an endpoint or a node), each assigned an IP address, could participate meaningfully in the network. However, as the usage of the web expanded beyond academia, the IPv4 addresses ran out. Among many ad hoc solutions to address the lack of IPv4 addresses was a system called Network Address Translation (NAT), which is a system where computers in a private network behind one internet facing router are assigned reusable private IP addresses. Even though IPv6 has been introduced, it has not taken off as anticipated by its supporters and the IPv4 + NAT solution still dominates today. Now, the inherent assumptions in the NAT makes it hard to run P2P applications, which act as both clients and servers of data. In this session, we will explore what NAT is, the different types of NAT, what the network topology for various NATs are and the challenges of discovering peers who are behind the NAT.']}
             contact={['M: ram@leastauthority.com',<br />,'W: ',<a href= "https://mastodon.radio/@vu3rdd">https://mastodon.radio/@vu3rdd</a>]}
@@ -87,16 +97,7 @@ const Content = () => {
           />
         </div>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/JhNSC_McKJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div className="resources">
-          <Resource
-            title={['Mechanism Design - ',<a href= "/lecturers">Ele Diakomichalis</a>]}
-            description={['In this lecture we will provide an introduction to auction and mechanism design as well as a survey of the most relevant topics at the intersection of computer science and economics. We will use real case studies from web search auctions, cryptocurrencies & security applications.']}
-            contact={['M: ele@monadic.xyz',<br />,'T: ',<a href="https://twitter.com/lftherios">@lftherios</a>]}
-            materials= {['Lecture material: ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/0B7eiTIS0EEaVVkdMRWxxTVlfRGdZVGY1c3ZGbFNhOVh5SUZz/view?usp=sharing">slides</a>,' and ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/0B7eiTIS0EEaVRGIzOGM3MnRnNUo5YjdBX0tOVl9HMTlpQWRB/view?usp=sharing">summary</a>]}
-          />
-        </div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/dj8FLVJLPjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br/>
+          <br/>
         <div className="resources">
           <Resource
             title={['Social P2P - ',<a href= "/lecturers">Sarah Friend</a>]}
