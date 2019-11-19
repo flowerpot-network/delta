@@ -10642,7 +10642,26 @@ function Index() {
       lineNumber: 56
     },
     __self: this
-  }, "Applications closed 22 September 2019. Cohort candidates can expect to hear back from us about their status by October 7.")));
+  }, "Applications closed 22 September 2019. Cohort candidates can expect to hear back from us about their status by October 7."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, "Follow along with the Cohort by checking out our ", __jsx("a", {
+    href: "/resources",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, "Resources"), " page. It's continuously updated with lecture materials and related content.")));
 }
 
 /***/ }),
