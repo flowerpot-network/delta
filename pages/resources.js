@@ -17,11 +17,11 @@ const Content = () => {
           <h3> 📚  Blockchain  101 </h3>
             <p> Part 1 - A Visual Demo: </p>
               <br />
-              <iframe width="560" height="315" src="https://www.youtube.com/watch?v=_160oMzblY8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/_160oMzblY8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <p> Part 2 - Public / Private Keys and Signing: </p>
               <br />
-              <iframe width="560" height="315" src="https://www.youtube.com/watch?v=xIDL_akeras" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xIDL_akeras" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <h3> 📝  Networking  101 </h3>
             <ul className="list">
               <li>
@@ -44,7 +44,7 @@ const Content = () => {
             additional= {['Additional resources ',<a href= "https://www.youtube.com/watch?v=ZcmyE8cUQRI">here</a>]}
           />
         </div>
-          <iframe width="560" height="315" src="https://www.youtube.com/watch?v=ZcmyE8cUQRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ZcmyE8cUQRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div className="resources">
           <Resource
             title={['Network Address Translation - ',<a href= "/lecturers">Ram Muthukrishnan</a>]}
@@ -95,7 +95,7 @@ const Content = () => {
             materials= {['Lecture material: ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/0B7eiTIS0EEaVVkdMRWxxTVlfRGdZVGY1c3ZGbFNhOVh5SUZz/view?usp=sharing">slides</a>,' and ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/0B7eiTIS0EEaVRGIzOGM3MnRnNUo5YjdBX0tOVl9HMTlpQWRB/view?usp=sharing">summary</a>]}
           />
         </div>
-          <iframe width="560" height="315" src="https://youtu.be/dj8FLVJLPjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dj8FLVJLPjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br/>
         <div className="resources">
           <Resource
@@ -105,7 +105,7 @@ const Content = () => {
             materials= {['Lecture material: coming soon']}
           />
         </div>
-          <iframe width="560" height="315" src="https://www.youtube.com/watch?v=ZY_cnpmBYkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ZY_cnpmBYkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br/>
         <div className="resources">
           <Resource
@@ -115,7 +115,7 @@ const Content = () => {
             materials= {['Lecture material: ',<a href= "https://drive.google.com/open?id=0B7eiTIS0EEaVVGdNNW1sYmFPNWljQ2VKMEM1SjZ2ZklZaFl3">slides</a>]}
           />
         </div>
-          <iframe width="560" height="315" src="https://youtu.be/ygKvjGqjpCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ygKvjGqjpCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br/>
         <div className="resources">
           <Resource
