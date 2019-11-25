@@ -98,7 +98,7 @@ const Content = () => {
             materials= {['Lecture material: ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/1JnG45Ll7lGNnC4iqIpwGUbpqy1g8yidP/view?usp=sharing">slides</a>]}
           />
         </div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/u1nlRS6tmO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
         <h3>Security - <a href= "/lecturers">Liz Steininger</a></h3>
         <p>
         The topic of security encompasses many elements of our technology functioning in a way that keeps us safe from threats. In this lecture, we will go through the exercise of threat modeling and talk about the common attacks to P2P networks. We will also explore how to reduce the risk of these threats to build and maintain P2P systems that meet their goals of confidentiality, integrity and reliability of the data they provide.
