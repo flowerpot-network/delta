@@ -5,32 +5,13 @@ const Content = () => {
   return (
     <Page>
       <div className="content">
-
-        <h1>
-          Lecture Materials and Related Content
-        </h1>
+        <h1>Lecture Materials and Related Content</h1>
           <br/>
             <p>
             Throughout the duration of the program, we will post the lecture material and other resources provided to our student cohort. This page will be updated frequently.
             </p>
-        <h2> Introductory Content </h2>
-          <h3> 📚  Blockchain  101 </h3>
-            <p><a href="https://youtu.be/_160oMzblY8">Part 1 - A Visual Demo</a></p>
-            <br />
-            <p><a href="https://www.youtube.com/watch?v=xIDL_akeras">Part 2 - Public / Private Keys and Signing</a></p>
-          <h3> 📝  Networking  101 </h3>
-            <ul className="list">
-              <li>
-                <a href= "https://files.ifi.uzh.ch/CSG/staff/bocek/extern/theses/BA-Jonas-Wagner.pdf">UDP Hole Punching in TomP2P for NAT Traversal</a>
-              </li>
-              <li>
-                <a href= "https://pdos.csail.mit.edu/papers/p2pnat.pdf">Peer-to-Peer Communication Across Network Address Translators</a>
-              </li>
-              <li>
-                <a href= "https://www.nrl.navy.mil/itd/chacs/sites/www.nrl.navy.mil.itd.chacs/files/pdfs/Dingledine%20etal2004.pdf">Tor: The Second-Generation Onion Router" Paper</a>
-              </li>
-            </ul>
-        <h2> Lecture Descriptions </h2>
+
+        <h2> Lecture Material </h2>
         <div className="resources">
           <Resource
             title={['Intro to P2P - ',<a href= "/lecturers">Stacco Troncoso</a>]}
@@ -39,7 +20,9 @@ const Content = () => {
             materials= {['Lecture material: ',<a href= "https://drive.google.com/file/d/105MOYl3BCCQIT96lL-87fQTIab3YUzaI/view">slides</a>,' and ',<a href= "https://drive.google.com/open?id=0B7eiTIS0EEaVcXFHN0pWZEtRQm1aOGd4eXhOUmF2V2lqVVIw">summary</a>]}
           />
         </div>
+
           <iframe width="560" height="315" src="https://www.youtube.com/embed/ZcmyE8cUQRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         <div className="resources">
           <Resource
             title={['Mechanism Design - ',<a href= "/lecturers">Ele Diakomichalis</a>]}
@@ -48,7 +31,9 @@ const Content = () => {
             materials= {['Lecture material: ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/0B7eiTIS0EEaVVkdMRWxxTVlfRGdZVGY1c3ZGbFNhOVh5SUZz/view?usp=sharing">slides</a>,' and ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/0B7eiTIS0EEaVRGIzOGM3MnRnNUo5YjdBX0tOVl9HMTlpQWRB/view?usp=sharing">summary</a>]}
           />
         </div>
+
           <iframe width="560" height="315" src="https://www.youtube.com/embed/dj8FLVJLPjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         <br/>
         <div className="resources">
           <Resource
@@ -98,22 +83,70 @@ const Content = () => {
             materials= {['Lecture material: ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/1JnG45Ll7lGNnC4iqIpwGUbpqy1g8yidP/view?usp=sharing">slides</a>]}
           />
         </div>
-          
-        <h3>Security - <a href= "/lecturers">Liz Steininger</a></h3>
-        <p>
-        The topic of security encompasses many elements of our technology functioning in a way that keeps us safe from threats. In this lecture, we will go through the exercise of threat modeling and talk about the common attacks to P2P networks. We will also explore how to reduce the risk of these threats to build and maintain P2P systems that meet their goals of confidentiality, integrity and reliability of the data they provide.
-        </p>
+        <div className="resources">
+          <Resource
+            title={['Security -  ',<a href= "/lecturers">Liz Steininger</a>]}
+            description={['The topic of security encompasses many elements of our technology functioning in a way that keeps us safe from threats. In this lecture, we will go through the exercise of threat modeling and talk about the common attacks to P2P networks. We will also explore how to reduce the risk of these threats to build and maintain P2P systems that meet their goals of confidentiality, integrity and reliability of the data they provide.']}
+            contact={['T: ',<a href="https://twitter.com/liz315?lang=en">@lix315</a>]}
+            materials= {['Lecture material: ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/1uNEk3QQQkaF4nWSA_K2r7Bqx1W0LIVIv/view?usp=sharing">slides</a>]}
+            additional= {['Additional material: ',
+            <ul className="list">
+              <li>
+                <a href= "http://eepurl.com/gHGF3L">Get notified next time we're organizing a cryptography / security workshop</a> (next one should be March, possibly sooner)
+              </li>
+              <li>
+                <a href= "https://www.youtube.com/watch?v=iRQw2RpQAVc">ZKSnarks Workshop by Mirco Richter</a> (our team member you met chiming in on Liz's talk)
+              </li>
+              <li>
+                <a href= "https://www.zeroknowledge.fm/">Interesting content</a> from our friends @ Zero Knowledge Podcast
+              </li>
+              <li>
+              If you're interested to check out some of our <a href= "https://leastauthority.com/blog/all-published-audits/">auditing work</a>
+              </li>
+            </ul>]}
+            />
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wkrWhEFABrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br/>
-        <h3>Primitives - <a href= "/lecturers">Lucas Vogelsang</a></h3>
-        <p>
-        P2P software often relies on cryptography to validate behavior of other nodes, keep networks in sync and provide consensus. This session gives a broad overview starting with the very basic primitives such as hash functions, signature schemes but also more complex constructions such as zero knowledge proofs.
-        </p>
+        <div className="resources">
+          <Resource
+            title={['Primitives - ',<a href= "/lecturers">Lucas Vogelsang</a>]}
+            description={['P2P software often relies on cryptography to validate behavior of other nodes, keep networks in sync and provide consensus. This session gives a broad overview starting with the very basic primitives such as hash functions, signature schemes but also more complex constructions such as zero knowledge proofs.']}
+            contact={['T: ',<a href="https://twitter.com/lucasvo?lang=en">@lucasvo</a>]}
+            materials= {['Lecture material:']}
+          />
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aH18Tc-evMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br/>
-        <h3>Decentralized Governance - <a href= "/lecturers">Kei Kreutler</a> and <a href= "/lecturers">Pat Rawson</a></h3>
-        <p>
-        From its first use, the phrase Decentralized Autonomous Organization conjured an array of potentialities, including legal representation and management for natural systems to imaginaries of independent Skynet-like entities. Kei’s lecture will include a brief working definition of a Decentralized Autonomous Organization (DAO), a history of their implementations to date in relation to decentralized organizing, and an overview of the dxDAO, a project initialized by Gnosis in early 2019 for community governance of software protocols. Some speculations on the future of DAOs will, of course, be interspersed throughout. Pat's lecture will discuss the emergence of collaborative networks and new institutional design patterns. In addition, Pat will present the DAOstack project, a blockchain governance platform that aims to facilitate the creation of superscalable cooperative structures.
-        </p>
-      </div>
+        <div className="resources">
+          <Resource
+            title={['Decentralized Governance - ',<a href= "/lecturers">Kei Kreutler & Pat Rawson</a>]}
+            description={['From its first use, the phrase Decentralized Autonomous Organization conjured an array of potentialities, including legal representation and management for natural systems to imaginaries of independent Skynet-like entities. Kei’s lecture will include a brief working definition of a Decentralized Autonomous Organization (DAO), a history of their implementations to date in relation to decentralized organizing, and an overview of the dxDAO, a project initialized by Gnosis in early 2019 for community governance of software protocols. Some speculations on the future of DAOs will, of course, be interspersed throughout. Pat`s lecture will discuss the emergence of collaborative networks and new institutional design patterns. In addition, Pat will present the DAOstack project, a blockchain governance platform that aims to facilitate the creation of superscalable cooperative structures.']}
+            contact={['T: ',<a href="https://twitter.com/keikreutler">@keikreutler</a>,' & ',<a href="https://twitter.com/papa_raw">@paparaw</a>]}
+            materials= {['Lecture material: ', <a href= "https://drive.google.com/a/monadic.xyz/file/d/1Gmw0M4hwzqoVnnGPD-kDThQ7bBkevgp7/view?usp=sharing">Kei's slides (on decentralized governance)</a>, ' & ', <a href= "https://drive.google.com/a/monadic.xyz/file/d/1mRbxB_o6GNoKq47IXMGbJpcS7tP_uYHQ/view?usp=sharing">Pat's slides (on DAOs)</a>]}
+          />
+        </div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/BVJTVzqmWxM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br/>
+
+      <h2> Introductory Content </h2>
+        <h3> 📚  Blockchain  101 </h3>
+          <p><a href="https://youtu.be/_160oMzblY8">Part 1 - A Visual Demo</a></p>
+          <br/>
+          <p><a href="https://www.youtube.com/watch?v=xIDL_akeras">Part 2 - Public / Private Keys and Signing</a></p>
+        <h3> 📝  Networking  101 </h3>
+          <ul className="list">
+            <li>
+              <a href= "https://files.ifi.uzh.ch/CSG/staff/bocek/extern/theses/BA-Jonas-Wagner.pdf">UDP Hole Punching in TomP2P for NAT Traversal</a>
+            </li>
+            <li>
+              <a href= "https://pdos.csail.mit.edu/papers/p2pnat.pdf">Peer-to-Peer Communication Across Network Address Translators</a>
+            </li>
+            <li>
+              <a href= "https://www.nrl.navy.mil/itd/chacs/sites/www.nrl.navy.mil.itd.chacs/files/pdfs/Dingledine%20etal2004.pdf">Tor: The Second-Generation Onion Router" Paper</a>
+            </li>
+          </ul>
+        </div>
     </Page>
   )
 }

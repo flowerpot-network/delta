@@ -13,29 +13,8 @@ export default function Index() {
           The Program
         </h3>
         <p>
-        During the month of November, the AccessP2P Program will bring together a cohort of students for weekly lectures from local P2P experts. From Bitcoin to Scuttlebutt, from governance to smart contracts, the program will highlight a spectrum of P2P theories, concepts, and technologies.
-
-        Lectures will be hosted by local projects and companies, giving the cohort the opportunity to grow their network within the Berlin P2P community.
+        During the month of November, the AccessP2P Program brought together a cohort of 10 students for weekly lectures from local P2P experts - at no cost to students. From Bitcoin to Scuttlebutt, from governance to smart contracts, the program highlighted a spectrum of P2P theories, concepts, and technologies. A total of <a href = "/resources">ten lectures</a>  were hosted by local projects and companies and gave the cohort the opportunity to grow their network within the Berlin P2P community.
         </p>
-        <br />
-        <br />
-        <ul className="specs">
-          <li>
-            <h4>
-              &#9889; 8+ lectures from experts in the peer-to-peer space
-            </h4>
-          </li>
-          <li>
-            <h4>
-              &#9889; Access to mentorship, career, and network opportunities
-            </h4>
-          </li>
-          <li>
-            <h4>
-              &#9889; No cost to participants
-            </h4>
-          </li>
-        </ul>
         <br />
         <h3>
           The Curriculum
@@ -47,13 +26,11 @@ export default function Index() {
         Read lecture descriptions <a href = "/resources">here</a>.
         </p>
         <h3>
-          Who should apply?
+          Who is AccessP2P for?
         </h3>
         <p>
-          We expect AccessP2P applicants to have some programming knowledge - whether it be self-taught or otherwise - but they are not required to be a traditional &apos;developer&apos;. We hope to host a cohort with varying levels of technical skills and different backgrounds. As such, we are committed to creating a safe space to answer questions and provide additional resources so that concepts presented are accessible to anybody interested in diving into P2P technology.
+          While AccessP2P participants have some programming knowledge - whether it be self-taught or otherwise - not all of them are traditional 'developers'. Given the varying levels of technical skills and different backgrounds, lectures designed material with the intention of being accessible to anybody interested in diving into P2P technology. Check out our <a href = "/resources">Resources</a> page for their lecture materials and related content.
         </p>
-        <br />
-        <p>Applications closed 22 September 2019. Cohort candidates can expect to hear back from us about their status by October 7.</p>
         <br />
         <p>Follow along with the Cohort by checking out our <a href = "/resources">Resources</a> page. It's continuously updated with lecture materials and related content.</p>
       </div>
