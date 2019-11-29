@@ -90,7 +90,20 @@ function Footer() {
       lineNumber: 19
     },
     __self: this
-  }, "FAQ")), " or feel free to ", __jsx("a", {
+  }, "FAQ")), ", follow us on ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "https://twitter.com/accessp2p",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "Twitter")), "  or feel free to ", __jsx("a", {
     href: "mailto:ange@monadic.xyz",
     __source: {
       fileName: _jsxFileName,
@@ -10426,128 +10439,32 @@ var Content = function Content() {
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }, "Lecture Materials and Related Content"), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 9
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 10
     },
     __self: this
   }, "Throughout the duration of the program, we will post the lecture material and other resources provided to our student cohort. This page will be updated frequently."), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 14
     },
     __self: this
-  }, " Introductory Content "), __jsx("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, " \uD83D\uDCDA  Blockchain  101 "), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "https://youtu.be/_160oMzblY8",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, "Part 1 - A Visual Demo")), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "https://www.youtube.com/watch?v=xIDL_akeras",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, "Part 2 - Public / Private Keys and Signing")), __jsx("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, " \uD83D\uDCDD  Networking  101 "), __jsx("ul", {
-    className: "list",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "https://files.ifi.uzh.ch/CSG/staff/bocek/extern/theses/BA-Jonas-Wagner.pdf",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, "UDP Hole Punching in TomP2P for NAT Traversal")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "https://pdos.csail.mit.edu/papers/p2pnat.pdf",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, "Peer-to-Peer Communication Across Network Address Translators")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "https://www.nrl.navy.mil/itd/chacs/sites/www.nrl.navy.mil.itd.chacs/files/pdfs/Dingledine%20etal2004.pdf",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }, "Tor: The Second-Generation Onion Router\" Paper"))), __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, " Lecture Descriptions "), __jsx("div", {
+  }, " Lecture Material "), __jsx("div", {
     className: "resources",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 15
     },
     __self: this
   }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -10555,7 +10472,7 @@ var Content = function Content() {
       href: "/lecturers",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36
+        lineNumber: 17
       },
       __self: this
     }, "Stacco Troncoso")],
@@ -10564,7 +10481,7 @@ var Content = function Content() {
       href: "https://twitter.com/StaccoP2P",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 19
       },
       __self: this
     }, "@staccoP2P")],
@@ -10572,20 +10489,20 @@ var Content = function Content() {
       href: "https://drive.google.com/file/d/105MOYl3BCCQIT96lL-87fQTIab3YUzaI/view",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 20
       },
       __self: this
     }, "slides"), ' and ', __jsx("a", {
       href: "https://drive.google.com/open?id=0B7eiTIS0EEaVcXFHN0pWZEtRQm1aOGd4eXhOUmF2V2lqVVIw",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 20
       },
       __self: this
     }, "summary")],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 16
     },
     __self: this
   })), __jsx("iframe", {
@@ -10597,14 +10514,14 @@ var Content = function Content() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 24
     },
     __self: this
   }), __jsx("div", {
     className: "resources",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 26
     },
     __self: this
   }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -10612,7 +10529,7 @@ var Content = function Content() {
       href: "/lecturers",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 28
       },
       __self: this
     }, "Ele Diakomichalis")],
@@ -10621,7 +10538,7 @@ var Content = function Content() {
       href: "https://twitter.com/lftherios",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47
+        lineNumber: 30
       },
       __self: this
     }, "@lftherios")],
@@ -10629,20 +10546,20 @@ var Content = function Content() {
       href: "https://drive.google.com/a/monadic.xyz/file/d/0B7eiTIS0EEaVVkdMRWxxTVlfRGdZVGY1c3ZGbFNhOVh5SUZz/view?usp=sharing",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 31
       },
       __self: this
     }, "slides"), ' and ', __jsx("a", {
       href: "https://drive.google.com/a/monadic.xyz/file/d/0B7eiTIS0EEaVRGIzOGM3MnRnNUo5YjdBX0tOVl9HMTlpQWRB/view?usp=sharing",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 31
       },
       __self: this
     }, "summary")],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 27
     },
     __self: this
   })), __jsx("iframe", {
@@ -10654,20 +10571,20 @@ var Content = function Content() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 35
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 37
     },
     __self: this
   }), __jsx("div", {
     className: "resources",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 38
     },
     __self: this
   }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -10675,7 +10592,7 @@ var Content = function Content() {
       href: "/lecturers",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 40
       },
       __self: this
     }, "Ram Muthukrishnan")],
@@ -10684,7 +10601,7 @@ var Content = function Content() {
       href: "https://mastodon.radio/@vu3rdd",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 42
       },
       __self: this
     }, "https://mastodon.radio/@vu3rdd")],
@@ -10692,20 +10609,20 @@ var Content = function Content() {
       href: "https://drive.google.com/file/d/16WDiJuTQ7mGn3aqjbzjem4eXiVf5pVGU/view",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 43
       },
       __self: this
     }, "slides"), ' and ', __jsx("a", {
       href: "https://rkrishnan.org/talks/accessp2p/talk.html",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 43
       },
       __self: this
     }, "summary")],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 39
     },
     __self: this
   })), __jsx("iframe", {
@@ -10717,20 +10634,20 @@ var Content = function Content() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 46
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 47
     },
     __self: this
   }), __jsx("div", {
     className: "resources",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 48
     },
     __self: this
   }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -10738,7 +10655,7 @@ var Content = function Content() {
       href: "/lecturers",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 50
       },
       __self: this
     }, "Sarah Friend")],
@@ -10747,7 +10664,7 @@ var Content = function Content() {
       href: "https://twitter.com/isthisanart_",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67
+        lineNumber: 52
       },
       __self: this
     }, " @isthisanart_")],
@@ -10755,20 +10672,20 @@ var Content = function Content() {
       href: "https://drive.google.com/open?id=1ZLjS2IK1aWC9sd7cuPAs052K1jKYy0e8",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 53
       },
       __self: this
     }, "slides"), ' and ', __jsx("a", {
       href: "https://www.are.na/isthisa/web-of-trust-isdy3f2dhok",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 53
       },
       __self: this
     }, "additional resources")],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 49
     },
     __self: this
   })), __jsx("iframe", {
@@ -10780,20 +10697,20 @@ var Content = function Content() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 56
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 57
     },
     __self: this
   }), __jsx("div", {
     className: "resources",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 58
     },
     __self: this
   }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -10801,7 +10718,7 @@ var Content = function Content() {
       href: "/lecturers",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75
+        lineNumber: 60
       },
       __self: this
     }, "Alexis Sellier")],
@@ -10810,7 +10727,7 @@ var Content = function Content() {
       href: "https://twitter.com/cloudhead",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77
+        lineNumber: 62
       },
       __self: this
     }, "@cloudhead")],
@@ -10818,13 +10735,13 @@ var Content = function Content() {
       href: "https://drive.google.com/open?id=0B7eiTIS0EEaVVGdNNW1sYmFPNWljQ2VKMEM1SjZ2ZklZaFl3",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78
+        lineNumber: 63
       },
       __self: this
     }, "slides")],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 59
     },
     __self: this
   })), __jsx("iframe", {
@@ -10836,20 +10753,20 @@ var Content = function Content() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 66
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 67
     },
     __self: this
   }), __jsx("div", {
     className: "resources",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 68
     },
     __self: this
   }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -10857,7 +10774,7 @@ var Content = function Content() {
       href: "/lecturers",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85
+        lineNumber: 70
       },
       __self: this
     }, "Fran\xE7ois Guezengar")],
@@ -10866,7 +10783,7 @@ var Content = function Content() {
       href: "https://gist.github.com/GrandSchtroumpf",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87
+        lineNumber: 72
       },
       __self: this
     }, "https://gist.github.com/GrandSchtroumpf")],
@@ -10874,13 +10791,13 @@ var Content = function Content() {
       href: "https://gist.github.com/GrandSchtroumpf/66ef1bd942eb72df6782955e70795cb4",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88
+        lineNumber: 73
       },
       __self: this
     }, "here")],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 69
     },
     __self: this
   })), __jsx("iframe", {
@@ -10892,20 +10809,20 @@ var Content = function Content() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 76
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 77
     },
     __self: this
   }), __jsx("div", {
     className: "resources",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 78
     },
     __self: this
   }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -10913,7 +10830,7 @@ var Content = function Content() {
       href: "/lecturers",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95
+        lineNumber: 80
       },
       __self: this
     }, "Solana Larsen & Kasia Odrozek")],
@@ -10921,28 +10838,28 @@ var Content = function Content() {
       href: "https://internethealthreport.org/2019/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96
+        lineNumber: 81
       },
       __self: this
     }, "here"), ' and the 2018 report ', __jsx("a", {
       href: "https://internethealthreport.org/2018/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96
+        lineNumber: 81
       },
       __self: this
     }, "here."), ' Check out ', __jsx("a", {
       href: "https://foundation.mozilla.org/en/initiatives/responsible-cs/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96
+        lineNumber: 81
       },
       __self: this
     }, "Mozilla Foundation funding resources"), ' and ', __jsx("a", {
       href: "https://www.grantfortheweb.org/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96
+        lineNumber: 81
       },
       __self: this
     }, "Grant for the Web.")],
@@ -10950,14 +10867,14 @@ var Content = function Content() {
       href: "https://twitter.com/solanasaurus?lang=en",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97
+        lineNumber: 82
       },
       __self: this
     }, "@solanasaurus"), ' & ', __jsx("a", {
       href: "https://twitter.com/kaodro?lang=en",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97
+        lineNumber: 82
       },
       __self: this
     }, "@kaodro")],
@@ -10965,111 +10882,354 @@ var Content = function Content() {
       href: "https://drive.google.com/a/monadic.xyz/file/d/1JnG45Ll7lGNnC4iqIpwGUbpqy1g8yidP/view?usp=sharing",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 83
       },
       __self: this
     }, "slides")],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 79
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "resources",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: this
+  }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: ['Security -  ', __jsx("a", {
+      href: "/lecturers",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 88
+      },
+      __self: this
+    }, "Liz Steininger")],
+    description: ['The topic of security encompasses many elements of our technology functioning in a way that keeps us safe from threats. In this lecture, we will go through the exercise of threat modeling and talk about the common attacks to P2P networks. We will also explore how to reduce the risk of these threats to build and maintain P2P systems that meet their goals of confidentiality, integrity and reliability of the data they provide.'],
+    contact: ['T: ', __jsx("a", {
+      href: "https://twitter.com/liz315?lang=en",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 90
+      },
+      __self: this
+    }, "@lix315")],
+    materials: ['Lecture material: ', __jsx("a", {
+      href: "https://drive.google.com/a/monadic.xyz/file/d/1uNEk3QQQkaF4nWSA_K2r7Bqx1W0LIVIv/view?usp=sharing",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 91
+      },
+      __self: this
+    }, "slides")],
+    additional: ['Additional material: ', __jsx("ul", {
+      className: "list",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 93
+      },
+      __self: this
+    }, __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 94
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "http://eepurl.com/gHGF3L",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 95
+      },
+      __self: this
+    }, "Get notified next time we're organizing a cryptography / security workshop"), " (next one should be March, possibly sooner)"), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 97
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "https://www.youtube.com/watch?v=iRQw2RpQAVc",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 98
+      },
+      __self: this
+    }, "ZKSnarks Workshop by Mirco Richter"), " (our team member you met chiming in on Liz's talk)"), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 100
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "https://www.zeroknowledge.fm/",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 101
+      },
+      __self: this
+    }, "Interesting content"), " from our friends @ Zero Knowledge Podcast"), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 103
+      },
+      __self: this
+    }, "If you're interested to check out some of our ", __jsx("a", {
+      href: "https://leastauthority.com/blog/all-published-audits/",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 104
+      },
+      __self: this
+    }, "auditing work")))],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
     },
     __self: this
   })), __jsx("iframe", {
     width: "560",
     height: "315",
-    src: "https://www.youtube.com/embed/u1nlRS6tmO4",
+    src: "https://www.youtube.com/embed/wkrWhEFABrA",
     frameborder: "0",
     allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 109
     },
     __self: this
-  }), __jsx("h3", {
+  }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 110
     },
     __self: this
-  }, "Security - ", __jsx("a", {
-    href: "/lecturers",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 102
-    },
-    __self: this
-  }, "Liz Steininger")), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 103
-    },
-    __self: this
-  }, "The topic of security encompasses many elements of our technology functioning in a way that keeps us safe from threats. In this lecture, we will go through the exercise of threat modeling and talk about the common attacks to P2P networks. We will also explore how to reduce the risk of these threats to build and maintain P2P systems that meet their goals of confidentiality, integrity and reliability of the data they provide."), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 106
-    },
-    __self: this
-  }), __jsx("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 107
-    },
-    __self: this
-  }, "Primitives - ", __jsx("a", {
-    href: "/lecturers",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 107
-    },
-    __self: this
-  }, "Lucas Vogelsang")), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 108
-    },
-    __self: this
-  }, "P2P software often relies on cryptography to validate behavior of other nodes, keep networks in sync and provide consensus. This session gives a broad overview starting with the very basic primitives such as hash functions, signature schemes but also more complex constructions such as zero knowledge proofs."), __jsx("br", {
+  }), __jsx("div", {
+    className: "resources",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 111
     },
     __self: this
-  }), __jsx("h3", {
+  }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: ['Primitives - ', __jsx("a", {
+      href: "/lecturers",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 113
+      },
+      __self: this
+    }, "Lucas Vogelsang")],
+    description: ['P2P software often relies on cryptography to validate behavior of other nodes, keep networks in sync and provide consensus. This session gives a broad overview starting with the very basic primitives such as hash functions, signature schemes but also more complex constructions such as zero knowledge proofs.'],
+    contact: ['T: ', __jsx("a", {
+      href: "https://twitter.com/lucasvo?lang=en",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 115
+      },
+      __self: this
+    }, "@lucasvo")],
+    materials: ['Lecture material:'],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 112
     },
     __self: this
-  }, "Decentralized Governance - ", __jsx("a", {
-    href: "/lecturers",
+  })), __jsx("iframe", {
+    width: "560",
+    height: "315",
+    src: "https://www.youtube.com/embed/aH18Tc-evMU",
+    frameborder: "0",
+    allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+    allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 119
     },
     __self: this
-  }, "Kei Kreutler"), " and ", __jsx("a", {
-    href: "/lecturers",
+  }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 120
     },
     __self: this
-  }, "Pat Rawson")), __jsx("p", {
+  }), __jsx("div", {
+    className: "resources",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 121
     },
     __self: this
-  }, "From its first use, the phrase Decentralized Autonomous Organization conjured an array of potentialities, including legal representation and management for natural systems to imaginaries of independent Skynet-like entities. Kei\u2019s lecture will include a brief working definition of a Decentralized Autonomous Organization (DAO), a history of their implementations to date in relation to decentralized organizing, and an overview of the dxDAO, a project initialized by Gnosis in early 2019 for community governance of software protocols. Some speculations on the future of DAOs will, of course, be interspersed throughout. Pat's lecture will discuss the emergence of collaborative networks and new institutional design patterns. In addition, Pat will present the DAOstack project, a blockchain governance platform that aims to facilitate the creation of superscalable cooperative structures.")));
+  }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: ['Decentralized Governance - ', __jsx("a", {
+      href: "/lecturers",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 123
+      },
+      __self: this
+    }, "Kei Kreutler & Pat Rawson")],
+    description: ['From its first use, the phrase Decentralized Autonomous Organization conjured an array of potentialities, including legal representation and management for natural systems to imaginaries of independent Skynet-like entities. Kei’s lecture will include a brief working definition of a Decentralized Autonomous Organization (DAO), a history of their implementations to date in relation to decentralized organizing, and an overview of the dxDAO, a project initialized by Gnosis in early 2019 for community governance of software protocols. Some speculations on the future of DAOs will, of course, be interspersed throughout. Pat`s lecture will discuss the emergence of collaborative networks and new institutional design patterns. In addition, Pat will present the DAOstack project, a blockchain governance platform that aims to facilitate the creation of superscalable cooperative structures.'],
+    contact: ['T: ', __jsx("a", {
+      href: "https://twitter.com/keikreutler",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 125
+      },
+      __self: this
+    }, "@keikreutler"), ' & ', __jsx("a", {
+      href: "https://twitter.com/papa_raw",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 125
+      },
+      __self: this
+    }, "@paparaw")],
+    materials: ['Lecture material: ', __jsx("a", {
+      href: "https://drive.google.com/a/monadic.xyz/file/d/1Gmw0M4hwzqoVnnGPD-kDThQ7bBkevgp7/view?usp=sharing",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 126
+      },
+      __self: this
+    }, "Kei's slides (on decentralized governance)"), ' & ', __jsx("a", {
+      href: "https://drive.google.com/a/monadic.xyz/file/d/1mRbxB_o6GNoKq47IXMGbJpcS7tP_uYHQ/view?usp=sharing",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 126
+      },
+      __self: this
+    }, "Pat's slides (on DAOs)")],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
+    },
+    __self: this
+  })), __jsx("iframe", {
+    width: "560",
+    height: "315",
+    src: "https://www.youtube.com/embed/BVJTVzqmWxM",
+    frameborder: "0",
+    allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+    allowfullscreen: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130
+    },
+    __self: this
+  }), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132
+    },
+    __self: this
+  }, " Introductory Content "), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133
+    },
+    __self: this
+  }, " \uD83D\uDCDA  Blockchain  101 "), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://youtu.be/_160oMzblY8",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134
+    },
+    __self: this
+  }, "Part 1 - A Visual Demo")), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    },
+    __self: this
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://www.youtube.com/watch?v=xIDL_akeras",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136
+    },
+    __self: this
+  }, "Part 2 - Public / Private Keys and Signing")), __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137
+    },
+    __self: this
+  }, " \uD83D\uDCDD  Networking  101 "), __jsx("ul", {
+    className: "list",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138
+    },
+    __self: this
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://files.ifi.uzh.ch/CSG/staff/bocek/extern/theses/BA-Jonas-Wagner.pdf",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140
+    },
+    __self: this
+  }, "UDP Hole Punching in TomP2P for NAT Traversal")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://pdos.csail.mit.edu/papers/p2pnat.pdf",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143
+    },
+    __self: this
+  }, "Peer-to-Peer Communication Across Network Address Translators")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 145
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://www.nrl.navy.mil/itd/chacs/sites/www.nrl.navy.mil.itd.chacs/files/pdfs/Dingledine%20etal2004.pdf",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 146
+    },
+    __self: this
+  }, "Tor: The Second-Generation Onion Router\" Paper")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Content);
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fresources&absolutePagePath=%2FUsers%2Fabbeytitcomb%2FDocuments%2FGitHub%2Faccess-p2p%2Fpages%2Fresources.js ***!
   \**********************************************************************************************************************************************************/
@@ -11092,5 +11252,5 @@ module.exports = dll_129a35c7ec57967eb265;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=resources.js.map
