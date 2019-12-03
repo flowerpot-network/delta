@@ -87,21 +87,15 @@ const Content = () => {
           <Resource
             title={['Security -  ',<a href= "/lecturers">Liz Steininger</a>]}
             description={['The topic of security encompasses many elements of our technology functioning in a way that keeps us safe from threats. In this lecture, we will go through the exercise of threat modeling and talk about the common attacks to P2P networks. We will also explore how to reduce the risk of these threats to build and maintain P2P systems that meet their goals of confidentiality, integrity and reliability of the data they provide.']}
-            contact={['T: ',<a href="https://twitter.com/liz315?lang=en">@lix315</a>]}
+            contact={['T: ',<a href="https://twitter.com/liz315?lang=en">@liz315</a>]}
             materials= {['Lecture material: ',<a href= "https://drive.google.com/a/monadic.xyz/file/d/1uNEk3QQQkaF4nWSA_K2r7Bqx1W0LIVIv/view?usp=sharing">slides</a>]}
             additional= {['Additional material: ',
             <ul className="list">
               <li>
-                <a href= "http://eepurl.com/gHGF3L">Get notified next time we're organizing a cryptography / security workshop</a> (next one should be March, possibly sooner)
+                <a href= "https://www.youtube.com/watch?v=iRQw2RpQAVc">ZKSnarks Workshop by Mirco Richter</a>
               </li>
               <li>
-                <a href= "https://www.youtube.com/watch?v=iRQw2RpQAVc">ZKSnarks Workshop by Mirco Richter</a> (our team member you met chiming in on Liz's talk)
-              </li>
-              <li>
-                <a href= "https://www.zeroknowledge.fm/">Interesting content</a> from our friends @ Zero Knowledge Podcast
-              </li>
-              <li>
-              If you're interested to check out some of our <a href= "https://leastauthority.com/blog/all-published-audits/">auditing work</a>
+              <a href= "https://leastauthority.com/blog/all-published-audits/">Example auditing work</a> by Least Authority
               </li>
             </ul>]}
             />
@@ -113,7 +107,6 @@ const Content = () => {
             title={['Primitives - ',<a href= "/lecturers">Lucas Vogelsang</a>]}
             description={['P2P software often relies on cryptography to validate behavior of other nodes, keep networks in sync and provide consensus. This session gives a broad overview starting with the very basic primitives such as hash functions, signature schemes but also more complex constructions such as zero knowledge proofs.']}
             contact={['T: ',<a href="https://twitter.com/lucasvo?lang=en">@lucasvo</a>]}
-            materials= {['Lecture material:']}
           />
         </div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/aH18Tc-evMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
