@@ -10915,7 +10915,7 @@ var Content = function Content() {
         lineNumber: 90
       },
       __self: this
-    }, "@lix315")],
+    }, "@liz315")],
     materials: ['Lecture material: ', __jsx("a", {
       href: "https://drive.google.com/a/monadic.xyz/file/d/1uNEk3QQQkaF4nWSA_K2r7Bqx1W0LIVIv/view?usp=sharing",
       __source: {
@@ -10938,52 +10938,26 @@ var Content = function Content() {
       },
       __self: this
     }, __jsx("a", {
-      href: "http://eepurl.com/gHGF3L",
+      href: "https://www.youtube.com/watch?v=iRQw2RpQAVc",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 95
       },
       __self: this
-    }, "Get notified next time we're organizing a cryptography / security workshop"), " (next one should be March, possibly sooner)"), __jsx("li", {
+    }, "ZKSnarks Workshop by Mirco Richter")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 97
       },
       __self: this
     }, __jsx("a", {
-      href: "https://www.youtube.com/watch?v=iRQw2RpQAVc",
+      href: "https://leastauthority.com/blog/all-published-audits/",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 98
       },
       __self: this
-    }, "ZKSnarks Workshop by Mirco Richter"), " (our team member you met chiming in on Liz's talk)"), __jsx("li", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 100
-      },
-      __self: this
-    }, __jsx("a", {
-      href: "https://www.zeroknowledge.fm/",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 101
-      },
-      __self: this
-    }, "Interesting content"), " from our friends @ Zero Knowledge Podcast"), __jsx("li", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 103
-      },
-      __self: this
-    }, "If you're interested to check out some of our ", __jsx("a", {
-      href: "https://leastauthority.com/blog/all-published-audits/",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 104
-      },
-      __self: this
-    }, "auditing work")))],
+    }, "Example auditing work"), " by Least Authority"))],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 87
@@ -10998,20 +10972,20 @@ var Content = function Content() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 103
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 104
     },
     __self: this
   }), __jsx("div", {
     className: "resources",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 105
     },
     __self: this
   }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -11019,7 +10993,7 @@ var Content = function Content() {
       href: "/lecturers",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 113
+        lineNumber: 107
       },
       __self: this
     }, "Lucas Vogelsang")],
@@ -11028,14 +11002,13 @@ var Content = function Content() {
       href: "https://twitter.com/lucasvo?lang=en",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 115
+        lineNumber: 109
       },
       __self: this
     }, "@lucasvo")],
-    materials: ['Lecture material:'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 106
     },
     __self: this
   })), __jsx("iframe", {
@@ -11047,20 +11020,20 @@ var Content = function Content() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 112
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 113
     },
     __self: this
   }), __jsx("div", {
     className: "resources",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 114
     },
     __self: this
   }, __jsx(components_Resources__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -11068,7 +11041,7 @@ var Content = function Content() {
       href: "/lecturers",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 123
+        lineNumber: 116
       },
       __self: this
     }, "Kei Kreutler & Pat Rawson")],
@@ -11077,14 +11050,14 @@ var Content = function Content() {
       href: "https://twitter.com/keikreutler",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 125
+        lineNumber: 118
       },
       __self: this
     }, "@keikreutler"), ' & ', __jsx("a", {
       href: "https://twitter.com/papa_raw",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 125
+        lineNumber: 118
       },
       __self: this
     }, "@paparaw")],
@@ -11092,20 +11065,20 @@ var Content = function Content() {
       href: "https://drive.google.com/a/monadic.xyz/file/d/1Gmw0M4hwzqoVnnGPD-kDThQ7bBkevgp7/view?usp=sharing",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 126
+        lineNumber: 119
       },
       __self: this
     }, "Kei's slides (on decentralized governance)"), ' & ', __jsx("a", {
       href: "https://drive.google.com/a/monadic.xyz/file/d/1mRbxB_o6GNoKq47IXMGbJpcS7tP_uYHQ/view?usp=sharing",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 126
+        lineNumber: 119
       },
       __self: this
     }, "Pat's slides (on DAOs)")],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 115
     },
     __self: this
   })), __jsx("iframe", {
@@ -11117,109 +11090,109 @@ var Content = function Content() {
     allowfullscreen: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 122
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 123
     },
     __self: this
   }), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 125
     },
     __self: this
   }, " Introductory Content "), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 126
     },
     __self: this
   }, " \uD83D\uDCDA  Blockchain  101 "), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 127
     },
     __self: this
   }, __jsx("a", {
     href: "https://youtu.be/_160oMzblY8",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 127
     },
     __self: this
   }, "Part 1 - A Visual Demo")), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 128
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 129
     },
     __self: this
   }, __jsx("a", {
     href: "https://www.youtube.com/watch?v=xIDL_akeras",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 129
     },
     __self: this
   }, "Part 2 - Public / Private Keys and Signing")), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 130
     },
     __self: this
   }, " \uD83D\uDCDD  Networking  101 "), __jsx("ul", {
     className: "list",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 131
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 132
     },
     __self: this
   }, __jsx("a", {
     href: "https://files.ifi.uzh.ch/CSG/staff/bocek/extern/theses/BA-Jonas-Wagner.pdf",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 133
     },
     __self: this
   }, "UDP Hole Punching in TomP2P for NAT Traversal")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 135
     },
     __self: this
   }, __jsx("a", {
     href: "https://pdos.csail.mit.edu/papers/p2pnat.pdf",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 136
     },
     __self: this
   }, "Peer-to-Peer Communication Across Network Address Translators")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
+      lineNumber: 138
     },
     __self: this
   }, __jsx("a", {
     href: "https://www.nrl.navy.mil/itd/chacs/sites/www.nrl.navy.mil.itd.chacs/files/pdfs/Dingledine%20etal2004.pdf",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146
+      lineNumber: 139
     },
     __self: this
   }, "Tor: The Second-Generation Onion Router\" Paper")))));
