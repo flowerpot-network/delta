@@ -11037,7 +11037,7 @@ var _jsxFileName = "/Users/julien-mini/code/oscoin/access-p2p/pages/updates/2.js
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var meta = {
-  releaseDate: new Date(2019, 12, 18),
+  releaseDate: new Date(2019, 11, 18),
   title: 'AccessP2P Program is a Wrap: Outcome and What’s Next'
 };
 function Index() {
@@ -11196,7 +11196,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 0:
 /*!************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fupdates&absolutePagePath=%2FUsers%2Fjulien-mini%2Fcode%2Foscoin%2Faccess-p2p%2Fpages%2Fupdates.js ***!
   \************************************************************************************************************************************************/
@@ -11219,5 +11219,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=updates.js.map
