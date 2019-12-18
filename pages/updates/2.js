@@ -1,7 +1,7 @@
 import Update from 'layouts/update'
 
 export const meta = {
-  releaseDate: new Date(2019, 12, 18),
+  releaseDate: new Date(2019, 11, 18),
   title: 'AccessP2P Program is a Wrap: Outcome and What’s Next'
 }
 
