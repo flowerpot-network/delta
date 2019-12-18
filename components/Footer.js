@@ -16,7 +16,7 @@ export default function Footer() {
       <br/>
       <br/>
       <p>
-        For more information, read our <Link href="/faq"><a>FAQ</a></Link>, follow us on <Link href="https://twitter.com/accessp2p"><a>Twitter</a></Link>  or feel free to <a href="mailto:ange@monadic.xyz">reach out</a>.
+        For more information, read our <Link href="/faq"><a>FAQ</a></Link>, follow us on <a href="https://twitter.com/accessp2p">Twitter</a>  or feel free to <a href="mailto:ange@monadic.xyz">reach out</a>.
       </p>
     </footer>)
 }
