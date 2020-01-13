@@ -33,33 +33,33 @@ const Partners = () => {
 
           <Lecturer
             name="Sarah Friend"
-            bio={[<a href="https://isthisa.com/" rel="noopener noreferrer" target="_blank">Sarah</a> , ' is an artist and software engineer, with special interest in blockchain and the p2p web. She is a proud Recurse Centre alum, and is one of the organizers of Our Networks, a conference on all aspects of the distributed web in Toronto.']}
+            bio={[<a href="https://isthisa.com/" rel="noopener noreferrer" target="_blank">Sarah</a> , ' is an artist and software engineer, with special interest in blockchain and the p2p web. She is a proud Recurse Centre alum, and is one of the organizers of ',<a href="https://ournetworks.ca/">Our Networks</a>,', a conference on all aspects of the distributed web in Toronto.']}
             picUrl="https://isthisa.com/static/Headshots/Headshot1.jpg"
             logoUrl=""
           />
 
           <Lecturer
             name="Lucas Vogelsang"
-            bio={['Lucas is co-founder and Head of Engineering at ', <a href="https://centrifuge.io/" rel="noopener noreferrer" target="_blank">Centrifuge</a>, ' a Berlin-based company building a protocol for the financial supply chain. Lucas dropped out of college to start his first startup in 2009 in Switzerland. Since then he has worked at various startups around the world in different technical roles. He strongly believes in privacy, and that this technology can be a driving force to make the world a better place.']}
+            bio={['Lucas is a co-founder and Head of Engineering at ',<a href="https://centrifuge.io/" rel="noopener noreferrer" target="_blank">Centrifuge</a>,', a Berlin-based company building a protocol for the financial supply chain. Lucas dropped out of college to start his first startup in 2009 in Switzerland. Since then, he has worked at various startups around the world in different technical roles. He strongly believes in privacy and that this technology can be a driving force to make the world a better place.']}
             picUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566223068/accessP2P/Lucas_Centrifuge_Primitives.png"
             logoUrl="https://res.cloudinary.com/juliendonck/image/upload/v1566223176/accessP2P/centrifuge-logo_ptxefx.png"
           />
 
           <Lecturer
             name="Alexis Sellier"
-            bio={['Long time open source contributor, he recently co-founded ', <a href="https://monadic.xyz/" rel="noopener noreferrer" target="_blank">Monadic</a>,'. Monadic current supports ', <a href="http://radicle.xyz/" rel="noopener noreferrer" target="_blank">Radicle</a>, ', a secure p2p network for code collaboration and value exchange.']}
+            bio={['Long time open source contributor, he recently co-founded ', <a href="https://monadic.xyz/" rel="noopener noreferrer" target="_blank">Monadic</a>,'. Monadic currently supports ', <a href="http://radicle.xyz/" rel="noopener noreferrer" target="_blank">Radicle</a>, ', a secure P2P network for code collaboration and value exchange.']}
             picUrl="https://avatars1.githubusercontent.com/u/40774?s=400&v=4"
             logoUrl="https://res.cloudinary.com/dvargvav9/image/upload/v1573491183/Logo_Radicle1_qzveib.png"
           />
           <Lecturer
             name="Eleftherios Diakomichalis"
-            bio={['Eleftherios is the co-founder of ', <a href="https://monadic.xyz/" rel="noopener noreferrer" target="_blank">Monadic</a>, ' which supports ',<a href="http://radicle.xyz/" rel="noopener noreferrer" target="_blank">Radicle</a>, ', a secure p2p network for code collaboration and value exchange. He was an early employee at SoundCloud where he led the Data Science team. His scientific interests lie between network science and statistics, focusing on online communities.']}
+            bio={['Eleftherios is the co-founder of ', <a href="https://monadic.xyz/" rel="noopener noreferrer" target="_blank">Monadic</a>, ' which supports ',<a href="http://radicle.xyz/" rel="noopener noreferrer" target="_blank">Radicle</a>, ', a secure P2P network for code collaboration and value exchange. He was an early employee at SoundCloud where he led the Data Science team. His scientific interests lie between network science and statistics, focusing on online communities.']}
             picUrl="https://res.cloudinary.com/dvargvav9/image/upload/v1568990825/VsABh_tY_400x400_hwcjd4.jpg"
             logoUrl="https://res.cloudinary.com/dvargvav9/image/upload/v1573491183/Logo_Radicle1_qzveib.png"
           />
           <Lecturer
             name="François Guezengar"
-            bio={['François is a blockchain engineer working at the ',<a href = "https://www.ethereum.org/" rel="noopener noreferrer" target="_blank">Ethereum Foundation</a>,' on the project Remix IDE. He is the co-organizer of the Ethereum Meetup group in Berlin. He focuses his work on building tools to simplify developer experience and simplify learning curve.']}
+            bio={['François is a blockchain engineer working at the ',<a href = "https://www.ethereum.org/" rel="noopener noreferrer" target="_blank">Ethereum Foundation</a>,' on the project ',<a href="https://remix.ethereum.org/">Remix IDE</a>,'.  He is the co-organizer of the Ethereum Meetup group in Berlin. He focuses his work on building tools to simplify the developer experience and learning curve.']}
             picUrl = "https://avatars2.githubusercontent.com/u/8143464?s=400&v=4"
             logoUrl="https://ethereum.foundation/images/avatar-icon.png"
           />

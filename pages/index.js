@@ -23,16 +23,15 @@ export default function Index() {
         <Table />
         <br />
         <p>
-        Read lecture descriptions <a href = "/resources">here</a>.
+        View lecture descriptions, videos, and materials <a href = "/resources">here</a>.
         </p>
         <h3>
           Who is AccessP2P for?
         </h3>
         <p>
-          While AccessP2P participants have some programming knowledge - whether it be self-taught or otherwise - not all of them are traditional 'developers'. Given the varying levels of technical skills and different backgrounds, lectures designed material with the intention of being accessible to anybody interested in diving into P2P technology. Check out our <a href = "/resources">Resources</a> page for their lecture materials and related content.
+          While AccessP2P participants have some programming knowledge - whether it be self-taught or otherwise - not all of them are traditional 'developers'. Given the varying levels of technical skills and different backgrounds, lecturers designed material with the intention of being accessible to anybody interested in diving into P2P technology. Check out our <a href = "/resources">Resources</a> page for their lecture materials and related content.
         </p>
         <br />
-        <p>Follow along with the Cohort by checking out our <a href = "/resources">Resources</a> page. It's continuously updated with lecture materials and related content.</p>
       </div>
     </Page>
   )
