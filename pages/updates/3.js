@@ -8,7 +8,11 @@ export const meta = {
 export default function Index() {
   return (
     <Update meta={meta}>
-      <p> The following blog post was written by Emily Woods, a member of the AccessP2P cohort. She's graciously allowed us to repost it here, but the original can be found on her <a href="https://emilywoods.me/blog/social-p2p/">blog</a>.</p>
+      <sub>The following blog post was written by Emily Woods, a member of the AccessP2P cohort. She's graciously allowed us to repost it here, but the original can be found on her <a href="https://emilywoods.me/blog/social-p2p/">blog</a>.</sub>
+
+      <br/>
+      <br/>
+      <br/>
 
       <p> In November 2019, I attended <a href="https://accessp2p.xyz/why">AccessP2P</a>. This was formed as a series of lectures, aimed at introducing a group of people to peer-to-peer (P2P) technologies and concepts.</p>
 
