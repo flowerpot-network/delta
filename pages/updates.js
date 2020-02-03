@@ -59,6 +59,7 @@ const getUpdates = async () => {
   return updates
 }
 
+
 Updates.getInitialProps = async () => {
   return {
     updates: await getUpdates()

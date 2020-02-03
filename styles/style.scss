@@ -188,6 +188,16 @@ header {
   margin-bottom: 32px;
 }
 
+.img_wrapper img {
+  max-width: 60%;
+  height: auto;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
 //FAQ
 
 .question {

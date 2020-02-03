@@ -21,8 +21,6 @@ const Content = () => {
           </p>
           <p className="answer">
             AccessP2P is organized by a few individuals at <a href="https://monadic.xyz"> Monadic</a>. However, the initiative wouldn’t be possible without the commitment of <a href="http://accessp2p.xyz/lecturers">individuals</a> - the majority of whom are contributors to the Berlin P2P community - who are creating original, accessible materials for the program. If you have questions about organization, logistics, or content, feel free to contact <a href="mailto:hello@accessp2p.xyz">us</a>.
-
-            AccessP2P is organized by a few individuals at . However, the initiative wouldn’t be possible without the commitment of  - all contributors to the Berlin P2P community - who are creating original, accessible materials for the program. If you have questions about organization, logistics, or content, feel free to contact .
           </p>
           <p className="question">
             Why does AccessP2P exist?
@@ -106,7 +104,7 @@ const Content = () => {
             Where can I learn more about AccessP2P?
           </p>
           <p className="answer">
-            If you can’t find answers to your questions via this FAQ or elsewhere on this website, feel free to contact <a href="mailto:hello@accessp2p.xyz">us</a>
+            If you can’t find answers to your questions via this FAQ or elsewhere on this website, feel free to contact <a href="mailto:hello@accessp2p.xyz">us</a>.
           </p>
           <p className="question">
             Do you deliver a certificate upon completion of the program?
