@@ -22,19 +22,28 @@ export default function Index() {
 
       <p>A “social network” is a familiar concept to most of us these days. When hearing the term, what pops into your head? It’s likely to be the image of a small blue bird or white “f” on a deep blue background. While social media networks may have seized the term somewhat, in its essence a social network is a network of interconnected humans, online or offline. Many of the social networks we log onto every day, are intended to mirror the way that people interact in the “real-world”: social media networks coerce real-life connections into something quantifiable.</p>
 
-      <img src="https://emilywoods.me/assets/images/social_p2p/network.png" alt="accessP2P stats"/>
+      <div className="img_wrapper">
+        <img src="https://emilywoods.me/assets/images/social_p2p/network.png"/>
+      </div>
+
       <p>Before delving into social networks, it helps to know what is meant by “a network”. A network is a graph, meaning there are entities (nodes) which have connections between them (edges). A graph can be directed or undirected, which means a connection goes one-way or both ways. To illustrate this, Sarah referred to the way users interact on Twitter, where one person follows another and that person does not need to follow back (directed graph), and compared it with how users interact on a platform like Facebook, where “friending” an individual requires consent by both individuals (undirected graph).</p>
 
-      <img src="https://emilywoods.me/assets/images/social_p2p/graph_direction.png"/>
+      <div className="img_wrapper">
+        <img src="https://emilywoods.me/assets/images/social_p2p/graph_direction.png"/>
+      </div>
 
       <p>Sarah then continued by describing a couple of specific types of networks: <a href="https://en.wikipedia.org/wiki/Small-world_network">small world</a> and <a href="https://en.wikipedia.org/wiki/Scale-free_network">scale-free</a>. In a small world graph, some nodes are “hubs” meaning that they have a higher number of connections than others. As a result of having a number of highly connected nodes, these small world networks can provide shorter paths between nodes. Sarah likened this to having an extroverted person in the network: someone with a lot of friends and who does a lot of the social heavy-lifting, who as a consequence, will reduce the number of connections between other individuals. For ease of understanding, Sarah suggested a lattice as the opposite of a small world graph, given that each node has an evenly distributed number of neighbours, ie. connections.</p>
 
-      <img src="https://emilywoods.me/assets/images/social_p2p/small_world.png"/>
+      <div className="img_wrapper">
+        <img src="https://emilywoods.me/assets/images/social_p2p/small_world.png"/>
+      </div>
 
       <p>A scale-free network, can also be referred to as a power-law network, given that this type of network asymptotically follows a power-law distribution. This describes the relationship between the number of nodes and the number of connections a node will have, and demonstrates the fraction of nodes which are likely to have a particular degree of connectivity. A characteristic of scale-free networks, it is that it can be relatively common for nodes to have a number of connections, which exceeds the average number of connections i.e. a small number of well-
       connected nodes may dominate the network and result in a centralised structure. Social networks can be scale-free.</p>
 
-      <img src="https://emilywoods.me/assets/images/social_p2p/scale_free.png"/>
+      <div className="img_wrapper">
+        <img src="https://emilywoods.me/assets/images/social_p2p/scale_free.png"/>
+      </div>
 
       <p>In summary, social networks are just another type of graph, where the nodes are people and the edges are the means by which they connect. While this may seem relatively simple to understand, there is a lot more that goes on within social media platforms, beyond the user interface and the relationship-graphs we can visualise for ourselves. [Aside: while carrying out an exercise in threat modelling of a P2P network during the <a href="https://www.youtube.com/watch?v=wkrWhEFABrA&feature=youtu.be">Access P2P Security lecture</a>, it provided a little context into what kind of information which can be deduced from relationships in a network, if someone wants to take advantage of it.]</p>
 
@@ -59,11 +68,11 @@ export default function Index() {
 
       <h4>Links and references</h4>
 
-      <ul>
-      <li>A recording of the lecture as well as many of the supporting materials, can be found <a href="http://accessp2p.xyz/resources">here</a>.</li>
-      <li>Here is a helpful guide for getting started with <a href="https://docs.datproject.org/docs/intro">Dat</a>s.</li>
+      <ul className="list">
+      <li>A recording of the lecture as well as many of the supporting lecture materials, can be found <a href="http://accessp2p.xyz/resources">here</a>.</li>
+      <li>Here is a helpful guide for getting started with <a href="https://docs.datproject.org/docs/intro">Dat</a>.</li>
       </ul>
-
+      <br />
       <h4>Acknowledgements</h4>
       <p>Thank you to <a href="https://twitter.com/angedupre">Ange</a> for reviewing this post, and also for the wonderful work she did with overseeing the entire AccessP2P programme.</p>
       <p>Thank you to <a href="https://isthisa.com/">Sarah</a> for reviewing this post and for sharing her knowledge on social P2P!</p>
