@@ -47,7 +47,7 @@ const getFiles = () => {
 
 const getUpdates = async () => {
   const files = await getFiles()
-  const updates = files.reduce(collection, file) => {
+  const updates = files.reduce((collection, file) => {
     collection.push({
       meta: require(`../pages/updates/${file}`).meta,
       id: file.replace(/\.[^/.]+$/, '')
