@@ -10,3 +10,8 @@
 a {
   @apply text-blue-600;
 }
+
+.balance,
+a {
+  @apply text-blue-600;
+}
