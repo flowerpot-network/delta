@@ -9,11 +9,23 @@ import newBoxClient, { privateGet, privateSet } from '../lib/box'
 
 // https://github.com/login/oauth/access_token
 
-const OrgBlock = ({ name, initAddress, orgSlug }) => {
+const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
   const [input, setInput] = useState(initAddress)
   const [address, setAddress] = useState(null)
 
-  // const box = await Box.openBox('0x12345...abcde', ethereumProvider)
+  const onSubmit = async () => {
+    const { space } = await newBoxClient(accountAddress, window.ethereum)
+    await privateSet(space, orgSlug, input)
+  }
+
+  useEffect(() => {
+    const fetch = async () => {
+      const { space } = await newBoxClient(accountAddress, window.ethereum)
+      const data = await privateGet(space, orgSlug)
+      console.log(data)
+    }
+    fetch()
+  })
 
   return (
     <div className="border rounded w-1/2 flex-wrap mx-2 p-3">
@@ -56,18 +68,22 @@ const Account = props => {
     // console.log(access_oken)
 
     console.log('hi', props.access_token)
-    setAccessToken(props.access_token)
+    // setAccessToken(props.access_token)
 
-    const fetchOrgs = async accessToken => {
-      // const { space } = await newBoxClient(address, window.ethereum)
-
-      const url = `https://api.github.com/user/orgs?access_token=${accessToken}`
+    const fetchOrgs = async () => {
+      console.log(props, accessToken)
+      // setAddress(props.accounts[0])
+      const { space } = await newBoxClient(props.accounts[0], window.ethereum)
+      console.log(space)
+      // await privateSet(space, `gat_${address}`, accessToken)
+      const url = `https://api.github.com/user/orgs?access_token=${props.access_token}`
+      console.log(url)
       const res = await request.get(url).set('User-Agent', 'Delta')
+      console.log(res.body)
       setOrgs(res.body)
-      console.log(orgs)
     }
 
-    fetchOrgs(props.access_token)
+    fetchOrgs()
 
     // const orgs = await fetchOrgs(props.access_token)
     // console.log(orgs)
@@ -123,6 +139,7 @@ const Account = props => {
             {orgs &&
               orgs.map(org => (
                 <OrgBlock
+                  accountAddress={address}
                   key={org.login}
                   name={org.login}
                   orgSlug={org.login}
