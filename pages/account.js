@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Layout from '../components/Layout'
 import request from 'superagent'
-import Redis from '../store/redis'
+// import Redis from '../store/redis'
 // http://localhost:3000/account?code=6f15d492026b24df701e
 
 // https://github.com/login/oauth/access_token
