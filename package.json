@@ -1,40 +1,21 @@
 {
-  "name": "accessp2p.xyz",
-  "version": "1.0.0",
-  "description": "The accessP2P website",
-  "main": "index.js",
   "scripts": {
-    "build": "NODE_PATH=. next build",
-    "dev": "NODE_PATH=. next",
-    "export": "yarn build && NODE_PATH=. next export -o docs",
-    "deploy": "yarn export && sh ./deploy.sh"
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/monadic.xyz/access-p2p.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/monadic.xyz/access-p2p/issues"
-  },
-  "homepage": "https://github.com/monadic.xyz/access-p2p#readme",
   "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
-    "next": "^9.0.2",
-    "node-sass": "^4.12.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.0.2",
-    "babel-plugin-preval": "^3.0.1",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "file-loader": "^4.2.0",
-    "prettier": "^1.18.2"
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "autoprefixer": "^9.7.4",
+    "babel-plugin-preval": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.2.0",
+    "postcss-import": "^12.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "superagent": "^5.2.1",
+    "tailwindcss": "^1.1.4"
   }
 }
