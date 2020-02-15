@@ -1,6 +1,6 @@
-import Layout from "../components/Layout";
+import Layout from '../components/Layout'
 
-export default async () => (
+export default () => (
   <Layout>
     <h1 className="text-3xl font-bold block mb-6">Get started</h1>
 
@@ -19,4 +19,4 @@ export default async () => (
       </button>
     </form>
   </Layout>
-);
+)

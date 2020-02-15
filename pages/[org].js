@@ -1,8 +1,8 @@
-import Layout from "../components/Layout";
-import Error from "next/error";
-import fetch from "isomorphic-unfetch";
-import request from "superagent";
-import { useRouter } from "next/router";
+import Layout from '../components/Layout'
+import Error from 'next/error'
+import fetch from 'isomorphic-unfetch'
+import request from 'superagent'
+import { useRouter } from 'next/router'
 
 function Org({
   errorCode,
@@ -13,13 +13,12 @@ function Org({
   html_url,
   ...props
 }) {
-  console.log(props);
-  const router = useRouter();
-  const { org } = router.query;
+  console.log(props)
+  const router = useRouter()
+  const { org } = router.query
 
   if (errorCode) {
-    // return <div>404</div>;
-    return <Error statusCode={errorCode} />;
+    return <Error statusCode={errorCode} />
   }
 
   return (
@@ -40,28 +39,28 @@ function Org({
         </li>
       </ul>
     </Layout>
-  );
+  )
 }
 
 Org.getInitialProps = async ctx => {
-  console.log(process.env);
+  console.log(process.env)
 
   try {
     const res = await request
       .get(`https://api.github.com/orgs/${ctx.query.org}`)
-      .set("User-Agent", "Delta")
-      .auth("milesalex", process.env.GITHUB_TOKEN);
+      .set('User-Agent', 'Delta')
+      .auth('milesalex', process.env.GITHUB_TOKEN)
 
     if (res.status > 400) {
-      return { errorCode: res.status };
+      return { errorCode: res.status }
     }
 
-    return res.body;
+    return res.body
   } catch (err) {
     return {
       errorCode: 404
-    };
+    }
   }
-};
+}
 
-export default Org;
+export default Org
