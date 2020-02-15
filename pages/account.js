@@ -1,6 +1,9 @@
-import { useState } from 'react'
+import React, { Component, useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import request from 'superagent'
+import Web3Container from '../lib/Web3Container'
+import newBoxClient, { privateGet, privateSet } from '../lib/box'
+
 // import Redis from '../store/redis'
 // http://localhost:3000/account?code=6f15d492026b24df701e
 
@@ -9,6 +12,8 @@ import request from 'superagent'
 const OrgBlock = ({ name, initAddress, orgSlug }) => {
   const [input, setInput] = useState(initAddress)
   const [address, setAddress] = useState(null)
+
+  // const box = await Box.openBox('0x12345...abcde', ethereumProvider)
 
   return (
     <div className="border rounded w-1/2 flex-wrap mx-2 p-3">
@@ -22,10 +27,7 @@ const OrgBlock = ({ name, initAddress, orgSlug }) => {
           value={address}
           onChange={e => setInput(e.target.value)}
         />
-        <button
-          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          type="button"
-        >
+        <button className="btn" type="button">
           Generate Button
         </button>
       </form>
@@ -45,30 +47,110 @@ const OrgBlock = ({ name, initAddress, orgSlug }) => {
   )
 }
 
-function Account(props) {
-  return (
-    <Layout>
-      <h1 className="text-3xl font-bold block mb-6">Get started</h1>
+const Account = props => {
+  const [address, setAddress] = useState('')
+  const [accessToken, setAccessToken] = useState('')
+  const [orgs, setOrgs] = useState(null)
 
-      <a href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=http://localhost:3000/account&scope=read:org,user">
-        Github auth
-      </a>
-      <div className="flex -mx-2">
-        {props.orgs &&
-          props.orgs.map(org => (
-            <OrgBlock name={org.login} orgSlug={org.login} />
-          ))}
-      </div>
-    </Layout>
+  useEffect(() => {
+    // console.log(access_oken)
+
+    console.log('hi', props.access_token)
+    setAccessToken(props.access_token)
+
+    const fetchOrgs = async accessToken => {
+      // const { space } = await newBoxClient(address, window.ethereum)
+
+      const url = `https://api.github.com/user/orgs?access_token=${accessToken}`
+      const res = await request.get(url).set('User-Agent', 'Delta')
+      setOrgs(res.body)
+      console.log(orgs)
+    }
+
+    fetchOrgs(props.access_token)
+
+    // const orgs = await fetchOrgs(props.access_token)
+    // console.log(orgs)
+  }, [props.access_token])
+
+  const onEnable = async () => {
+    const accounts = await window.ethereum.enable()
+    setAddress(accounts[0])
+  }
+
+  // static async getDerivedStateFromProps(nextProps, prevState) {
+  //   console.log(nextProps)
+
+  //   const { space } = await newBoxClient(prevState.address, window.ethereum)
+  //   await privateSet(
+  //     space,
+  //     `github_${prevState.address}`,
+  //     nextProps.access_token
+  //   )
+
+  //   return {
+  //     space,
+  //     accessToken: nextProps.access_token
+  //   }
+  // }
+
+  return (
+    <Web3Container
+      renderLoading={() => <div>Loading Dapp Page...</div>}
+      render={({ web3, accounts, contract }) => (
+        // <Dapp accounts={accounts} contract={contract} web3={web3} />
+
+        <Layout>
+          <h1 className="text-3xl font-bold block mb-6">Get started</h1>
+
+          {!props.accounts[0] && (
+            <button
+              onClick={onEnable}
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Connect Metamask
+            </button>
+          )}
+
+          <a
+            href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=http://localhost:3000/account&scope=read:org,user"
+            className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Login with GitHub
+          </a>
+
+          <div className="flex -mx-2">
+            {orgs &&
+              orgs.map(org => (
+                <OrgBlock
+                  key={org.login}
+                  name={org.login}
+                  orgSlug={org.login}
+                />
+              ))}
+          </div>
+        </Layout>
+      )}
+    />
   )
 }
 
-Account.getInitialProps = async ctx => {
+const Wrapper = props => (
+  <Web3Container
+    renderLoading={() => <div>Loading Dapp Page...</div>}
+    render={({ web3, accounts }) => (
+      <Account accounts={accounts} web3={web3} {...props} />
+    )}
+  />
+)
+
+Wrapper.getInitialProps = async ctx => {
   const { code } = ctx.query
 
   if (!code) return {}
 
   try {
+    // if (!accessToken) {
     const res = await request
       .post('https://github.com/login/oauth/access_token')
       .send({
@@ -78,11 +160,10 @@ Account.getInitialProps = async ctx => {
       })
 
     const { access_token } = res.body
-    const url = `https://api.github.com/user/orgs?access_token=${access_token}`
-    const res1 = await request.get(url).set('User-Agent', 'Delta')
 
     return {
-      orgs: res1.body
+      // orgs: res1.body,
+      access_token
     }
   } catch (err) {
     console.log('hi', err.message, err.stack)
@@ -90,4 +171,4 @@ Account.getInitialProps = async ctx => {
   }
 }
 
-export default Account
+export default Wrapper
