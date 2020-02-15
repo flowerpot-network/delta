@@ -1,11 +1,12 @@
 /* purgecss start ignore */
-@import "tailwindcss/base";
+@import 'tailwindcss/base';
 /* purgecss end ignore */
 
-@import "tailwindcss/components";
+@import 'tailwindcss/components';
 
-@import "tailwindcss/utilities";
+@import 'tailwindcss/utilities';
 
-.link {
+.link,
+a {
   @apply text-blue-600;
 }
