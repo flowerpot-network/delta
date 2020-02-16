@@ -1,6 +1,5 @@
 import Layout from '../components/Layout'
 import Error from 'next/error'
-import fetch from 'isomorphic-unfetch'
 import request from 'superagent'
 import { useRouter } from 'next/router'
 import Repo from '../components/Repo'
@@ -8,6 +7,17 @@ import Balance from '../components/Balance'
 import { ethers } from 'ethers'
 
 function Org({ org: orgRes, repos, balance, ...props }) {
+  const triggerPayment = () => {
+    console.log('run metamask payment')
+  }
+
+  const router = useRouter()
+  const { trigger, org } = router.query
+
+  if (trigger === 'true') {
+    triggerPayment()
+  }
+
   // const { repos } = repoRes
   // console.log(repos)
   const {
@@ -18,10 +28,6 @@ function Org({ org: orgRes, repos, balance, ...props }) {
     location,
     html_url
   } = orgRes
-
-  // console.log(props)
-  const router = useRouter()
-  const { org } = router.query
 
   if (errorCode) {
     return <Error statusCode={errorCode} />
