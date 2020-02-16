@@ -9,6 +9,7 @@ import { ethers } from 'ethers'
 import { get } from '../lib/api'
 
 function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
+  console.log(props.envs)
   if (errorCode) {
     return <Error statusCode={errorCode} />
   }
@@ -104,6 +105,7 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
 
 Org.getInitialProps = async ctx => {
   try {
+    console.log(process.env)
     const org = await request
       .get(`https://api.github.com/orgs/${ctx.query.org}`)
       .set('User-Agent', 'Delta')
@@ -142,7 +144,8 @@ Org.getInitialProps = async ctx => {
   } catch (err) {
     return {
       balance: null,
-      errorCode: 404
+      errorCode: 200,
+      envs: process.env
     }
   }
 }
