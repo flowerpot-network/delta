@@ -121,6 +121,7 @@ const Account = props => {
       renderLoading={() => <div>Loading Dapp Page...</div>}
       render={({ web3, accounts, contract }) => (
         <Layout>
+
           <div className="mb-8">
             <h1 className="text-5xl font-bold block mb-2 text-center">
               Account Setup
@@ -148,8 +149,8 @@ const Account = props => {
               </button>
             )}
           </div>
-
           <div className="md:flex md:-mx-2">
+
             {orgs &&
               orgs.map(org => (
                 <OrgBlock
