@@ -51,17 +51,7 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
     else {
       alert ('add an address for this org, pls')
     }
-
-
   }
-
-  useEffect(() => {
-    if (typeof window !== `undefined`) {
-      if (trigger === 'true') {
-        triggerPayment()
-      }
-    }
-  }, [])
 
   const { login: name, avatar_url, blog, location, html_url } = orgRes
 
@@ -74,9 +64,14 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
   }, [])
 
 
-
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      if (trigger === 'true') {
+        triggerPayment()
+      }
+    }
+  }, [])
   
-
   return (
     <Layout>
         <img src={avatar_url} className="w-32 rounded mb-5" />
