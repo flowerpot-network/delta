@@ -162,15 +162,21 @@ const Wrapper = props => {
 
   // if (!code) return {}
 
+  console.log('hi')
+  console.log('hiii')
+
   useEffect(() => {
+    console.log({
+      client_id: process.env.GITHUB_CLIENT_ID,
+      client_secret: process.env.GITHUB_CLIENT_SECRET,
+      code
+    })
     const fetch = async () => {
-      console.log({
-        client_id: process.env.GITHUB_CLIENT_ID,
-        client_secret: process.env.GITHUB_CLIENT_SECRET,
-        code
-      })
       try {
         // if (!accessToken) {
+        console.log(
+          'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token'
+        )
         const res = await request
           .post(
             'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token'
