@@ -45,8 +45,14 @@ function Org({ org: orgRes, repos, balance, ...props }) {
           </li>
         </ul>
       </div>
-      <div className ="balance">
-        <p className="font-semibold">BALANCE: {ethers.utils.formatEther(balance.result)}</p>
+      <div className="mb-5">
+      <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+      <svg class="fill-current w-4 h-4 mr-2" xmlns="https://res.cloudinary.com/dvargvav9/image/upload/v1581816146/heart_resized_ruge9l.svg" viewBox="0 0 20 20"></svg>
+      <span>Support</span>
+      </button>
+      </div>
+      <div>
+        <p className="max-w-sm border p-3 rounded mb-4 shadow-md">BALANCE: {ethers.utils.formatEther(balance.result)} ETH</p>
       </div>
       <div>
         {repos.map(repo => (
