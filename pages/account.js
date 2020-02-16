@@ -12,7 +12,7 @@ import { useRouter } from 'next/router'
 
 const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
   const [input, setInput] = useState('')
-  const [address, setAddress] = useState(null)
+  const [address, setAddress] = useState('')
 
   const onSubmit = async e => {
     e.preventDefault()
