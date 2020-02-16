@@ -10,10 +10,7 @@ export default ({ children }) => {
           </h1>
         </Link>
         <nav>
-          <Link
-            href="/
-          "
-          >
+          <Link href="/account">
             <a className="text-blue-600">My Account </a>
           </Link>
         </nav>
