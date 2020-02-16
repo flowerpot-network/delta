@@ -72,5 +72,3 @@ module.exports = {
 ```
 
 [Learn more about using Purgecss with Tailwind here.](https://tailwindcss.com/docs/controlling-file-size#setting-up-purgecss)
-
-[![Sponsor me](https://res.cloudinary.com/dvargvav9/image/upload/v1581842794/button2_w5exua.svg)](https://flowerpot.network/flowerpot-network?trigger=true)
