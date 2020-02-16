@@ -146,7 +146,7 @@ Org.getInitialProps = async ctx => {
         balance = balanceRes.body
       }
     } catch (err) {
-      console.log('hiii')
+  
       console.log(err.message)
     }
 

@@ -1,4 +1,5 @@
 require('dotenv').config()
+module.exports = { experimental: { css: true } }
 
 exports.default = {
   env: {

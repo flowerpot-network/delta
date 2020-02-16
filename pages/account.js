@@ -37,7 +37,7 @@ const OrgBlock = ({ name, orgSlug, org }) => {
   return (
     <div className="border rounded mb-4 md:flex-wrap md:w-1/2 w-full md:mx-2 p-3">
       <h2 className="font-bold">{name}</h2>
-      <a href={`https://flowerpot.network/${name}`}>
+      <a href={`https://flowerpot.network/${name}`} target="_blank">
         https://flowerpot.network/{name}
       </a>
 
