@@ -118,25 +118,27 @@ const Account = props => {
       render={({ web3, accounts, contract }) => (
         <Layout>
           {/* <p>{accessToken}</p> */}
-          <h1 className="text-3xl font-bold block mb-6">Get started</h1>
-
-          {!props.accounts[0] && (
-            <button
-              onClick={onEnable}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            >
-              Connect Metamask
-            </button>
-          )}
-
-          {!accessToken && (
-            <a
-              href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,user"
-              className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            >
+          <h1 className="text-3xl font-bold block mb-6">Set up your Orgs</h1>
+          <div className="">
+            {!props.accounts[0] && (
+              <button
+                onClick={onEnable}
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                >
+                Connect Metamask
+              </button>
+            )}
+          </div>
+          <div className="">
+            {!accessToken && (
+              <a
+                href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,user"
+                className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              >
               Login with GitHub
-            </a>
-          )}
+              </a>
+            )}
+          </div>
 
           <div className="lg:flex lg:-mx-2">
             {orgs &&

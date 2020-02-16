@@ -19,16 +19,22 @@ export default () => (
     <p className="mb-4"> Step 2: Activate your profile & link GitHub</p>
   </div>
   <div className="text-xl mt-8">
-    <p className="mb-4"> Step 3: Create a new wallet for your GitHub org (i.e. Gnosis safe, Metamask) </p>
+    <p className="mb-4"> Step 3: Create a new wallet for your GitHub org (i.e. <a href="https://safe.gnosis.io/multisig">a Gnosis safe</a> multisig or a <a href="https://metamask.io/">Metamask</a>) </p>
   </div>
   <div className="text-xl mt-8">
-    <p> Generate a markdown button for your README.md that connects to Metamask.</p>
+    <p className="mb-4"> Step 4: Generate a markdown button for README.md's in your GitHub Org! </p>
   </div>
-  <div className="text-xl mt-8">
-    <p> Generate a markdown button for your README.md that connects to Metamask.</p>
-  </div>
-  <div className="text-xl mt-8">
-    <p> Claim your Org, generate your button, and start receiving crypto donations without the overhead </p>
+  <div className="container mt-16 flex justify-center mx-auto">
+    <section id="flowers">
+              <pre><code>                _(_)_                     _(_)_     </code></pre>
+              <pre><code>    @@@@       (_)@(_)        @@@@       (_)@(_)    </code></pre>
+              <pre><code>   @@()@@ wWWWw  (_)\        @@()@@ wWWWw  (_)\     </code></pre>
+              <pre><code>    @@@@  (___)     \|/       @@@@  (___)     \|/   </code></pre>
+              <pre><code>     /      Y       \|         /      Y       \|    </code></pre>
+              <pre><code>  \ |     \ |/       | /    \ |     \ |/       | /  </code></pre>
+              <pre><code>  \\|//   \\|///  \\\|//    \\|//   \\|///  \\\|//  </code></pre>
+              <pre><code>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</code></pre>
+    </section>
   </div>
   </Layout>
 );
