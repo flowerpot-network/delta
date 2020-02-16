@@ -27,22 +27,32 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
     let accounts = await window.ethereum.enable()
     console.log('accounts', accounts)
 
-    const transactionParameters = {
-      // need to replace with the org's address
-      to: orgAddress,
-      from: accounts[0], // must match user's active address.
-      // we could make this editable
-      value: '20000000000000' // Only required to send ether to the recipient from the initiating external account.
+    console.log("org addreses", orgAddress)
+
+    if(orgAddress != ''){
+      const transactionParameters = {
+        // need to replace with the org's address
+        to: orgAddress,
+        from: accounts[0], // must match user's active address.
+        // we could make this editable
+        value: '20000000000000' // Only required to send ether to the recipient from the initiating external account.
+      }
+  
+      window.ethereum.sendAsync(
+        {
+          method: 'eth_sendTransaction',
+          params: [transactionParameters],
+          from: accounts[0]
+        },
+        {}
+      )
+
+    }
+    else {
+      alert ('add an address for this org, pls')
     }
 
-    window.ethereum.sendAsync(
-      {
-        method: 'eth_sendTransaction',
-        params: [transactionParameters],
-        from: accounts[0]
-      },
-      {}
-    )
+
   }
 
   useEffect(() => {
@@ -63,6 +73,10 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
     fetch()
   }, [])
 
+
+
+  
+
   return (
     <Layout>
         <img src={avatar_url} className="w-32 rounded mb-5" />
@@ -81,10 +95,10 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
           </li>
         </ul>
 
-      <div className="mt-5 mb-5" onClick={triggerPayment}>
-        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex ">
+      <div className="mt-5 mb-5">
+        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex " onClick={triggerPayment}>
           <img class="h-6" src="https://res.cloudinary.com/dvargvav9/image/upload/v1581845188/heart_resized_1_csdpmt.svg"/>
-          <span>  Support</span>
+          <span> Support</span>
         </button>
       </div>
 
