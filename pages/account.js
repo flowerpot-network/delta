@@ -11,7 +11,7 @@ import { useRouter } from 'next/router'
 
 // https://github.com/login/oauth/access_token
 
-const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
+const OrgBlock = ({ name, orgSlug, org }) => {
   const [input, setInput] = useState('')
   const [address, setAddress] = useState('')
 
@@ -32,11 +32,14 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
     fetch()
   }, [])
 
-  return (
-    <div className="border rounded mb-4  lg:flex-wrap lg:w-1/2 w-full mx-2 p-3">
-      <h2>{name}</h2>
+  console.log(org)
 
-      <form className="block" onSubmit={onSubmit}>
+  return (
+    <div className="border rounded mb-4 md:flex-wrap md:w-1/2 w-full md:mx-2 p-3">
+      <h2 className="font-bold">{name}</h2>
+      <a href={`https://github.com/${name}`}>https://github.com/{name}</a>
+
+      <form className="block mt-3" onSubmit={onSubmit}>
         <input
           className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3"
           type="text"
@@ -45,7 +48,7 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
           onChange={e => setInput(e.target.value)}
         />
         <button
-          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
           type="submit"
         >
           Generate Button
@@ -56,9 +59,9 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
         <div className="mt-8">
           <h2 className="text-2xl">Instructions</h2>
           <p className="mb-3">Copy and past this code on any public readme</p>
-          <code className="block bg-gray-900 text-gray-200 rounded p-4 text-sm">
+          <code className="block bg-gray-900 text-gray-200 rounded p-4 text-sm overflow-hidden overflow-x-scroll">
             [![Sponsor
-            me](https://res.cloudinary.com/dvargvav9/image/upload/v1581816146/heart_resized_ruge9l.svg)](https://flowerpot.network/
+            me](https://res.cloudinary.com/dvargvav9/image/upload/v1581842794/button2_w5exua.svg)](https://flowerpot.network/
             {orgSlug}?trigger=true)
           </code>
         </div>
@@ -118,28 +121,35 @@ const Account = props => {
       renderLoading={() => <div>Loading Dapp Page...</div>}
       render={({ web3, accounts, contract }) => (
         <Layout>
-          {/* <p>{accessToken}</p> */}
-          <h1 className="text-3xl font-bold block mb-6 text-red-700">
-            Get started
-          </h1>
+          <div className="mb-8">
+            <h1 className="text-5xl font-bold block mb-2 text-center">
+              Account Setup
+            </h1>
+            <p className="text-center text-gray-600 text-xl">
+              Link your accounts to begin the process
+            </p>
+          </div>
 
-          <a
-            href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,read:user"
-            className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
-            Login with GitHub
-          </a>
+          <div className="mb-16 text-center">
+            {!accessToken && (
+              <a href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,read:user">
+                <button className="bg-gray-900 hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-4">
+                  Login with GitHub
+                </button>
+              </a>
+            )}
 
-          {!props.accounts[0] && (
-            <button
-              onClick={onEnable}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            >
-              Connect Metamask
-            </button>
-          )}
+            {!props.accounts[0] && (
+              <button
+                onClick={onEnable}
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              >
+                Connect Metamask
+              </button>
+            )}
+          </div>
 
-          <div className="lg:flex lg:-mx-2">
+          <div className="md:flex md:-mx-2">
             {orgs &&
               orgs.map(org => (
                 <OrgBlock
@@ -161,11 +171,6 @@ const Wrapper = props => {
   const [accessToken, setAccessToken] = useState(null)
 
   const { code } = router.query
-
-  // if (!code) return {}
-
-  console.log('hi')
-  console.log('hiii')
 
   useEffect(() => {
     const fetch = async () => {
