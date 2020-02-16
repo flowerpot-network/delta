@@ -66,7 +66,7 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
-      if (trigger === 'true') {
+      if (trigger === 'true' && orgAddress !='') {
         triggerPayment()
       }
     }
