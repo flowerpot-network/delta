@@ -58,11 +58,10 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
 
   return (
     <Layout>
-      <div className="mb-8">
-        <img src={avatar_url} className="w-32 rounded mb-5" />
-        <h1 className="text-2xl font-bold">{name}</h1>
-
-        <p>{orgAddress}</p>
+      <div className="grid grid-cols-3 gap-4 mb-8">
+        <div><img src={avatar_url} className="w-32 rounded mb-5" /></div>
+        <div><h1 className="text-2xl font-bold">{name}</h1></div>
+        <div><p>{orgAddress}</p></div>
 
         <ul>
           <li>
@@ -87,6 +86,7 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
             className="fill-current w-4 h-4 mr-2"
             xmlns="https://res.cloudinary.com/dvargvav9/image/upload/v1581816146/heart_resized_ruge9l.svg"
             viewBox="0 0 20 20"
+            path=""
           ></svg>
           <span>Support</span>
         </button>
@@ -98,6 +98,9 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
           </p>
         </div>
       )}
+      <div className="w-32 rounded mt-5 mb-5">
+        <h1 className="text-2xl font-bold">Repositories</h1>
+      </div>
       <div>
         {repos.map(repo => (
           <Repo key={repo.node_id} repo={repo} />

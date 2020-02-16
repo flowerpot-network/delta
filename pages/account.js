@@ -57,7 +57,7 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
           <p className="mb-3">Copy and past this code on any public readme</p>
           <code className="block bg-gray-900 text-gray-200 rounded p-4 text-sm">
             [![Sponsor
-            me](https://res.cloudinary.com/dvargvav9/image/upload/v1581816146/heart_resized_ruge9l.svg)](https://flowerpot.network/{orgSlug}?trigger=true)
+            me](https://res.cloudinary.com/dvargvav9/image/upload/v1581842794/button2_w5exua.svg)](https://flowerpot.network/{orgSlug}?trigger=true)
           </code>
         </div>
       )}
