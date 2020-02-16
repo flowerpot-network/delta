@@ -2,7 +2,7 @@ import React, { Component, useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import request from 'superagent'
 import Web3Container from '../lib/Web3Container'
-import { get, set } from '../lib/api'
+import newBoxClient, { privateGet, privateSet } from '../lib/box'
 import { useRouter } from 'next/router'
 
 // import Redis from '../store/redis'
@@ -17,24 +17,15 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
   const onSubmit = async e => {
     e.preventDefault()
     console.log('submit')
-    // const { box } = await newBoxClient(accountAddress, window.ethereum)
-
-    try {
-      console.log('hi')
-
-      await set(orgSlug, input)
-
-      console.log('there')
-
-      setAddress(input)
-    } catch (err) {
-      console.log(err)
-    }
+    const { box } = await newBoxClient(accountAddress, window.ethereum)
+    await privateSet(box, orgSlug, input)
+    setAddress(input)
   }
 
   useEffect(() => {
     const fetch = async () => {
-      const data = await get(orgSlug)
+      const { box } = await newBoxClient(accountAddress, window.ethereum)
+      const data = await privateGet(box, orgSlug)
       setInput(data)
     }
     fetch()
@@ -66,8 +57,7 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
           <p className="mb-3">Copy and past this code on any public readme</p>
           <code className="block bg-gray-900 text-gray-200 rounded p-4 text-sm">
             [![Sponsor
-            me](https://localhost:3000/button.svg)](https://localhost:3000/
-            {orgSlug}?trigger=true)
+            me](https://res.cloudinary.com/dvargvav9/image/upload/v1581816146/heart_resized_ruge9l.svg)](https://flowerpot.network/{orgSlug}?trigger=true)
           </code>
         </div>
       )}
@@ -83,7 +73,8 @@ const Account = props => {
 
   useEffect(() => {
     const check = async () => {
-      const accessToken = await get(`gat_${props.accounts[0]}`)
+      const { box } = await newBoxClient(props.accounts[0], window.ethereum)
+      const accessToken = await privateGet(box, `gat_${props.accounts[0]}`)
       setAccessToken(accessToken)
     }
 
@@ -94,8 +85,10 @@ const Account = props => {
 
   useEffect(() => {
     const save = async () => {
+      const { box } = await newBoxClient(props.accounts[0], window.ethereum)
+
       if (props.accessToken) {
-        await set(`gat_${props.accounts[0]}`, props.accessToken)
+        await privateSet(box, `gat_${props.accounts[0]}`, props.accessToken)
       }
     }
     save()
@@ -138,7 +131,7 @@ const Account = props => {
 
           {!accessToken && (
             <a
-              href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=http://localhost:3000/account&scope=read:org,user"
+              href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,user"
               className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             >
               Login with GitHub
@@ -162,7 +155,7 @@ const Account = props => {
   )
 }
 
-const Wrapper = props => {
+  const Wrapper = props => {
   const router = useRouter()
   const [accessToken, setAccessToken] = useState(null)
 
@@ -183,6 +176,8 @@ const Wrapper = props => {
             client_secret: process.env.GITHUB_CLIENT_SECRET,
             code
           })
+
+        console.log(res)
 
         const { access_token } = res.body
 
