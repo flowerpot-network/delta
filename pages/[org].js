@@ -8,7 +8,11 @@ import Balance from '../components/Balance'
 import { ethers } from 'ethers'
 import { get } from '../lib/api'
 
-function Org({ org: orgRes, repos, balance, ...props }) {
+function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
+  if (errorCode) {
+    return <Error statusCode={errorCode} />
+  }
+
   const [orgAddress, setOrgAddress] = useState('')
 
   const triggerPayment = async e => {
@@ -37,14 +41,7 @@ function Org({ org: orgRes, repos, balance, ...props }) {
   const router = useRouter()
   const { trigger, org } = router.query
 
-  const {
-    errorCode,
-    login: name,
-    avatar_url,
-    blog,
-    location,
-    html_url
-  } = orgRes
+  const { login: name, avatar_url, blog, location, html_url } = orgRes
 
   useEffect(() => {
     const fetch = async () => {
@@ -53,10 +50,6 @@ function Org({ org: orgRes, repos, balance, ...props }) {
     }
     fetch()
   }, [])
-
-  if (errorCode) {
-    return <Error statusCode={errorCode} />
-  }
 
   return (
     <Layout>
@@ -93,11 +86,13 @@ function Org({ org: orgRes, repos, balance, ...props }) {
           <span>Support</span>
         </button>
       </div>
-      <div>
-        <p className="max-w-sm border p-3 rounded mb-4 shadow-md">
-          BALANCE: {ethers.utils.formatEther(balance.result)} ETH
-        </p>
-      </div>
+      {balance && balance.result && (
+        <div>
+          <p className="max-w-sm border p-3 rounded mb-4 shadow-md">
+            BALANCE: {ethers.utils.formatEther(balance.result)} ETH
+          </p>
+        </div>
+      )}
       <div>
         {repos.map(repo => (
           <Repo key={repo.node_id} repo={repo} />
@@ -119,13 +114,18 @@ Org.getInitialProps = async ctx => {
       .set('User-Agent', 'Delta')
       .auth(process.env.GITHUB_CLIENT_ID, process.env.GITHUB_CLIENT_SECRET)
 
-    const balance = await request
-      .get(
-        `https://api.etherscan.io/api?module=account&action=balance&address=0x9f2942fF27e40445d3CB2aAD90F84C3a03574F26&tag=latest&apikey=DS3QGS4YV7DQQMN5M5UJVSI2HHHKEENVVS`
-      )
-      .set('User-Agent', 'Delta')
+    const address = await get(org.body.login)
 
-    console.log(balance)
+    let balance = null
+    try {
+      balanceRes = await request.get(
+        `https://api.etherscan.io/api?module=account&action=balance&address=${address}&tag=latest&apikey=DS3QGS4YV7DQQMN5M5UJVSI2HHHKEENVVS`
+      )
+
+      balance = balanceRes.body
+    } catch (err) {
+      console.log(err)
+    }
 
     if (org.status > 400) {
       return { errorCode: orgRes.status }
@@ -134,7 +134,7 @@ Org.getInitialProps = async ctx => {
     return {
       org: org.body,
       repos: repos.body,
-      balance: balance.body
+      balance
     }
   } catch (err) {
     return {
