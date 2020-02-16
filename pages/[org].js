@@ -22,7 +22,7 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
 
     const transactionParameters = {
       // need to replace with the org's address
-      to: '0x60EAEb46e439b92167205e66CC2C01Ce1e5eB318',
+      to: orgAddress,
       from: accounts[0], // must match user's active address.
       // we could make this editable
       value: '0x300000000000000' // Only required to send ether to the recipient from the initiating external account.
