@@ -119,7 +119,9 @@ const Account = props => {
       render={({ web3, accounts, contract }) => (
         <Layout>
           {/* <p>{accessToken}</p> */}
-          <h1 className="text-3xl font-bold block mb-6">Get started</h1>
+          <h1 className="text-3xl font-bold block mb-6 text-red-700">
+            Get started
+          </h1>
 
           <a
             href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,read:user"
