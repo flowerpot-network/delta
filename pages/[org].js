@@ -1,10 +1,16 @@
+import { useState } from 'react'
 import Layout from '../components/Layout'
 import Error from 'next/error'
 import request from 'superagent'
 import { useRouter } from 'next/router'
 import Repo from '../components/Repo'
+import { get } from '../lib/api'
+
+import { useEffect } from 'react'
 
 function Org({ org: orgRes, repos, ...props }) {
+  const [orgAddress, setOrgAddress] = useState('')
+
   const triggerPayment = () => {
     console.log('run metamask payment')
   }
@@ -16,8 +22,6 @@ function Org({ org: orgRes, repos, ...props }) {
     triggerPayment()
   }
 
-  // const { repos } = repoRes
-  // console.log(repos)
   const {
     errorCode,
     login: name,
@@ -26,6 +30,14 @@ function Org({ org: orgRes, repos, ...props }) {
     location,
     html_url
   } = orgRes
+
+  useEffect(() => {
+    const fetch = async () => {
+      const address = await get(name)
+      setOrgAddress(address)
+    }
+    fetch()
+  }, [])
 
   if (errorCode) {
     return <Error statusCode={errorCode} />
@@ -36,6 +48,8 @@ function Org({ org: orgRes, repos, ...props }) {
       <div className="mb-8">
         <img src={avatar_url} className="w-32 rounded mb-5" />
         <h1 className="text-2xl font-bold">{name}</h1>
+
+        <p>{orgAddress}</p>
 
         <ul>
           <li>

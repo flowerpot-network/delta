@@ -2,7 +2,7 @@ import React, { Component, useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import request from 'superagent'
 import Web3Container from '../lib/Web3Container'
-import newBoxClient, { privateGet, privateSet } from '../lib/box'
+import { get, set } from '../lib/api'
 import { useRouter } from 'next/router'
 
 // import Redis from '../store/redis'
@@ -17,15 +17,24 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
   const onSubmit = async e => {
     e.preventDefault()
     console.log('submit')
-    const { box } = await newBoxClient(accountAddress, window.ethereum)
-    await privateSet(box, orgSlug, input)
-    setAddress(input)
+    // const { box } = await newBoxClient(accountAddress, window.ethereum)
+
+    try {
+      console.log('hi')
+
+      await set(orgSlug, input)
+
+      console.log('there')
+
+      setAddress(input)
+    } catch (err) {
+      console.log(err)
+    }
   }
 
   useEffect(() => {
     const fetch = async () => {
-      const { box } = await newBoxClient(accountAddress, window.ethereum)
-      const data = await privateGet(box, orgSlug)
+      const data = await get(orgSlug)
       setInput(data)
     }
     fetch()
@@ -74,8 +83,7 @@ const Account = props => {
 
   useEffect(() => {
     const check = async () => {
-      const { box } = await newBoxClient(props.accounts[0], window.ethereum)
-      const accessToken = await privateGet(box, `gat_${props.accounts[0]}`)
+      const accessToken = await get(`gat_${props.accounts[0]}`)
       setAccessToken(accessToken)
     }
 
@@ -86,10 +94,8 @@ const Account = props => {
 
   useEffect(() => {
     const save = async () => {
-      const { box } = await newBoxClient(props.accounts[0], window.ethereum)
-
       if (props.accessToken) {
-        await privateSet(box, `gat_${props.accounts[0]}`, props.accessToken)
+        await set(`gat_${props.accounts[0]}`, props.accessToken)
       }
     }
     save()
@@ -176,8 +182,6 @@ const Wrapper = props => {
             client_secret: process.env.GITHUB_CLIENT_SECRET,
             code
           })
-
-        console.log(res)
 
         const { access_token } = res.body
 
