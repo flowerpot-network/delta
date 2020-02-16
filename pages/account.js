@@ -167,8 +167,10 @@ const Wrapper = props => {
       try {
         // if (!accessToken) {
         const res = await request
-          .post('https://github.com/login/oauth/access_token')
-          // .set('X-Requested-With', 'Accept')
+          .post(
+            'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token'
+          )
+          .set('X-Requested-With', 'Accept')
           .send({
             client_id: process.env.GITHUB_CLIENT_ID,
             client_secret: process.env.GITHUB_CLIENT_SECRET,
