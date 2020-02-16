@@ -168,11 +168,6 @@ const Wrapper = props => {
   console.log('hiii')
 
   useEffect(() => {
-    console.log({
-      client_id: process.env.GITHUB_CLIENT_ID,
-      client_secret: process.env.GITHUB_CLIENT_SECRET,
-      code
-    })
     const fetch = async () => {
       try {
         // if (!accessToken) {
@@ -185,8 +180,8 @@ const Wrapper = props => {
           )
           .set('X-Requested-With', 'Accept')
           .send({
-            client_id: process.env.GITHUB_CLIENT_ID,
-            client_secret: process.env.GITHUB_CLIENT_SECRET,
+            client_id: 'ee508729e6002c32d53b',
+            client_secret: 'e8ed912f2b6fdcccbef5aecfcfb23a1d4b3dea13',
             code
           })
 

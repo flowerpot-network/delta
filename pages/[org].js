@@ -113,12 +113,12 @@ Org.getInitialProps = async ctx => {
     const org = await request
       .get(`https://api.github.com/orgs/${ctx.query.org}`)
       .set('User-Agent', 'Delta')
-      .auth(process.env.GITHUB_CLIENT_ID, process.env.GITHUB_CLIENT_SECRET)
+      .auth('ee508729e6002c32d53b', 'e8ed912f2b6fdcccbef5aecfcfb23a1d4b3dea13')
 
     const repos = await request
       .get(`https://api.github.com/orgs/${ctx.query.org}/repos`)
       .set('User-Agent', 'Delta')
-      .auth(process.env.GITHUB_CLIENT_ID, process.env.GITHUB_CLIENT_SECRET)
+      .auth('ee508729e6002c32d53b', 'e8ed912f2b6fdcccbef5aecfcfb23a1d4b3dea13')
 
     const address = await get(org.body.login)
 
