@@ -10,6 +10,8 @@ import { get } from '../lib/api'
 
 function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
   console.log(props.envs)
+
+  console.log(ethers.utils.hexlify(0.019))
   if (errorCode) {
     return <Error statusCode={errorCode} />
   }
@@ -30,7 +32,7 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
       to: orgAddress,
       from: accounts[0], // must match user's active address.
       // we could make this editable
-      value: '0x300000000000000' // Only required to send ether to the recipient from the initiating external account.
+      value: '20000000000000' // Only required to send ether to the recipient from the initiating external account.
     }
 
     window.ethereum.sendAsync(
