@@ -37,7 +37,9 @@ const OrgBlock = ({ name, orgSlug, org }) => {
   return (
     <div className="border rounded mb-4 md:flex-wrap md:w-1/2 w-full md:mx-2 p-3">
       <h2 className="font-bold">{name}</h2>
-      <a href={`https://github.com/${name}`}>https://github.com/{name}</a>
+      <a href={`https://flowerpot.network/${name}`}>
+        https://flowerpot.network/{name}
+      </a>
 
       <form className="block mt-3" onSubmit={onSubmit}>
         <input
@@ -121,7 +123,6 @@ const Account = props => {
       renderLoading={() => <div>Loading Dapp Page...</div>}
       render={({ web3, accounts, contract }) => (
         <Layout>
-
           <div className="mb-8">
             <h1 className="text-5xl font-bold block mb-2 text-center">
               Account Setup
@@ -150,7 +151,6 @@ const Account = props => {
             )}
           </div>
           <div className="md:flex md:-mx-2">
-
             {orgs &&
               orgs.map(org => (
                 <OrgBlock
