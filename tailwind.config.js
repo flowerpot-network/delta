@@ -1,7 +1,14 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {}
   },
-  variants: {},
-  plugins: [],
+  variants: {
+    display: ['responsive', 'hover', 'focus'],
+    width: ['responsive', 'hover', 'focus'],
+    padding: ['responsive', 'hover', 'focus', 'first'],
+    borderStyle: ['responsive', 'hover', 'focus', 'first', 'last'],
+    inset: ['responsive', 'hover', 'focus'],
+    backgroundColor: ['odd', 'even', 'responsive']
+  },
+  plugins: []
 }
