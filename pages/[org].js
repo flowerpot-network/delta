@@ -7,16 +7,38 @@ import Balance from '../components/Balance'
 import { ethers } from 'ethers'
 
 function Org({ org: orgRes, repos, balance, ...props }) {
-  const triggerPayment = () => {
+
+
+  const triggerPayment = async e => {
     console.log('run metamask payment')
+
+    let accounts = await window.ethereum.enable()
+   
+    console.log('accounts', accounts)
+   
+   
+   const transactionParameters = {
+     // need to replace with the org's address
+     to: '0x60EAEb46e439b92167205e66CC2C01Ce1e5eB318', 
+     from: accounts[0], // must match user's active address.
+     // we could make this editable
+     value: '0x300000000000000', // Only required to send ether to the recipient from the initiating external account.
+   }
+ 
+     window.ethereum.sendAsync({
+       method: 'eth_sendTransaction',
+       params: [transactionParameters],
+       from: accounts[0],
+     }, {})
+
   }
 
   const router = useRouter()
   const { trigger, org } = router.query
 
-  if (trigger === 'true') {
-    triggerPayment()
-  }
+  // if (trigger === 'true') {
+  //   triggerPayment()
+  // }
 
   // const { repos } = repoRes
   // console.log(repos)
@@ -51,11 +73,12 @@ function Org({ org: orgRes, repos, balance, ...props }) {
           </li>
         </ul>
       </div>
-      <div className="mb-5">
-      <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-      <svg class="fill-current w-4 h-4 mr-2" xmlns="https://res.cloudinary.com/dvargvav9/image/upload/v1581816146/heart_resized_ruge9l.svg" viewBox="0 0 20 20"></svg>
-      <span>Support</span>
-      </button>
+      
+      <div className="mb-5" onClick={triggerPayment}>
+        <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center" type="submit">
+        <svg className="fill-current w-4 h-4 mr-2" xmlns="https://res.cloudinary.com/dvargvav9/image/upload/v1581816146/heart_resized_ruge9l.svg" viewBox="0 0 20 20"></svg>
+        <span>Support</span>
+        </button>
       </div>
       <div>
         <p className="max-w-sm border p-3 rounded mb-4 shadow-md">BALANCE: {ethers.utils.formatEther(balance.result)} ETH</p>
