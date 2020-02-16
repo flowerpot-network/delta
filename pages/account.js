@@ -75,6 +75,7 @@ const Account = props => {
     const check = async () => {
       //  const { box } = await newBoxClient(props.accounts[0], window.ethereum)
       const accessToken = await get(`gat_${props.accounts[0]}`)
+
       setAccessToken(accessToken)
     }
 
