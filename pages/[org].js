@@ -118,7 +118,7 @@ Org.getInitialProps = async ctx => {
 
     let balance = null
     try {
-      balanceRes = await request.get(
+      let balanceRes = await request.get(
         `https://api.etherscan.io/api?module=account&action=balance&address=${address}&tag=latest&apikey=DS3QGS4YV7DQQMN5M5UJVSI2HHHKEENVVS`
       )
 
