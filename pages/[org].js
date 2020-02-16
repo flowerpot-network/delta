@@ -3,10 +3,13 @@ import Error from 'next/error'
 import request from 'superagent'
 import { useRouter } from 'next/router'
 import Repo from '../components/Repo'
-import Balance from '../components/Balance'
 import { ethers } from 'ethers'
 
-function Org({ org: orgRes, repos, balance, ...props }) {
+function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
+  if (errorCode) {
+    return <Error statusCode={errorCode} />
+  }
+
   const triggerPayment = () => {
     console.log('run metamask payment')
   }
@@ -19,19 +22,14 @@ function Org({ org: orgRes, repos, balance, ...props }) {
   }
 
   // const { repos } = repoRes
-  // console.log(repos)
   const {
-    errorCode,
-    login: name,
+    name,
+    // errorCode,
     avatar_url,
     blog,
     location,
     html_url
   } = orgRes
-
-  if (errorCode) {
-    return <Error statusCode={errorCode} />
-  }
 
   return (
     <Layout>
@@ -70,23 +68,32 @@ function Org({ org: orgRes, repos, balance, ...props }) {
 }
 
 Org.getInitialProps = async ctx => {
+  console.log('FML')
   try {
+
+    console.log('one')
     const org = await request
       .get(`https://api.github.com/orgs/${ctx.query.org}`)
       .set('User-Agent', 'Delta')
       .auth(process.env.GITHUB_CLIENT_ID, process.env.GITHUB_CLIENT_SECRET)
 
+    console.log('two')
     const repos = await request
       .get(`https://api.github.com/orgs/${ctx.query.org}/repos`)
       .set('User-Agent', 'Delta')
       .auth(process.env.GITHUB_CLIENT_ID, process.env.GITHUB_CLIENT_SECRET)
 
+    console.log('three')
     const balance = await request
       .get(`https://api.etherscan.io/api?module=account&action=balance&address=0x9f2942fF27e40445d3CB2aAD90F84C3a03574F26&tag=latest&apikey=DS3QGS4YV7DQQMN5M5UJVSI2HHHKEENVVS`)
       .set('User-Agent', 'Delta')
 
-    console.log(balance)
-
+    console.log('++++++++++++++++++++++++')
+    console.log(process.env.GITHUB_CLIENT_ID)
+    console.log(process.env.GITHUB_CLIENT_SECRET)
+    console.log(process.env.ETHERSCAN_API_KEY)
+    console.log('++++++++++++++++++++++++')
+    console.log(org.status)
     if (org.status > 400) {
       return { errorCode: orgRes.status }
     }

@@ -11,7 +11,6 @@ function Repo({ repo, ...props }) {
 }
 
 Repo.getInitialProps = async (ctx, props) => {
-  // console.log(props)
   return { h1: 1 }
 }
 
