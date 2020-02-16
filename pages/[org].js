@@ -65,11 +65,9 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
 
   return (
     <Layout>
-      <div className="grid grid-cols-3 gap-4 mb-8">
-        <div><img src={avatar_url} className="w-32 rounded mb-5" /></div>
-        <div><h1 className="text-2xl font-bold">{name}</h1></div>
-        <div><p>{orgAddress}</p></div>
-
+        <img src={avatar_url} className="w-32 rounded mb-5" />
+        <h1 className="text-2xl font-bold">{name}</h1>
+        <p>{orgAddress}</p>
         <ul>
           <li>
             <a className="text-blue-600" href={html_url}>
@@ -82,22 +80,14 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
             </a>
           </li>
         </ul>
-      </div>
 
-      <div className="mb-5" onClick={triggerPayment}>
-        <button
-          className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
-          type="submit"
-        >
-          <svg
-            className="fill-current w-4 h-4 mr-2"
-            xmlns="https://res.cloudinary.com/dvargvav9/image/upload/v1581816146/heart_resized_ruge9l.svg"
-            viewBox="0 0 20 20"
-            path=""
-          ></svg>
-          <span>Support</span>
+      <div className="mt-5 mb-5" onClick={triggerPayment}>
+        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex ">
+          <img class="h-6" src="https://res.cloudinary.com/dvargvav9/image/upload/v1581845188/heart_resized_1_csdpmt.svg"/>
+          <span>  Support</span>
         </button>
       </div>
+
       {balance && (
         <div>
           <p className="max-w-sm border p-3 rounded mb-4 shadow-md">
