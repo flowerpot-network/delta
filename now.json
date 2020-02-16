@@ -1,10 +1,10 @@
 {
     "build": {
       "env": {
-        "ETHERSCAN_API_KEY": "@ETHERSCAN_API_KEY",
-        "GITHUB_TOKEN": "@GITHUB_TOKEN",
-        "GITHUB_CLIENT_ID": "@GITHUB_CLIENT_ID",
-        "GITHUB_CLIENT_SECRET": "@GITHUB_CLIENT_SECRET"
+        "etherscan_api_key": "@etherscan_api_key",
+        "github_token": "@github_token",
+        "github_client_id": "@github_client_id",
+        "github_client_secret": "@github_client_secret"
       }
     }
 }
