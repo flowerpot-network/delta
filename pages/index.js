@@ -13,11 +13,6 @@ const exampleOrgs = [
     imageWidth: '50%'
   },
   {
-    name: '3Box',
-    image: 'https://avatars1.githubusercontent.com/u/45031480?s=200&v=4',
-    imageWidth: '50%'
-  },
-  {
     name: 'Uniswap'
   }
 ]
@@ -44,7 +39,7 @@ export default () => (
 
       <div className="flex -mx-1">
         {exampleOrgs.map(org => (
-          <div className="border rounded w-1/3 flex-wrap mx-2 p-3">
+          <div className="border rounded flex-wrap items-stretch w-1/2 flex-wrap mx-2 p-3 flex-col flex-grow">
             {/* <div className="text-center">
             <img src={org.image} className="mx-auto" width={org.imageWidth} />
           </div> */}
