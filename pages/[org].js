@@ -10,11 +10,17 @@ import { get } from '../lib/api'
 
 function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
   console.log(props.envs)
+
+  console.log(ethers.utils.hexlify(0.019))
   if (errorCode) {
     return <Error statusCode={errorCode} />
   }
 
   const [orgAddress, setOrgAddress] = useState('')
+  const [windowReady, setWindowReady] = useState(false)
+
+  const router = useRouter()
+  const { trigger, org } = router.query
 
   const triggerPayment = async e => {
     console.log('run metamask payment')
@@ -26,7 +32,7 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
       to: orgAddress,
       from: accounts[0], // must match user's active address.
       // we could make this editable
-      value: '0x300000000000000' // Only required to send ether to the recipient from the initiating external account.
+      value: '20000000000000' // Only required to send ether to the recipient from the initiating external account.
     }
 
     window.ethereum.sendAsync(
@@ -39,14 +45,15 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
     )
   }
 
-  const router = useRouter()
-  const { trigger, org } = router.query
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      if (trigger === 'true') {
+        triggerPayment()
+      }
+    }
+  }, [])
 
   const { login: name, avatar_url, blog, location, html_url } = orgRes
-
-  if (trigger === 'true') {
-    triggerPayment()
-  }
 
   useEffect(() => {
     const fetch = async () => {
@@ -116,12 +123,12 @@ Org.getInitialProps = async ctx => {
     const org = await request
       .get(`https://api.github.com/orgs/${ctx.query.org}`)
       .set('User-Agent', 'Delta')
-      .auth(process.env.GITHUB_CLIENT_ID, process.env.GITHUB_CLIENT_SECRET)
+      .auth('ee508729e6002c32d53b', 'e8ed912f2b6fdcccbef5aecfcfb23a1d4b3dea13')
 
     const repos = await request
       .get(`https://api.github.com/orgs/${ctx.query.org}/repos`)
       .set('User-Agent', 'Delta')
-      .auth(process.env.GITHUB_CLIENT_ID, process.env.GITHUB_CLIENT_SECRET)
+      .auth('ee508729e6002c32d53b', 'e8ed912f2b6fdcccbef5aecfcfb23a1d4b3dea13')
 
     const address = await get(org.body.login)
 
