@@ -1,7 +1,9 @@
 function Balance({ balance, ...props }) {
-  console.log(balance)
   return (
-    <div> <p> BALANCE </p> </div>
+    <div>
+      {' '}
+      <p> BALANCE </p>{' '}
+    </div>
   )
 }
 

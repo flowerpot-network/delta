@@ -86,7 +86,7 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
           <span>Support</span>
         </button>
       </div>
-      {balance && balance.result && (
+      {balance && (
         <div>
           <p className="max-w-sm border p-3 rounded mb-4 shadow-md">
             BALANCE: {ethers.utils.formatEther(balance.result)} ETH
@@ -118,13 +118,16 @@ Org.getInitialProps = async ctx => {
 
     let balance = null
     try {
-      let balanceRes = await request.get(
-        `https://api.etherscan.io/api?module=account&action=balance&address=${address}&tag=latest&apikey=DS3QGS4YV7DQQMN5M5UJVSI2HHHKEENVVS`
-      )
+      if (address !== '') {
+        let balanceRes = await request.get(
+          `https://api.etherscan.io/api?module=account&action=balance&address=${address}&tag=latest&apikey=DS3QGS4YV7DQQMN5M5UJVSI2HHHKEENVVS`
+        )
 
-      balance = balanceRes.body
+        balance = balanceRes.body
+      }
     } catch (err) {
-      console.log(err)
+      console.log('hiii')
+      console.log(err.message)
     }
 
     if (org.status > 400) {
@@ -138,6 +141,7 @@ Org.getInitialProps = async ctx => {
     }
   } catch (err) {
     return {
+      balance: null,
       errorCode: 404
     }
   }
