@@ -2,7 +2,8 @@ import React, { Component, useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import request from 'superagent'
 import Web3Container from '../lib/Web3Container'
-import newBoxClient, { privateGet, privateSet } from '../lib/box'
+// import newBoxClient, { privateGet, privateSet } from '../lib/box'
+import { get, set } from '../lib/api'
 import { useRouter } from 'next/router'
 
 // import Redis from '../store/redis'
@@ -17,15 +18,15 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
   const onSubmit = async e => {
     e.preventDefault()
     console.log('submit')
-    const { box } = await newBoxClient(accountAddress, window.ethereum)
-    await privateSet(box, orgSlug, input)
+    // const { box } = await newBoxClient(accountAddress, window.ethereum)
+    await set(orgSlug, input)
     setAddress(input)
   }
 
   useEffect(() => {
     const fetch = async () => {
-      const { box } = await newBoxClient(accountAddress, window.ethereum)
-      const data = await privateGet(box, orgSlug)
+      //  const { box } = await newBoxClient(accountAddress, window.ethereum)
+      const data = await get(orgSlug)
       setInput(data)
     }
     fetch()
@@ -68,28 +69,23 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
 
 const Account = props => {
   const [orgs, setOrgs] = useState(null)
-  const [accessToken, setAccessToken] = useState(props.access_token)
-
-  console.log(props)
+  const [accessToken, setAccessToken] = useState(props.accessToken)
 
   useEffect(() => {
     const check = async () => {
-      const { box } = await newBoxClient(props.accounts[0], window.ethereum)
-      const accessToken = await privateGet(box, `gat_${props.accounts[0]}`)
+      //  const { box } = await newBoxClient(props.accounts[0], window.ethereum)
+      const accessToken = await get(`gat_${props.accounts[0]}`)
       setAccessToken(accessToken)
     }
 
-    if (!props.access_token) {
+    if (!props.accessToken) {
       check()
     }
-  }, [])
 
-  useEffect(() => {
     const save = async () => {
-      const { box } = await newBoxClient(props.accounts[0], window.ethereum)
-
       if (props.accessToken) {
-        await privateSet(box, `gat_${props.accounts[0]}`, props.accessToken)
+        await set(`gat_${props.accounts[0]}`, props.accessToken)
+        setAccessToken(props.accessToken)
       }
     }
     save()
@@ -104,8 +100,9 @@ const Account = props => {
       setOrgs(res.body)
       console.log(res.body)
     }
-
-    fetchOrgs()
+    if (accessToken) {
+      fetchOrgs()
+    }
   }, [accessToken])
 
   const onEnable = async () => {
@@ -121,6 +118,13 @@ const Account = props => {
           {/* <p>{accessToken}</p> */}
           <h1 className="text-3xl font-bold block mb-6">Get started</h1>
 
+          <a
+            href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,user"
+            className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Login with GitHub
+          </a>
+
           {!props.accounts[0] && (
             <button
               onClick={onEnable}
@@ -129,13 +133,6 @@ const Account = props => {
               Connect Metamask
             </button>
           )}
-
-          <a
-            href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,user"
-            className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
-            Login with GitHub
-          </a>
 
           <div className="lg:flex lg:-mx-2">
             {orgs &&
