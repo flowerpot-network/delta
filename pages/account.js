@@ -96,7 +96,10 @@ const Account = props => {
   useEffect(() => {
     const fetchOrgs = async () => {
       const url = `https://cors-anywhere.herokuapp.com/https://api.github.com/user/orgs?access_token=${accessToken}`
-      const res = await request.get(url).set('User-Agent', 'Delta')
+      const res = await request
+        .get(url)
+        .set('User-Agent', 'Delta')
+        .set('X-Requested-With', 'Accept')
       setOrgs(res.body)
       console.log(res.body)
     }
@@ -167,12 +170,12 @@ const Wrapper = props => {
           .post(
             'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token'
           )
+          .set('X-Requested-With', 'Accept')
           .send({
             client_id: process.env.GITHUB_CLIENT_ID,
             client_secret: process.env.GITHUB_CLIENT_SECRET,
             code
           })
-          .set('X-Requested-With', 'Accept')
 
         console.log(res)
 
