@@ -119,7 +119,7 @@ const Account = props => {
         <Layout>
           {/* <p>{accessToken}</p> */}
           <h1 className="text-3xl font-bold block mb-6">Set up your Orgs</h1>
-          <div className="">
+          <div className="mt-4">
             {!props.accounts[0] && (
               <button
                 onClick={onEnable}
@@ -129,7 +129,7 @@ const Account = props => {
               </button>
             )}
           </div>
-          <div className="">
+          <div className="mt-4">
             {!accessToken && (
               <a
                 href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,user"
