@@ -65,11 +65,9 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
 
   return (
     <Layout>
-      <div className="grid grid-cols-3 gap-4 mb-8">
-        <div><img src={avatar_url} className="w-32 rounded mb-5" /></div>
-        <div><h1 className="text-2xl font-bold">{name}</h1></div>
-        <div><p>{orgAddress}</p></div>
-
+        <img src={avatar_url} className="w-32 rounded mb-5" />
+        <h1 className="text-2xl font-bold">{name}</h1>
+        <p>{orgAddress}</p>
         <ul>
           <li>
             <a className="text-blue-600" href={html_url}>
@@ -82,8 +80,6 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
             </a>
           </li>
         </ul>
-      </div>
-
       <div className="mb-5" onClick={triggerPayment}>
         <button
           className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
