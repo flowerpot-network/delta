@@ -2,7 +2,8 @@ import React, { Component, useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import request from 'superagent'
 import Web3Container from '../lib/Web3Container'
-import newBoxClient, { privateGet, privateSet } from '../lib/box'
+// import newBoxClient, { privateGet, privateSet } from '../lib/box'
+import { get, set } from '../lib/api'
 import { useRouter } from 'next/router'
 
 // import Redis from '../store/redis'
@@ -17,15 +18,15 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
   const onSubmit = async e => {
     e.preventDefault()
     console.log('submit')
-    const { box } = await newBoxClient(accountAddress, window.ethereum)
-    await privateSet(box, orgSlug, input)
+    // const { box } = await newBoxClient(accountAddress, window.ethereum)
+    await set(orgSlug, input)
     setAddress(input)
   }
 
   useEffect(() => {
     const fetch = async () => {
-      const { box } = await newBoxClient(accountAddress, window.ethereum)
-      const data = await privateGet(box, orgSlug)
+      //  const { box } = await newBoxClient(accountAddress, window.ethereum)
+      const data = await get(orgSlug)
       setInput(data)
     }
     fetch()
@@ -57,7 +58,8 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
           <p className="mb-3">Copy and past this code on any public readme</p>
           <code className="block bg-gray-900 text-gray-200 rounded p-4 text-sm">
             [![Sponsor
-            me](https://res.cloudinary.com/dvargvav9/image/upload/v1581842794/button2_w5exua.svg)](https://flowerpot.network/{orgSlug}?trigger=true)
+            me](https://res.cloudinary.com/dvargvav9/image/upload/v1581842794/button2_w5exua.svg)](https://flowerpot.network/
+            {orgSlug}?trigger=true)
           </code>
         </div>
       )}
@@ -67,28 +69,23 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
 
 const Account = props => {
   const [orgs, setOrgs] = useState(null)
-  const [accessToken, setAccessToken] = useState(props.access_token)
-
-  console.log(props)
+  const [accessToken, setAccessToken] = useState(props.accessToken)
 
   useEffect(() => {
     const check = async () => {
-      const { box } = await newBoxClient(props.accounts[0], window.ethereum)
-      const accessToken = await privateGet(box, `gat_${props.accounts[0]}`)
+      const accessToken = await get(`gat_${props.accounts[0]}`)
+
       setAccessToken(accessToken)
     }
 
-    if (!props.access_token) {
+    if (!props.accessToken) {
       check()
     }
-  }, [])
 
-  useEffect(() => {
     const save = async () => {
-      const { box } = await newBoxClient(props.accounts[0], window.ethereum)
-
       if (props.accessToken) {
-        await privateSet(box, `gat_${props.accounts[0]}`, props.accessToken)
+        await set(`gat_${props.accounts[0]}`, props.accessToken)
+        setAccessToken(props.accessToken)
       }
     }
     save()
@@ -98,13 +95,17 @@ const Account = props => {
 
   useEffect(() => {
     const fetchOrgs = async () => {
-      const url = `https://api.github.com/user/orgs?access_token=${accessToken}`
-      const res = await request.get(url).set('User-Agent', 'Delta')
+      const url = `https://cors-anywhere.herokuapp.com/https://api.github.com/user/orgs?access_token=${accessToken}`
+      const res = await request
+        .get(url)
+        .set('User-Agent', 'Delta')
+        .set('X-Requested-With', 'Accept')
       setOrgs(res.body)
       console.log(res.body)
     }
-
-    fetchOrgs()
+    if (accessToken) {
+      fetchOrgs()
+    }
   }, [accessToken])
 
   const onEnable = async () => {
@@ -118,6 +119,7 @@ const Account = props => {
       render={({ web3, accounts, contract }) => (
         <Layout>
           {/* <p>{accessToken}</p> */}
+        
           <h1 className="text-3xl font-bold block mb-6">Set up your Orgs</h1>
           <div className="mt-4">
             {!props.accounts[0] && (
@@ -140,6 +142,7 @@ const Account = props => {
             )}
           </div>
 
+
           <div className="lg:flex lg:-mx-2">
             {orgs &&
               orgs.map(org => (
@@ -157,7 +160,7 @@ const Account = props => {
   )
 }
 
-  const Wrapper = props => {
+const Wrapper = props => {
   const router = useRouter()
   const [accessToken, setAccessToken] = useState(null)
 
@@ -165,17 +168,24 @@ const Account = props => {
 
   // if (!code) return {}
 
+  console.log('hi')
+  console.log('hiii')
+
   useEffect(() => {
     const fetch = async () => {
       try {
         // if (!accessToken) {
+        console.log(
+          'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token'
+        )
         const res = await request
           .post(
             'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token'
           )
+          .set('X-Requested-With', 'Accept')
           .send({
-            client_id: process.env.GITHUB_CLIENT_ID,
-            client_secret: process.env.GITHUB_CLIENT_SECRET,
+            client_id: 'ee508729e6002c32d53b',
+            client_secret: 'e8ed912f2b6fdcccbef5aecfcfb23a1d4b3dea13',
             code
           })
 
@@ -186,7 +196,7 @@ const Account = props => {
         setAccessToken(access_token)
       } catch (err) {
         console.log('hi', err.message, err.stack)
-        return { error: true }
+        throw err
       }
     }
 
