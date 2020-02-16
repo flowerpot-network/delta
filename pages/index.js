@@ -13,6 +13,11 @@ const exampleOrgs = [
     imageWidth: '50%'
   },
   {
+    name: '3Box',
+    image: 'https://avatars1.githubusercontent.com/u/45031480?s=200&v=4',
+    imageWidth: '50%'
+  },
+  {
     name: 'Uniswap'
   }
 ]
@@ -39,12 +44,12 @@ export default () => (
 
       <div className="flex -mx-1">
         {exampleOrgs.map(org => (
-          <div className="border rounded flex-wrap items-stretch w-1/2 flex-wrap mx-2 p-3 flex-col flex-grow">
+          <div className="border rounded w-1/3 flex-wrap mx-2 p-3">
             {/* <div className="text-center">
             <img src={org.image} className="mx-auto" width={org.imageWidth} />
           </div> */}
             <h2 className="font-bold">{org.name}</h2>
-            <Link href={`https://flowerpot.network/${org.name}`}>
+            <Link href={`https://flowerpot.network/${org.name.toLowerCase()}`}>
               Water Flowerpot 🚰
             </Link>
           </div>
@@ -84,7 +89,7 @@ export default () => (
         </p>
       </div>
     </div>
-    <div className="container mt-16 flex justify-center mx-auto pb-18">
+    <div className="container mt-16 flex justify-center mx-auto pb-">
     <section id="flowers">
           <pre><code>                _(_)_                     _(_)_     </code></pre>
           <pre><code>    @@@@       (_)@(_)        @@@@       (_)@(_)    </code></pre>
