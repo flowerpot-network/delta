@@ -10,3 +10,11 @@
 a {
   @apply text-blue-600;
 }
+
+.button {
+  position: absolute;
+  width: 112.57px;
+  height: 20px;
+  left: 99px;
+  top: 188px;
+}

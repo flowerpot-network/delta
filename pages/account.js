@@ -108,6 +108,7 @@ const Account = props => {
       const url = `https://api.github.com/user/orgs?access_token=${accessToken}`
       const res = await request.get(url).set('User-Agent', 'Delta')
       setOrgs(res.body)
+      console.log(res.body)
     }
 
     fetchOrgs()

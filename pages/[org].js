@@ -1,26 +1,41 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import Error from 'next/error'
 import request from 'superagent'
 import { useRouter } from 'next/router'
 import Repo from '../components/Repo'
+import Balance from '../components/Balance'
+import { ethers } from 'ethers'
 import { get } from '../lib/api'
 
-import { useEffect } from 'react'
-
-function Org({ org: orgRes, repos, ...props }) {
+function Org({ org: orgRes, repos, balance, ...props }) {
   const [orgAddress, setOrgAddress] = useState('')
 
-  const triggerPayment = () => {
+  const triggerPayment = async e => {
     console.log('run metamask payment')
+    let accounts = await window.ethereum.enable()
+    console.log('accounts', accounts)
+
+    const transactionParameters = {
+      // need to replace with the org's address
+      to: '0x60EAEb46e439b92167205e66CC2C01Ce1e5eB318',
+      from: accounts[0], // must match user's active address.
+      // we could make this editable
+      value: '0x300000000000000' // Only required to send ether to the recipient from the initiating external account.
+    }
+
+    window.ethereum.sendAsync(
+      {
+        method: 'eth_sendTransaction',
+        params: [transactionParameters],
+        from: accounts[0]
+      },
+      {}
+    )
   }
 
   const router = useRouter()
   const { trigger, org } = router.query
-
-  if (trigger === 'true') {
-    triggerPayment()
-  }
 
   const {
     errorCode,
@@ -65,6 +80,24 @@ function Org({ org: orgRes, repos, ...props }) {
         </ul>
       </div>
 
+      <div className="mb-5" onClick={triggerPayment}>
+        <button
+          className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+          type="submit"
+        >
+          <svg
+            className="fill-current w-4 h-4 mr-2"
+            xmlns="https://res.cloudinary.com/dvargvav9/image/upload/v1581816146/heart_resized_ruge9l.svg"
+            viewBox="0 0 20 20"
+          ></svg>
+          <span>Support</span>
+        </button>
+      </div>
+      <div>
+        <p className="max-w-sm border p-3 rounded mb-4 shadow-md">
+          BALANCE: {ethers.utils.formatEther(balance.result)} ETH
+        </p>
+      </div>
       <div>
         {repos.map(repo => (
           <Repo key={repo.node_id} repo={repo} />
@@ -86,13 +119,22 @@ Org.getInitialProps = async ctx => {
       .set('User-Agent', 'Delta')
       .auth(process.env.GITHUB_CLIENT_ID, process.env.GITHUB_CLIENT_SECRET)
 
+    const balance = await request
+      .get(
+        `https://api.etherscan.io/api?module=account&action=balance&address=0x9f2942fF27e40445d3CB2aAD90F84C3a03574F26&tag=latest&apikey=DS3QGS4YV7DQQMN5M5UJVSI2HHHKEENVVS`
+      )
+      .set('User-Agent', 'Delta')
+
+    console.log(balance)
+
     if (org.status > 400) {
-      return { errorCode: res.status }
+      return { errorCode: orgRes.status }
     }
 
     return {
       org: org.body,
-      repos: repos.body
+      repos: repos.body,
+      balance: balance.body
     }
   } catch (err) {
     return {
