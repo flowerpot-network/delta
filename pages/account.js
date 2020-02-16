@@ -73,7 +73,6 @@ const Account = props => {
 
   useEffect(() => {
     const check = async () => {
-      //  const { box } = await newBoxClient(props.accounts[0], window.ethereum)
       const accessToken = await get(`gat_${props.accounts[0]}`)
 
       setAccessToken(accessToken)
@@ -165,6 +164,11 @@ const Wrapper = props => {
 
   useEffect(() => {
     const fetch = async () => {
+      console.log({
+        client_id: process.env.GITHUB_CLIENT_ID,
+        client_secret: process.env.GITHUB_CLIENT_SECRET,
+        code
+      })
       try {
         // if (!accessToken) {
         const res = await request
@@ -185,7 +189,7 @@ const Wrapper = props => {
         setAccessToken(access_token)
       } catch (err) {
         console.log('hi', err.message, err.stack)
-        return { error: true }
+        throw err
       }
     }
 
