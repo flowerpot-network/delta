@@ -15,6 +15,10 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
   }
 
   const [orgAddress, setOrgAddress] = useState('')
+  const [windowReady, setWindowReady] = useState(false)
+
+  const router = useRouter()
+  const { trigger, org } = router.query
 
   const triggerPayment = async e => {
     console.log('run metamask payment')
@@ -39,14 +43,15 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
     )
   }
 
-  const router = useRouter()
-  const { trigger, org } = router.query
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      if (trigger === 'true') {
+        triggerPayment()
+      }
+    }
+  }, [])
 
   const { login: name, avatar_url, blog, location, html_url } = orgRes
-
-  if (trigger === 'true') {
-    triggerPayment()
-  }
 
   useEffect(() => {
     const fetch = async () => {
