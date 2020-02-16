@@ -95,7 +95,7 @@ const Account = props => {
 
   useEffect(() => {
     const fetchOrgs = async () => {
-      const url = `https://api.github.com/user/orgs?access_token=${accessToken}`
+      const url = `https://cors-anywhere.herokuapp.com/https://api.github.com/user/orgs?access_token=${accessToken}`
       const res = await request.get(url).set('User-Agent', 'Delta')
       setOrgs(res.body)
       console.log(res.body)
@@ -119,7 +119,7 @@ const Account = props => {
           <h1 className="text-3xl font-bold block mb-6">Get started</h1>
 
           <a
-            href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,user"
+            href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,read:user"
             className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Login with GitHub
@@ -172,6 +172,7 @@ const Wrapper = props => {
             client_secret: process.env.GITHUB_CLIENT_SECRET,
             code
           })
+          .set('X-Requested-With', 'Accept')
 
         console.log(res)
 
