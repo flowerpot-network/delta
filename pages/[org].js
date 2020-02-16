@@ -44,6 +44,10 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
 
   const { login: name, avatar_url, blog, location, html_url } = orgRes
 
+  if (trigger === 'true') {
+    triggerPayment()
+  }
+
   useEffect(() => {
     const fetch = async () => {
       const address = await get(name)
