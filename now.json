@@ -1,10 +1,17 @@
 {
+  "env": {
+    "ETHERSCAN_API_KEY": "@etherscan_api_key",
+    "GITHUB_TOKEN": "@github_token",
+    "GITHUB_CLIENT_ID": "@github_client_id",
+    "GITHUB_CLIENT_SECRET": "@github_client_secret"
+    },
+
     "build": {
       "env": {
-        "etherscan_api_key": "@etherscan_api_key",
-        "github_token": "@github_token",
-        "github_client_id": "@github_client_id",
-        "github_client_secret": "@github_client_secret"
+        "ETHERSCAN_API_KEY": "@etherscan_api_key",
+        "GITHUB_TOKEN": "@github_token",
+        "GITHUB_CLIENT_ID": "@github_client_id",
+        "GITHUB_CLIENT_SECRET": "@github_client_secret"
       }
     }
 }
