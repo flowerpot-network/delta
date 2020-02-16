@@ -57,7 +57,8 @@ const OrgBlock = ({ name, initAddress, orgSlug, accountAddress }) => {
           <p className="mb-3">Copy and past this code on any public readme</p>
           <code className="block bg-gray-900 text-gray-200 rounded p-4 text-sm">
             [![Sponsor
-            me](https://res.cloudinary.com/dvargvav9/image/upload/v1581816146/heart_resized_ruge9l.svg)](https://flowerpot.network/{orgSlug}?trigger=true)
+            me](https://res.cloudinary.com/dvargvav9/image/upload/v1581816146/heart_resized_ruge9l.svg)](https://flowerpot.network/
+            {orgSlug}?trigger=true)
           </code>
         </div>
       )}
@@ -129,14 +130,12 @@ const Account = props => {
             </button>
           )}
 
-          {!accessToken && (
-            <a
-              href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,user"
-              className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            >
-              Login with GitHub
-            </a>
-          )}
+          <a
+            href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,user"
+            className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Login with GitHub
+          </a>
 
           <div className="lg:flex lg:-mx-2">
             {orgs &&
@@ -155,7 +154,7 @@ const Account = props => {
   )
 }
 
-  const Wrapper = props => {
+const Wrapper = props => {
   const router = useRouter()
   const [accessToken, setAccessToken] = useState(null)
 
