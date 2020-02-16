@@ -11,8 +11,7 @@ export default ({ children }) => {
         </Link>
         <nav>
           <Link
-            href="/
-          "
+            href="/account"
           >
             <a className="text-blue-600">My Account </a>
           </Link>
