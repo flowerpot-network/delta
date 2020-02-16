@@ -49,7 +49,7 @@ export default () => (
             <img src={org.image} className="mx-auto" width={org.imageWidth} />
           </div> */}
             <h2 className="font-bold">{org.name}</h2>
-            <Link href={`https://flowerpot.network/${org.name.toLowerCase()}`}>
+            <Link href={`https://flowerpot.network/${org.name.toLowerCase()}`} target="_blank">
               Water Flowerpot 🚰
             </Link>
           </div>
