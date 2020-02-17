@@ -9,9 +9,9 @@ import { ethers } from 'ethers'
 import { get } from '../lib/api'
 
 function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
-  console.log(props.envs)
+  // console.log(props.envs)
 
-  console.log(ethers.utils.hexlify(0.019))
+  // console.log(ethers.utils.hexlify(0.019))
   if (errorCode) {
     return <Error statusCode={errorCode} />
   }
@@ -23,13 +23,13 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
   const { trigger, org } = router.query
 
   const triggerPayment = async e => {
-    console.log('run metamask payment')
+    // console.log('run metamask payment')
     let accounts = await window.ethereum.enable()
-    console.log('accounts', accounts)
+    // console.log('accounts', accounts)
 
-    console.log("org addreses", orgAddress)
+    // console.log('org addreses', orgAddress)
 
-    if(orgAddress != ''){
+    if (orgAddress != '') {
       const transactionParameters = {
         // need to replace with the org's address
         to: orgAddress,
@@ -37,7 +37,7 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
         // we could make this editable
         value: '20000000000000' // Only required to send ether to the recipient from the initiating external account.
       }
-  
+
       window.ethereum.sendAsync(
         {
           method: 'eth_sendTransaction',
@@ -46,10 +46,8 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
         },
         {}
       )
-
-    }
-    else {
-      alert ('add an address for this org, pls')
+    } else {
+      alert('add an address for this org, pls')
     }
   }
 
@@ -63,36 +61,41 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
     fetch()
   }, [])
 
-
   useEffect(() => {
     if (typeof window !== `undefined`) {
-      if (trigger === 'true' && orgAddress !='') {
+      if (trigger === 'true' && orgAddress != '') {
         triggerPayment()
       }
     }
   }, [])
-  
+
   return (
     <Layout>
-        <img src={avatar_url} className="w-32 rounded mb-5" />
-        <h1 className="text-2xl font-bold">{name}</h1>
-        <p>{orgAddress}</p>
-        <ul>
-          <li>
-            <a className="text-blue-600" href={html_url}>
-              Github
-            </a>
-          </li>
-          <li>
-            <a className="text-blue-600" href={blog}>
-              Website
-            </a>
-          </li>
-        </ul>
+      <img src={avatar_url} className="w-32 rounded mb-5" />
+      <h1 className="text-2xl font-bold">{name}</h1>
+      <p>{orgAddress}</p>
+      <ul>
+        <li>
+          <a className="text-blue-600" href={html_url}>
+            Github
+          </a>
+        </li>
+        <li>
+          <a className="text-blue-600" href={blog}>
+            Website
+          </a>
+        </li>
+      </ul>
 
       <div className="mt-5 mb-5">
-        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex " onClick={triggerPayment}>
-          <img class="h-6" src="https://res.cloudinary.com/dvargvav9/image/upload/v1581845188/heart_resized_1_csdpmt.svg"/>
+        <button
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex "
+          onClick={triggerPayment}
+        >
+          <img
+            class="h-6"
+            src="https://res.cloudinary.com/dvargvav9/image/upload/v1581845188/heart_resized_1_csdpmt.svg"
+          />
           <span> Support</span>
         </button>
       </div>
@@ -118,7 +121,7 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
 
 Org.getInitialProps = async ctx => {
   try {
-    console.log(process.env)
+    // console.log(process.env)
     const org = await request
       .get(`https://api.github.com/orgs/${ctx.query.org}`)
       .set('User-Agent', 'Delta')
@@ -141,7 +144,6 @@ Org.getInitialProps = async ctx => {
         balance = balanceRes.body
       }
     } catch (err) {
-  
       console.log(err.message)
     }
 

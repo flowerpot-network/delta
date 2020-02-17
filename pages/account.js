@@ -1,51 +1,57 @@
-import React, { Component, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import request from 'superagent'
 import Web3Container from '../lib/Web3Container'
-// import newBoxClient, { privateGet, privateSet } from '../lib/box'
+import { parseCookies, setCookie, destroyCookie } from 'nookies'
+import Link from 'next/link'
 import { get, set } from '../lib/api'
-import { useRouter } from 'next/router'
+import getConfig from 'next/config'
 
-// import Redis from '../store/redis'
-// http://localhost:3000/account?code=6f15d492026b24df701e
+const {
+  publicRuntimeConfig: { GITHUB_CLIENT_ID }, // Available both client and server side
+  serverRuntimeConfig: { GITHUB_CLIENT_SECRET } // Only available server side
+} = getConfig()
 
-// https://github.com/login/oauth/access_token
+const uri =
+  process.env.NODE_ENV !== 'development'
+    ? 'https://flowerpot.network'
+    : 'http://localhost:3000'
 
 const OrgBlock = ({ name, orgSlug, org }) => {
+  const [loading, setLoading] = useState(false)
   const [input, setInput] = useState('')
   const [address, setAddress] = useState('')
 
   const onSubmit = async e => {
     e.preventDefault()
-    console.log('submit')
-    // const { box } = await newBoxClient(accountAddress, window.ethereum)
-    await set(orgSlug, input)
+    await set(orgSlug.toLowerCase(), input)
     setAddress(input)
   }
 
   useEffect(() => {
     const fetch = async () => {
-      //  const { box } = await newBoxClient(accountAddress, window.ethereum)
-      const data = await get(orgSlug)
+      setLoading(true)
+      const data = await get(orgSlug.toLowerCase())
       setInput(data)
+      setLoading(false)
     }
     fetch()
   }, [])
 
-  console.log(org)
-
   return (
     <div className="border rounded mb-4 md:flex-wrap md:w-1/2 w-full md:mx-2 p-3">
       <h2 className="font-bold">{name}</h2>
-      <a href={`https://flowerpot.network/${name}`} target="_blank">
-        https://flowerpot.network/{name}
-      </a>
+      <Link href={`/${name}`}>
+        <a target="_blank">
+          {uri}/{name}
+        </a>
+      </Link>
 
       <form className="block mt-3" onSubmit={onSubmit}>
         <input
           className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-3"
           type="text"
-          placeholder="Address"
+          placeholder={!loading ? 'Address' : 'Loading...'}
           value={input}
           onChange={e => setInput(e.target.value)}
         />
@@ -73,153 +79,112 @@ const OrgBlock = ({ name, orgSlug, org }) => {
 }
 
 const Account = props => {
+  const cookies = parseCookies()
+  const [loading, setLoading] = useState(false)
   const [orgs, setOrgs] = useState(null)
-  const [accessToken, setAccessToken] = useState(props.accessToken)
-
-  useEffect(() => {
-    const check = async () => {
-      const accessToken = await get(`gat_${props.accounts[0]}`)
-
-      setAccessToken(accessToken)
-    }
-
-    if (!props.accessToken) {
-      check()
-    }
-
-    const save = async () => {
-      if (props.accessToken) {
-        await set(`gat_${props.accounts[0]}`, props.accessToken)
-        setAccessToken(props.accessToken)
-      }
-    }
-    save()
-    // const orgs = await fetchOrgs(props.access_token)
-    // console.log(orgs)
-  }, [props.accessToken])
+  const [accessToken, setAccessToken] = useState(
+    cookies.flowerpot_github_access_token
+  )
 
   useEffect(() => {
     const fetchOrgs = async () => {
+      setLoading(true)
       const url = `https://cors-anywhere.herokuapp.com/https://api.github.com/user/orgs?access_token=${accessToken}`
       const res = await request
         .get(url)
         .set('User-Agent', 'Delta')
         .set('X-Requested-With', 'Accept')
       setOrgs(res.body)
-      console.log(res.body)
+      setLoading(false)
     }
+
     if (accessToken) {
       fetchOrgs()
     }
   }, [accessToken])
 
-  const onEnable = async () => {
-    const accounts = await window.ethereum.enable()
-    setAddress(accounts[0])
-  }
+  // const onEnable = async () => {
+  //   const accounts = await window.ethereum.enable()
+  //   setAddress(accounts[0])
+  // }
 
   return (
     <Web3Container
       renderLoading={() => <div>Loading Dapp Page...</div>}
-      render={({ web3, accounts, contract }) => (
-        <Layout>
-          <div className="mb-8">
-            <h1 className="text-5xl font-bold block mb-2 text-center">
-              Account Setup
-            </h1>
-            <p className="text-center text-gray-600 text-xl">
-              Link your accounts to begin the process
-            </p>
-          </div>
+      render={({ web3, accounts, contract }) => {
+        return (
+          <Layout>
+            <div className="mb-8">
+              <h1 className="text-5xl font-bold block mb-2 text-center">
+                Account Setup
+              </h1>
+              <p className="text-center text-gray-600 text-xl">
+                Link your accounts to begin the process
+              </p>
+            </div>
 
-          <div className="mb-16 text-center">
-            {/* {!accessToken && ( */}
-              <a href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,read:user">
-                <button className="bg-gray-900 hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-4">
-                  Login with GitHub
-                </button>
-              </a>
-            {/* )} */}
+            <div className="mb-16 text-center">
+              {!accessToken && (
+                <a
+                  href={`https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&redirect_uri=${uri}/account&scope=read:org,read:user`}
+                >
+                  <button className="bg-gray-900 hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-4">
+                    Login with GitHub
+                  </button>
+                </a>
+              )}
 
-            {!props.accounts[0] && (
+              {/* {!props.accounts[0] && (
               <button
                 onClick={onEnable}
                 className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               >
                 Connect Metamask
               </button>
-            )}
-          </div>
-          <div className="md:flex md:-mx-2">
-            {orgs &&
-              orgs.map(org => (
-                <OrgBlock
-                  accountAddress={props.accounts[0]}
-                  key={org.login}
-                  name={org.login}
-                  orgSlug={org.login}
-                />
-              ))}
-          </div>
-        </Layout>
-      )}
-    />
-  )
-}
-
-const Wrapper = props => {
-  const router = useRouter()
-  const [accessToken, setAccessToken] = useState(null)
-
-  const { code } = router.query
-
-  useEffect(() => {
-    const fetch = async () => {
-      try {
-        // if (!accessToken) {
-        console.log(
-          'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token'
+            )} */}
+            </div>
+            <div className="md:flex md:-mx-2">
+              {loading && <p>Loading...</p>}
+              {orgs &&
+                orgs.map(org => (
+                  <OrgBlock
+                    accountAddress={accounts[0]}
+                    key={org.login}
+                    name={org.login}
+                    orgSlug={org.login}
+                  />
+                ))}
+            </div>
+          </Layout>
         )
-        const res = await request
-          .post(
-            'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token'
-          )
-          .set('X-Requested-With', 'Accept')
-          .send({
-            client_id: 'ee508729e6002c32d53b',
-            client_secret: 'e8ed912f2b6fdcccbef5aecfcfb23a1d4b3dea13',
-            code
-          })
-
-        console.log(res)
-
-        const { access_token } = res.body
-
-        setAccessToken(access_token)
-      } catch (err) {
-        console.log('hi', err.message, err.stack)
-        throw err
-      }
-    }
-
-    if (code) {
-      fetch()
-    }
-  }, [code])
-
-  return (
-    <Web3Container
-      renderLoading={() => <div>Loading Dapp Page...</div>}
-      render={({ web3, accounts }) => (
-        <Account
-          accounts={accounts}
-          web3={web3}
-          accessToken={accessToken}
-          {...props}
-        />
-      )}
+      }}
     />
   )
 }
 
-export default Wrapper
+Account.getInitialProps = async ctx => {
+  const { code } = ctx.query
+
+  if (code) {
+    const res = await request
+      .post('https://github.com/login/oauth/access_token')
+      .send({
+        client_id: process.env.GITHUB_CLIENT_ID,
+        client_secret: process.env.GITHUB_CLIENT_SECRET,
+        code
+      })
+
+    const { access_token } = res.body
+
+    if (access_token) {
+      setCookie(ctx, 'flowerpot_github_access_token', access_token, {
+        maxAge: 30 * 24 * 60 * 60,
+        path: '/'
+      })
+      return { accessToken: access_token }
+    }
+  }
+  return {}
+}
+
+export default Account

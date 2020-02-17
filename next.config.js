@@ -1,12 +1,9 @@
-require('dotenv').config()
-module.exports = { experimental: { css: true } }
+const nextRuntimeDotenv = require('next-runtime-dotenv')
 
-exports.default = {
-  env: {
-    GITHUB_TOKEN: process.env.GITHUB_TOKEN,
-    GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
-    GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
-    REDIS_URL: process.env.REDIS_URL,
-    ETHERSCAN_API_KEY: process.env.ETHERSCAN_API_KEY
-  }
-}
+const withConfig = nextRuntimeDotenv({
+  // path: '.env',
+  public: ['GITHUB_CLIENT_ID', 'REDIS_URL', 'ETHERSCAN_API_KEY'],
+  server: ['GITHUB_CLIENT_SECRET']
+})
+
+module.exports = withConfig({})
