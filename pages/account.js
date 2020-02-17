@@ -37,7 +37,7 @@ const OrgBlock = ({ name, orgSlug, org }) => {
   return (
     <div className="border rounded mb-4 md:flex-wrap md:w-1/2 w-full md:mx-2 p-3">
       <h2 className="font-bold">{name}</h2>
-      <a href={`https://flowerpot.network/${name}`}>
+      <a href={`https://flowerpot.network/${name}`} target="_blank">
         https://flowerpot.network/{name}
       </a>
 
@@ -133,13 +133,13 @@ const Account = props => {
           </div>
 
           <div className="mb-16 text-center">
-            {!accessToken && (
+            {/* {!accessToken && ( */}
               <a href="https://github.com/login/oauth/authorize?client_id=ee508729e6002c32d53b&redirect_uri=https://flowerpot.network/account&scope=read:org,read:user">
                 <button className="bg-gray-900 hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-4">
                   Login with GitHub
                 </button>
               </a>
-            )}
+            {/* )} */}
 
             {!props.accounts[0] && (
               <button
