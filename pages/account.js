@@ -89,11 +89,12 @@ const Account = props => {
   useEffect(() => {
     const fetchOrgs = async () => {
       setLoading(true)
-      const url = `https://cors-anywhere.herokuapp.com/https://api.github.com/user/orgs?access_token=${accessToken}`
+      const url = `https://cors-anywhere.herokuapp.com/https://api.github.com/user/orgs`
       const res = await request
         .get(url)
         .set('User-Agent', 'Delta')
         .set('X-Requested-With', 'Accept')
+        .set('Authorization', `token ${accessToken}`)
       setOrgs(res.body)
       setLoading(false)
     }

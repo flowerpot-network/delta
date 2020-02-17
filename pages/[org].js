@@ -7,6 +7,11 @@ import Repo from '../components/Repo'
 import Balance from '../components/Balance'
 import { ethers } from 'ethers'
 import { get } from '../lib/api'
+import getConfig from 'next/config'
+const {
+  publicRuntimeConfig: { GITHUB_CLIENT_ID }, // Available both client and server side
+  serverRuntimeConfig: { GITHUB_CLIENT_SECRET } // Only available server side
+} = getConfig()
 
 function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
   // console.log(props.envs)
@@ -121,16 +126,15 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
 
 Org.getInitialProps = async ctx => {
   try {
-    // console.log(process.env)
     const org = await request
       .get(`https://api.github.com/orgs/${ctx.query.org}`)
       .set('User-Agent', 'Delta')
-      .auth('ee508729e6002c32d53b', 'e8ed912f2b6fdcccbef5aecfcfb23a1d4b3dea13')
+      .auth(GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET)
 
     const repos = await request
       .get(`https://api.github.com/orgs/${ctx.query.org}/repos`)
       .set('User-Agent', 'Delta')
-      .auth('ee508729e6002c32d53b', 'e8ed912f2b6fdcccbef5aecfcfb23a1d4b3dea13')
+      .auth(GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET)
 
     const address = await get(org.body.login)
 
@@ -159,7 +163,7 @@ Org.getInitialProps = async ctx => {
   } catch (err) {
     return {
       balance: null,
-      errorCode: 200,
+      errorCode: 500,
       envs: process.env
     }
   }
