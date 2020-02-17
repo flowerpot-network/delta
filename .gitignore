@@ -17,3 +17,4 @@ yarn-error.log*
 # ipfs/
 # orbitdb/
 .now
+package-lock.json
