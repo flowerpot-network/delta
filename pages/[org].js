@@ -60,7 +60,7 @@ function Org({ org: orgRes, errorCode, repos, balance, ...props }) {
 
   useEffect(() => {
     const fetch = async () => {
-      const address = await get(name)
+      const address = await get(name.toLowerCase())
       setOrgAddress(address)
     }
     fetch()
