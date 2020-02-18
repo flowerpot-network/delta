@@ -41,7 +41,7 @@ export default () => (
         buttons that initiate Metamask transactions.
       </p>
       <img
-        class="justify-center mx-auto mb-8"
+        className="justify-center mx-auto mb-8"
         src="https://res.cloudinary.com/dvargvav9/image/upload/v1581842794/button2_w5exua.svg"
       />
       <p className="text-xl text-center text-gray-600 mb-8">
@@ -50,12 +50,17 @@ export default () => (
 
       <div className="flex -mx-1">
         {exampleOrgs.map(org => (
-          <div className="border rounded w-1/3 flex-wrap mx-2 p-3">
+          <div
+            className="border rounded w-1/3 flex-wrap mx-2 p-3"
+            key={org.name}
+          >
             {/* <div className="text-center">
             <img src={org.image} className="mx-auto" width={org.imageWidth} />
           </div> */}
             <h2 className="font-bold">{org.name}</h2>
-            <Link href={`/${org.name.toLowerCase()}`}>Water Flowerpot 🚰</Link>
+            <Link href={`/${org.name.toLowerCase()}`}>
+              <a>Water Flowerpot 🚰</a>
+            </Link>
           </div>
         ))}
       </div>
